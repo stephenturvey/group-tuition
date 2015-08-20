@@ -10,6 +10,11 @@ body.ou-wide .r2 .ou-content {border-radius:0.5em;}
 
 div.inview {padding:1.2em 2em;}
 
+div.table-wrap {
+	width:100%;
+	overflow:scroll;
+}
+
 table {margin-bottom:30px;}
 
 table a {color:#039;}
@@ -85,6 +90,13 @@ iframe {
 
 
 
+/* feedback */
+
+form.tutorial-feedback textarea {
+	width:50%;
+	font-size:1em;
+	padding:0.5em;	
+}
 
 
 
