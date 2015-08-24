@@ -11,8 +11,8 @@ body.ou-wide .r2 .ou-content {border-radius:0.5em;}
 div.inview {padding:1.2em 2em;}
 
 div.table-wrap {
-	width:100%;
-	overflow:scroll;
+	xwidth:100%;
+	xoverflow:scroll;
 }
 
 table {margin-bottom:30px;}
