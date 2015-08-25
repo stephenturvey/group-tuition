@@ -10,17 +10,14 @@ body.ou-wide .r2 .ou-content {border-radius:0.5em;}
 
 div.inview {padding:1.2em 2em;}
 
-div.table-wrap {
-	xwidth:100%;
-	xoverflow:scroll;
-}
-
 table {margin-bottom:30px;}
 
 table a {
 	color:#039;
 	text-decoration:underline;
 }
+
+table img {max-width:none;}
 
 table th {font-weight:bold;}
 
@@ -29,19 +26,25 @@ table td {padding:0.5em 1em;}
 
 table td.booked {color:#539d3c;}
 
-table tbody tr:nth-child(even) td {background-color:#f5f5f5;}
+table tbody tr:nth-of-type(even) td {background-color:#f5f5f5;}
 
-/* archive */
-table.cols3 th {width:40%;}
-table.cols3 th.last {width:20%;}
-/**/
-
-table.cols4 th {width:40%;}
-table.cols4 th.last {width:20%;}
+table.confirmation tbody tr:nth-of-type(even) td {background-color:transparent;}
 
 table.event-listings td {vertical-align: middle;}
 
 span.compulsory {color:#b52a1e;}
+
+table.confirmation td ul {padding-left:1.2em;}
+
+/* archive */
+table.cols3 th {width:40%;}
+table.cols3 th.last {width:20%;}
+table.cols4 th {width:40%;}
+table.cols4 th.last {width:20%;}
+/**/
+
+
+
 
 hr {
 	border:none;
@@ -131,7 +134,31 @@ ol.ou-breadcrumb li:first-child {background-image:none;}
 
 
 
+@media screen and (max-width: 800px) {
 
+/* make tables scrollable at smaller screen sizes */
+
+table tbody tr:nth-of-type(even) td {background-color:transparent;}
+
+div.table-wrap {
+	overflow-x: scroll;
+	background-image: 
+		-webkit-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)), 
+		-webkit-linear-gradient(right, #ffffff, rgba(255, 255, 255, 0)), 
+		-webkit-linear-gradient(left, #c3c3c5, rgba(195, 195, 197, 0)), 
+		-webkit-linear-gradient(right, #c3c3c5, rgba(195, 195, 197, 0));
+	background-image: 
+		linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)), 
+		linear-gradient(right, #ffffff, rgba(255, 255, 255, 0)), 
+		linear-gradient(left, #c3c3c5, rgba(195, 195, 197, 0)), 
+		linear-gradient(right, #c3c3c5, rgba(195, 195, 197, 0));
+	background-position: 0 0, 100% 0, 0 0, 100% 0;
+	background-repeat: no-repeat;
+	background-size: 4em 100%, 4em 100%, 1em 100%, 1em 100%;
+	background-attachment: local, local, scroll, scroll;
+}
+
+} /* end media query */
 
 
 
