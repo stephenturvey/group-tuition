@@ -27,9 +27,12 @@
 <script type="text/javascript" src="includes/studenthome-menu-2012.js"></script>
 <script type="text/javascript" src="js/site.js"></script>
 
+<!-- new js -->
+<script type="text/javascript" src="js/sorttable.js"></script>
 
 <!-- new meta tag -->
 <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no" />
+
 </head>
 
 <body class="ou-wide ou-ia-learning ou-blend study r2r3 sh-study ou-mobile ou-full" onload="boot()">
@@ -110,15 +113,16 @@
 </ul>
   
 <h2>Help</h2>
-<p>See <a href="http://www2.open.ac.uk/students/help/topic/tutorials-and-residential-schools">the Help Centre</a> or <a href="http://www2.open.ac.uk/students/help/your-contacts#q13">ask a specific question</a> about this tutorial.</p>
+<p>See <a href="http://www2.open.ac.uk/students/help/topic/tutorials-and-residential-schools">the Help Centre</a> or <a href="http://www2.open.ac.uk/students/help/your-contacts#q13">ask a specific question</a> about this tutorial. Please <a href="#">contact us about any additional requirements</a> you may have.</p>
 
 <hr>
 
-<h2>Book B716 Tutorial</h2>
+<h2 class="book-title">Book B716 Tutorial</h2>
+
 <h3>Suggested options (based on your location)</h3>
 
 <div class="table-wrap">
-<table class="event-listings">
+<table class="event-listings sortable">
   <thead>
     <tr>
       <th>Tutorial date</th>
@@ -128,9 +132,9 @@
       <th>End time</th>
       <th>Type</th>
       <th>Tutor</th>
-      <th>Book</th>
-      <th>&nbsp;</th>
-    </tr>
+      <th>Book by</th>
+      <th class="sorttable_nosort">Book</th>
+      </tr>
   </thead>
   <tbody>
     <tr>
@@ -141,9 +145,9 @@
       <td>12:30pm</td>
       <td>Face to face tutorial</td>
       <td>Mrs Janet Argyle</td>
-      <td><a href="tutorials-cancel.html" class="cancel">Cancel </a><a href="tutorials-confirmation.html"></a></td>
-      <td><a href="tutorials-confirmation.html"><img src="img/2015/icon-print.png" alt="Print details" /></a></td>
-    </tr>
+      <td>28/05/2016</td>
+      <td><a href="tutorials-cancel.html" class="cancel">Cancel </a> <a href="tutorials-confirmation.html">View/print</a></td>
+      </tr>
     <tr>
       <td>27/06/2016</td>
       <td>London</td>
@@ -151,18 +155,40 @@
       <td>13:00pm</td>
       <td>17:00pm</td>
       <td>Face to face tutorial</td>
-      <td>Mrs Sarah Upstone</td>
+      <td>TBC</td>
+      <td>14/06/2016</td>
       <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
-      <td>&nbsp;</td>
-    </tr>
+      </tr>
   </tbody>
 </table>
 </div>
 
 <h3>All other options</h3>
 
+<form class="distance-filter">
+<p>Show tutorials within 
+  <select name="miles" id="miles">
+    <option value="any" selected>Any</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+    <option value="40">40</option>
+    <option value="50">50</option>
+    <option value="60">60</option>
+    <option value="70">70</option>
+    <option value="80">80</option>
+    <option value="90">90</option>
+    <option value="100">100</option>
+  </select> 
+  miles of 
+  <input type="text" name="postcode" id="postcode" placeholder="Postcode/Town">
+  <input name="submit" type="button" value="Filter">
+</p>
+</form>
+
+
 <div class="table-wrap">
-<table class="event-listings">
+<table class="event-listings sortable">
   <thead>
     <tr>
       <th>Tutorial date</th>
@@ -172,11 +198,22 @@
       <th>End time</th>
       <th>Type</th>
       <th>Tutor</th>
-      <th>Book</th>
-      <th>&nbsp;</th>
-    </tr>
+      <th>Book by</th>
+      <th class="sorttable_nosort">Book</th>
+      </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>07/08/2015</td>
+      <td>Milton Keynes</td>
+      <td><a href="tutorials-venue.html">Walton Hall</a></td>
+      <td>19:00pm</td>
+      <td>21:00pm</td>
+      <td>Face to face tutorial</td>
+      <td>Mrs Rebecca Jones</td>
+      <td>25/08/2015</td>
+      <td>Deadline passed</td>
+      </tr>
     <tr>
       <td>02/06/2016</td>
       <td>Whittlebury</td>
@@ -185,20 +222,20 @@
       <td>15:30pm</td>
       <td>Face to face tutorial</td>
       <td>Mr Saul Smith</td>
+      <td>20/05/2016</td>
       <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
-      <td>&nbsp;</td>
-    </tr>
+      </tr>
     <tr>
       <td>15/06/2016</td>
       <td>Liverpool</td>
-      <td>To be confirmed</td>
+      <td>TBC</td>
       <td>10:00am</td>
       <td>13:00pm</td>
       <td>Face to face tutorial</td>
       <td>Mr Arnold Palmer</td>
+      <td>01/06/2016</td>
       <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
-      <td>&nbsp;</td>
-    </tr>
+      </tr>
     <tr>
       <td>21/06/2016</td>
       <td>n/a</td>
@@ -207,9 +244,9 @@
       <td>12:00pm</td>
       <td>Online tutorial</td>
       <td>Mrs Alison Perkins</td>
+      <td>05/06/2016</td>
       <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
-      <td>&nbsp;</td>
-    </tr>
+      </tr>
   </tbody>
 </table>
 </div>

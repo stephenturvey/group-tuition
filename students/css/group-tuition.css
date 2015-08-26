@@ -38,6 +38,25 @@ span.compulsory {color:#b52a1e;}
 
 table.confirmation td ul {padding-left:1.2em;}
 
+/* sortable tables */
+
+table.sortable th:hover {
+	cursor:pointer;
+	color:#444;
+}
+
+table.sortable th.sorttable_nosort:hover {
+	cursor: text;
+	color:#000;
+}
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B2\25Bc";
+	font-size:9px;
+	color:#ccc;
+}
+
+
 /**/
 
 
@@ -49,10 +68,22 @@ hr {
 	margin:30px 0;	
 }
 
+h2.book-title {
+	margin-bottom:25px;	
+}
+
 h3 {
 	font-size:1.1em;
 	font-weight:bold;
 	color:black;	
+}
+
+a.print {
+	background-image:url(../img/2015/icon-print.png);
+	background-position:0 0.2em;
+	background-repeat:no-repeat;
+	padding-left:20px;
+	display:inline-block;
 }
 
 
@@ -64,6 +95,7 @@ a.cancel {
 	background-color:#539d3c;	
 	display:inline-block;
 	padding:3px 8px;
+	margin-right:3px;
 	border-radius:4px;
 	text-decoration:none;
 }
@@ -78,6 +110,7 @@ a.cancel:hover {
 }
 
 /**/
+
 
 /* map */
 
@@ -116,13 +149,26 @@ iframe {
 
 /**/
 
-/* feedback */
+/* forms */
 
 form.tutorial-feedback textarea {
 	width:50%;
 	font-size:1em;
 	padding:0.5em;	
 }
+
+form.distance-filter {margin:20px 0;}
+
+form.distance-filter input[type="text"] {
+	font-size:1em;
+	margin:0 3px;
+	width:100px;
+}
+
+form.distance-filter p {color:#666;}
+
+/**/
+
 
 /* breadcrumb */
 
@@ -183,6 +229,7 @@ div.table-wrap {
 h1 {
     font-size: 1.6em;
     padding: .5em .5em 1em .5em;
+	line-height:130%;
 }
 
 div.inview {padding:1em 1.5em;}
