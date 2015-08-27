@@ -2,7 +2,12 @@
 
 /* GROUP TUITION - TUTOR STYLES */
 
-
+a.group-email {
+	background-image:url(icon-group-email.png);
+	background-position:0 .1em;
+	background-repeat:no-repeat;
+	padding:0 0 0 20px;	
+}
 
 
 /* sortable tables */
