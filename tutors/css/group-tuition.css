@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* GROUP TUITION - TUTOR STYLES */
+
+
+
+
+/* sortable tables */
+
+table.sortable th:hover {
+	cursor:pointer;
+	color:#eee;
+}
+
+table.sortable th.sorttable_nosort:hover {
+	cursor: text;
+	color:#fff;
+}
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B2\25Bc";
+	font-family: arial;
+	font-size:9px;
+	color:#E6B49B;
+}
+
+
+/**/

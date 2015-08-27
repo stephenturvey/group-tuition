@@ -1,0 +1,45 @@
+div.spacer {	clear:both;} 
+body { font-family:verdana,arial,sans-serif; font-size:xx-small; margin:0; padding:0; }
+
+/* start - columns */
+div#body_content {text-align:left;  width:88%; margin:0 auto; }  
+div.all_content {margin:20px 0; border:1px solid #e4e4e4;   }  
+div.page_content { padding:20px 0px 0px 10px; margin-bottom:0px; }
+div.col1 { 	  width:200px; float:left; margin:0px;  padding:0px 10px 0px 0px; }
+div.col1_nav {width:170px; float:left; margin:0px;  padding:0px; }
+div.page_content2 {
+	position:relative;
+	padding:0px;
+	left: 130px;
+	top: 80px;
+
+}
+div.col2and3  {   width:64%; /*height:100%;*/ float:left; padding:0px 10px 0px 0px; margin-bottom:20px; }
+div.col2{ 	float:left; margin:0px; width:44%; padding:0px 15px 0px 0px ;  }
+div.col3{ 	float:left; margin:0px; width:47%; padding:0px 0px 0px 0px ; }
+div.col2and3_all  {   width:88%;/* height:100%; */ padding:0px 40px 10px 40px; }
+/* home page stuff */
+div.alli_content { text-align:left; width:87%; margin: 15px auto 0px auto; padding:0px;  } 
+div.top_sign {width:150px; 	background-color: #fff;border:1px solid #ccc; border-bottom: none;  padding:3px 6px 2px 6px ; }
+div.loginboxbox_home { 	font-size:xx-small; border:1px solid #ccc; background-color: #F4f4f4; padding:4px 0px 4px 4px; margin:25px 0px; width:160px; }
+
+
+
+
+
+div.col1_home_n {	float:left; width:450px; position:relative; padding-right:10px; } 
+div.col3_home_n {	padding:0px 0px; }
+div.col1 img {border:1px solid #ccc; margin-bottom:10px;	 }
+
+div.col3_home_n img {	border:1px solid #ccc; }
+/* start - sign in bar */
+
+
+
+/* start - content */
+
+p.error {font-size:130%; margin:0px; padding:0px;}
+p.error a {color:#03c; text-decoration:none;} p.error a:hover {text-decoration:underline;}
+
+
+div.signedin2 a {color:#666;} div.signedin2 a:hover {color:#000;}

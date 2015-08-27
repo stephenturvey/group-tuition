@@ -1,0 +1,35 @@
+#footer {
+	width: 100%;
+	float: left;
+}
+
+#footercontent {
+	margin: 10px;
+	text-align: center;
+}
+
+#footer hr {
+	border-top: none;
+	border-bottom: 1px dotted #999999;
+	border-left: none;
+	border-right: none;
+	height: 1px;
+	width: 100%;
+	background-color: transparent;
+	color: white;
+}
+
+#footer address {
+	font-style: normal;
+	color: #999999;
+	background-color: transparent;
+	text-align: center;
+}
+
+#footercontent p {
+	font-size: 80%;
+	color:#999;
+	background-color: transparent;
+	margin:0;
+	padding:0;
+}

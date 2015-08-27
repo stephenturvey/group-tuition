@@ -1,0 +1,220 @@
+﻿/* Style Sheet for Refer student form */
+
+#aware
+{
+	margin: 2em 0 0.5em;
+}
+
+#unaware
+{
+	margin: 0.5em 0 0.5em;
+}
+p#guidance
+{
+	/*text-align: left;*/
+
+}
+
+#datelastref
+{
+	width: 12em;
+}
+
+#whynotaware
+{
+	width: 30em;
+}
+
+div#MessageJ p
+{
+	float: left;
+}
+
+#textarea
+{
+	background-color: #f8f8f8;
+	padding-top: 4px;
+}
+
+#tdChars
+{
+	background-color: #f8f8f8;
+	padding: 0 20px 8px 0;
+	text-align: right;
+	font-size: 85%;
+	line-height: 100%;
+}
+
+textarea 
+{
+	width: 832px; 
+	height: 132px;	
+}
+
+/* Class' */
+
+.hide
+{
+	display: none;
+}
+
+.show
+{
+	display: block;
+}
+
+.left
+{
+	float: left;
+}
+
+.clear
+{
+	clear: left;
+}
+
+.preview
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:100%;
+	margin-top: 2em;
+	background-color: White;
+	min-height: 0;
+}
+
+.response
+{
+	color: #C00000;
+	background-color: #E4F1FE;
+	width: 100%;
+}
+
+.trResponse
+{
+	background-color: #E4F1FE;
+}
+
+.red
+{
+	color: #C00000;
+}
+
+input[name=referralreason] 
+{
+	margin-top: -1px;
+	float:left;
+}
+
+.refline 
+{
+	height:1.5em;
+}
+
+
+.orange
+{
+	background-image: url('../img/orange-top3.jpg');
+	background-repeat: no-repeat;
+}
+
+#refContainer {
+	width:100%;
+}
+
+#first, #second {
+     width:  100%;      
+}
+
+#first 
+{
+	margin-top:3em;
+	height: 170px;	
+}
+
+#second 
+{
+	height: 170px;
+}
+
+#second, #third {
+	margin-top:1em;
+}
+
+#headers {
+	margin-top:3em;
+}
+
+.refreason {
+	width:45%;
+	float:left;
+	margin-right:4%;
+}
+
+.refreason div {
+ margin-bottom: 1em;
+	
+}
+
+.refreason div input {
+	border-radius: 2px;
+}
+
+.clear {
+	clear:left;
+}
+
+.extra{
+	margin-left:1em;
+}
+
+div.sectionbox h2 
+{
+	font-size:100%
+}
+
+#col1 DIV.sectionbox Div.content li.bullets
+{
+	list-style-type:none;
+	list-style-type:disc;
+}
+
+#details {
+	 margin-top: 1em;
+	
+}
+
+.content 
+{
+}
+
+.triangle {
+    float:left;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 16px solid #4293CB;
+
+}
+
+.circle {
+    float:left;
+	width: 16px;
+	height: 16px;
+	background: #C44C4D;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.square {
+    height:14px;
+	width:14px;
+	border-radius:2px;
+	float:left;
+    background-color: #4FAF44;
+}
+
+.refline img, #refform p img {
+    float: left;
+}

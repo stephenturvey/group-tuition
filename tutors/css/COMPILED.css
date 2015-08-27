@@ -1,0 +1,47 @@
+/* TUTOR HOME CSS FILE (main screen)
+
+Last modified 10th January, 2003 */
+
+/* BASIC SETTINGS
+_____________________________________________________________*/
+body {
+margin: 0;
+padding: 0;
+color: black;
+background-color: white;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+background-image : none;
+}
+
+body, p, table, tr, td, th, cite, code, pre, dl,dd, dt {
+line-height: 140%;
+font-size: x-small;
+voice-family: "\"}\"";
+voice-family: inherit;
+font-size: small
+}
+
+h1,h2,h3,h4, h5,h6 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: blue;
+	background-color: transparent;
+}
+
+a:hover {
+	text-decoration : none;
+	color: blue;
+	background-color: transparent;
+}
+
+a:visited {
+	color: blue;
+	background-color: transparent;
+}
+
+a:active {
+	color: blue;
+	background-color: transparent;
+}

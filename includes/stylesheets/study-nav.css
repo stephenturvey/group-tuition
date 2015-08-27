@@ -1,0 +1,158 @@
+/* STUDY NAV
+----------------------------------------------------------------- */
+
+/*
+
+v0.1.3
+
+CSS to accompany the study-nav.html file located in the /includes/ folder on all OU live and development servers.
+
+The current design is directly influenced by the  OU topbar with subtle differences to the borders and hover state. 
+
+The "Active" state is achieved by placing the relevant class to the opening <body> tag
+e.g. any page with <body class="study"> would represent an active state in the "Study at the OU" nav item. 
+
+*/
+
+div#study-nav {margin:0 0 0 90px; padding:0; border:none;}
+div#study-nav ul {list-style-type:none; margin:0; padding:0; width:100%; height:auto; float:left; clear:both; }
+div#study-nav ul li {list-style-type:none; display: inline; margin:0; padding:0; }
+
+/* Inactive state
+------------------------------------------------------*/
+
+div#study-nav ul li a 
+{
+text-decoration:none; font-size: 0.9em; margin:0 0 0 0; 
+float:left; text-decoration:none;
+border:1px solid #fff;
+padding:0 0.5em;
+margin:0 1em 0 0;
+color:#303131;
+}
+
+/* Active state
+------------------------------------------------------*/
+
+body.study div#study-nav ul li a#link-study, 
+body.new div#study-nav ul li a#link-new, 
+body.questions div#study-nav ul li a#link-questions, 
+body.apply div#study-nav ul li a#link-apply
+{
+color:#5ab5ee;
+border-color:#5ab5ee; 
+}
+
+/* Hover state
+------------------------------------------------------*/
+
+div#study-nav ul li a:hover 
+{
+border-color:#eee;
+}
+
+/* Makes the topbar highlight properly
+------------------------------------------------------*/
+
+div#ou-row1 ul li a#ou-study
+{
+	border:1px solid #5AB5EE;
+	color:#5AB5EE;
+}
+div#ou-row1 ul li a#ou-study:hover 
+{
+	color:#000000;
+}
+
+/* New SAOU Brand top nav
+------------------------------------------------------*/
+
+/* 5.0 NAVIGATION SYSTEMS
+-------------------------------------------------------------------------*/
+
+/* IA NAV ---- */ 
+
+div#ia-nav {
+	width:100%;
+	height:auto;
+	float:left;
+	clear:both;
+	background-image:url(site-nav-bg.jpg);
+	background-position:left center;
+	border-bottom:1px solid #ddd;
+	margin:0;
+	padding:0;
+}
+div#ia-nav ul {
+	width:100%;
+	height:auto;
+	float:left;
+	clear:both;
+	border-bottom:1px solid #FFF;
+	margin:0;
+	padding:0;
+}
+div#ia-nav ul li {
+	list-style-type:none;
+	display:inline;
+	margin:0;
+	padding:0;
+}
+div#ia-nav ul li a {
+	display:block;
+	float:left;
+	text-decoration:none;
+	background-color:transaprent;
+	background-image:url(../img/s-bg.jpg);
+	background-position:right center;
+	background-repeat:repeat-x;
+	color:#333;
+	padding:0.7em 1.3em;
+}
+div#ia-nav ul li a.s1, div#ia-nav ul li a.s1:hover {
+	background-image:url(../img/s1-bg.jpg);
+	background-position:right center;
+	color:#FFF;
+	font-weight:700;
+	padding-right:2em;
+}
+div#ia-nav ul li a:hover, body.s1 div#ia-nav ul li a.s1, body.s2 div#ia-nav ul li a.s2, body.s3 div#ia-nav ul li a.s3, body.s4 div#ia-nav ul li a.s4, body.s5 div#ia-nav ul li a.s5, body.s6 div#ia-nav ul li a.s6, body.s7 div#ia-nav ul li a.s7, body.s8 div#ia-nav ul li a.s8 {
+	background-image:url(../img/s-bg-hover.jpg);
+	color:#000;
+}
+body.s2 div#ia-nav ul li a.s1 {
+	background-image:url(../img/s1-bg-hover.jpg);
+}
+p#site-title a#sub-site-title {
+	color:#666;
+}
+div#site-breadcrumb {
+	font-size:1em;
+	color:#666;
+	text-transform:uppercase;
+	letter-spacing:0.2em;
+}
+div#site-breadcrumb a {
+	text-decoration:none;
+}
+.nav ul {
+	margin:1em 0;
+	padding:0;
+}
+.nav li {
+	list-style-type:none;
+	margin:0 0 0 0;
+	padding:0;
+	display:inline;
+}
+.nav li a, .nav li strong {
+	padding:0.5em;
+	border:1px solid #eee;
+}
+.nav li a:hover {
+	background-color:#ddd;
+}
+.nav li strong {
+	background-color:#eee;
+	color:black;
+}

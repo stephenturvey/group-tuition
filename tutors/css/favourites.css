@@ -1,0 +1,34 @@
+#editfaves ol {
+display:block;
+margin: 0 0 1em 0;
+}
+
+#editfaves li {
+	text-align: right;
+	list-style-type:none;
+	border:none;
+	margin: 0 0 5px 0;
+}
+
+#editfaves li ul {
+	border-bottom: 1px solid black;
+	padding-bottom: 1em;
+	margin: 0;
+}
+
+label {
+	font-weight: bold;
+}
+
+#editfaves form {
+	width: 80%;
+	height: auto;
+	margin: 0 auto 1em auto;
+	text-align: center;
+}
+
+#editfaves h3 {
+	text-transform:none;
+}
+
+input.mylink { width: 240px; }

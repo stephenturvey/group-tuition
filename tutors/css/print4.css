@@ -1,0 +1,26 @@
+#topbar { display:none; }
+div.title, div.links, div.navigation { display:none; }
+#Top1_divNav { display:none; }
+
+div.sectionbox { border:0; }
+div.sectionbox h2 { font-size:100%; font-weight:bold; margin:0; padding:0; text-align:center; }
+
+div#submit { display:none; }
+
+table.extra td { font-size:70%; }
+
+div.currentcourses { font-size:60%; }
+
+div.currentcourses h5 { margin-top:-1em; }
+
+select { font-size:60%; }
+textarea { width:50%; }
+
+.currentcourses h5 {
+	color: black;
+	font-weight : normal;
+	background-color: #fff;
+	padding: 3px;
+	margin: 0 0 0 0 ;
+	border : none;
+}

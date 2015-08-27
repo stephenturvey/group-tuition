@@ -1,0 +1,40 @@
+﻿body .ou-cookies-bar,
+body #ou-header,
+body .ou-footer {
+    font-size: 16px;
+}
+.ou-cookies-bar h3
+{
+    margin-top: .8em;
+}
+#ou-header #ou-service-links ul li
+{
+    *display: inline; /*For IE 7*/
+}
+body .ou-footer {
+    font-size: 14px;
+}
+body .ou-footer a {
+    font-size: 1.025em;
+}
+body .ou-footer .ou-contact {
+    width: 78%;
+    padding-top: 1.75em;
+}
+body .ou-footer .ou-contact,
+body .ou-footer .ou-footer-nav #ou-ia-public,
+body .ou-footer .ou-footer-nav #ou-ia-student,
+body .ou-footer .ou-small-print {
+    margin-left: 160px;
+}
+body .ou-footer .ou-footer-nav #ou-ia-public,
+body .ou-footer .ou-footer-nav #ou-ia-student {
+    margin-bottom: 25px;
+}
+body .ou-footer .ou-small-print {
+    padding-left: 0;
+}
+body .ou-footer .ou-footer-nav ul li a {
+    padding-left: 0;
+    padding-right: 30px;
+}

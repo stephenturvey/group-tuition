@@ -1,0 +1,174 @@
+@media screen {
+	/*-----------------------
+	openuniversity.edu
+		HEADER
+	-----------------------*/
+	#ou_edu_header {
+		color: #696768;
+		display: block;
+		font: 12px "Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
+		margin: 15px 0;
+		}
+		
+	#ou_edu_header a {
+		text-decoration: none;
+	}
+
+	#ou_edu_header img {
+		border: 0 none;
+	}
+
+	#ou_edu_header .clearfix:after {
+		clear: both;
+		content: ".";
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+
+	/* --- Logo --- */
+	#ou_edu_header .logo {
+		display: block;
+		float: left;
+		width: 90px;
+	}
+
+	/* --- Header Right Block --- */
+	#ou_edu_header #header_nav {
+		display: block;
+		float: right;
+		text-align: right;
+		width: 625px;
+	}
+
+	/* --- Header Right Block 1st Line --- */
+		#ou_edu_header .header_line1 {
+			padding-bottom: 15px;
+		}
+			#ou_edu_header .header_line1 a {
+				color: #fff;
+			}
+			#ou_edu_header .header_line1 a:hover {
+				color: #000;
+			}
+			#ou_edu_header .tel {
+				display: inline-block;
+				font-family: "Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
+				font-size: 1.8em;
+			}
+			#ou_edu_header .call_back,
+			#ou_edu_header .req_info,
+			#ou_edu_header .ask_question {
+				display: block;
+				float: right;
+				font-weight: 500;
+				height: 27px;
+				line-height: 27px;
+				margin-left: 12px;
+				padding-left: 5px;
+				text-align: left;
+				width: 120px;
+			}
+			#ou_edu_header .call_back {
+				background: url("/includes/global/header-callback.png") no-repeat scroll right center #F18200;
+			}
+			#ou_edu_header .req_info {
+				background: url("/includes/global/header-request.png") no-repeat scroll right center #F18200;
+			}
+			#ou_edu_header .ask_question {
+				background: url("/includes/global/header-question.png") no-repeat scroll right center #F18200;
+			}
+	/* --- Header Right Block - Search Form --- */
+		#ou_edu_header .element-invisible {
+			clip: rect(1px, 1px, 1px, 1px);
+			position: absolute !important;
+		}
+		#ou_edu_header input#search_field {
+			background: url("/includes/global/header-search.png") no-repeat scroll right center transparent;
+			border: 1px solid #6CA8CD;
+			color: #666666;
+			display: block;
+			float: right;
+			font: 1em "Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
+			padding: 5px 3px;
+			height: 15px;
+			width: 254px;
+		}
+		#ou_edu_header input#edit-submit {
+			display: none;
+			visibility: hidden;
+		}
+
+	/*-----------------------
+	openuniversity.edu
+		FOOTER
+	-----------------------*/
+	#ou_edu_footer {
+		color: #696768;
+		display: block;
+		font: 12px Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
+		margin-top: 10px;
+		background: url("/includes/global/org-footer-bg.png") no-repeat scroll right top transparent;
+		display: inline-block;
+		min-height: 272px;
+		width: 100%;
+	}
+		#ou_edu_footer a {
+			color: #696768;
+			text-decoration: none;
+		}
+		#ou_edu_footer .footer-left {
+			float: left;
+			width: 245px;
+		}
+			#ou_edu_footer .ou-title {
+				font-family: "Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
+				font-size: 1.8em;
+				margin: 10px 0 0;
+			}
+
+			#ou_edu_footer .ou-copyright {
+				font-size: smaller;
+				margin: 5px 0;
+			}
+			#ou_edu_footer .social-media {
+				margin-top: 40px;
+			}
+		#ou_edu_footer .footer-right > div {
+			float: left;
+			width: 150px;
+		}
+			#ou_edu_footer ul.menu {
+				padding-left: 0;
+			}
+
+			#ou_edu_footer ul.menu li {
+				list-style: none;
+				margin: 0;
+				padding-left: 10px;
+			}
+		#ou_edu_footer img {
+			display: inline-block;
+		}
+}
+
+@media print {
+	.tel {
+		display: block;
+		float: right;
+	}
+
+	.call_back,
+	.req_info,
+	.header_line2
+	{
+		display: none;
+		visibility: hidden;
+	}
+	.social-media,
+	.footer-right
+	{
+		display: none;
+		visibility: hidden;
+	}
+}

@@ -1,0 +1,17 @@
+#topbar { display:none; }
+div.title, div.links { display:none; }
+#Top1_divNav { display:none; }
+
+div.sectionbox { border:0; }
+div.sectionbox h2 { display:none; }
+
+div.studentdetails ul.codes { display:none; }
+
+#zxcright { display:none; }
+
+#studentdet_col1 { display:none; }
+#studentdet_col2 { display:none; }
+#subjecttochange { display:none; }
+
+#tblStudents td { font-size:60%; }
+
