@@ -2,12 +2,37 @@
 
 /* GROUP TUITION - TUTOR STYLES */
 
+
+a.link-float {float:right;}
+
+
+/* icons */
+
 a.group-email {
-	background-image:url(icon-group-email.png);
+	background-image:url(2015/icon-group-email.png);
 	background-position:0 .1em;
 	background-repeat:no-repeat;
-	padding:0 0 0 20px;	
+	padding:0 0 0 20px;
+	margin:0 3px;	
 }
+
+a.feedback {
+	background-image:url(2015/icon-comment.png);
+	background-position:0 .3em;
+	background-repeat:no-repeat;
+	padding:0 0 0 18px;
+	margin:0 3px;
+}
+
+a.icon-cluster  {
+	background-image:url(2015/icon-cluster.png);
+	background-position:0 .3em;
+	background-repeat:no-repeat;
+	padding:0 0 0 18px;
+	margin:0 3px;
+}
+
+/**/
 
 
 /* sortable tables */
