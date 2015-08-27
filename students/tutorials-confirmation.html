@@ -27,9 +27,25 @@
 <script type="text/javascript" src="includes/studenthome-menu-2012.js"></script>
 <script type="text/javascript" src="js/site.js"></script>
 
+<!-- new AddThisEvent -->
+<script type="text/javascript" src="https://addthisevent.com/libs/1.6.0/ate.min.js"></script>
+
+<script type="text/javascript">
+addthisevent.settings({
+	license    : "replace-with-your-licensekey",
+	css        : false,
+	outlook    : {show:true, text:"Outlook"},
+	google     : {show:true, text:"Google <em>(online)</em>"},
+	yahoo      : {show:true, text:"Yahoo <em>(online)</em>"},
+	outlookcom : {show:true, text:"Outlook.com <em>(online)</em>"},
+	appleical  : {show:true, text:"Apple Calendar"},
+	dropdown   : {order:"appleical,google,outlook,outlookcom,yahoo"}
+});
+</script>
 
 <!-- new meta tag -->
 <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no" />
+
 </head>
 
 <body class="ou-wide ou-ia-learning ou-blend study r2r3 sh-study ou-mobile ou-full" onload="boot()">
@@ -92,9 +108,26 @@
 
 <p>Kapil Dev, you have secured a place on <strong>Tutorial 1</strong> in <strong>Whittlebury</strong> on <strong>02/06/2016</strong>.</p>
 
-<p><a href="#" class="print">Print this page</a>.</p>
+<!-- addthisevent.com -->
+<div title="Add to Calendar" class="addthisevent">
+    Add to Calendar
+    <span class="start">02/06/2016 11:30 AM</span>
+    <span class="end">02/06/2016 15:30 AM</span>
+    <span class="timezone">Europe/London</span>
+    <span class="title">Tutorial 1</span>
+    <span class="description">Getting ready for your first assignment</span>
+    <span class="location">Whittlebury Hall</span>
+    <span class="organizer">The OU</span>
+    <span class="date_format">MM/DD/YYYY</span>
+    <span class="alarm_reminder">15</span>
+    <span class="recurring">FREQ=DAILY;COUNT=10</span>
+</div>
 
 <hr>
+
+<p><a href="#" class="print">Print this page</a></p>
+
+
 <div class="table-wrap">
   <table class="confirmation">
       <tr>
