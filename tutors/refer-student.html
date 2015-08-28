@@ -139,7 +139,270 @@
 
             
     
+                <div>
+                <div class="currentcourses">
                     
+<p id="guidance"><a href="http://www.open.ac.uk/tutors/sol/referring-your-students.php" class="blue2">See guidance for referring your students ›</a></p>
+
+<form action="refer-student-4.aspx" method="post" name="refform" id="refform" onsubmit="return validate()">
+<input name="inpPI" type="hidden" id="inpPI" value="C6602741"><input name="inpCourse" type="hidden" id="inpCourse" value="TM129"><input name="inpPres" type="hidden" id="inpPres" value="2014J"><input name="inpAlloc" type="hidden" id="inpAlloc" value="243990"><input name="inpTutorName" type="hidden" id="inpTutorName" value="Kate Sim"><input name="inpStudentName" type="hidden" id="inpStudentName" value="Conor Berridge"><input name="inpSstName" type="hidden" id="inpSstName" value="SRS">   
+
+<div id="toparea">  
+
+    <div class="extra">
+        Student Name: <strong>Ben Gurney</strong>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PI: <strong>012345678</strong>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Module: <strong>TM129 (2014J)</strong>
+        <br>
+
+        <!-- Student Awareness Radio buttons  -->
+        <div id="aware"><input value="Y" name="studcheck" type="radio" id="studcheck1"> The student <b>is</b> aware of this referral.
+            <div id="studentisaware" class="hide">Date of last contact from student: <input name="datelastref" type="text" id="datelastref"></div>  
+        </div>
+
+        <div id="unaware"><input value="N" name="studcheck" type="radio" id="studcheck2"> The student <b>is not</b> aware of this referral.
+            <div id="studentnotaware" class="hide">Please state reasons why: <input name="whynotaware" type="text" id="whynotaware"></div>
+        </div>
+
+    </div>
+<!--/td></tr></table-->
+</div>
+
+<h5>Reason for referral</h5>
+
+<p><img alt="" src="css/square.png">&nbsp;automated email will be sent which you can preview (and inhibit if absolutely necessary). No further action will be taken by the Student Support Team unless the student responds to the email or the email is inhibited.</p>
+<p><img alt="" src="css/triangle.png"></p></form></div>&nbsp;No automated email is available. You will need to provide relevant information to enable the Student Support Team to make effective personal contact.<p></p>
+
+<!-- Radio button selection grid -->
+
+<div id="refContainer">
+    <div id="first">
+        <div class="refreason">
+            <h4>Personal issues</h4>
+            <div class="refline"><input type="radio" name="referralreason" id="rdisability" value="disability"><img alt="" src="css/triangle.png">&nbsp;Disability</div>    
+            <div class="refline"><input type="radio" name="referralreason" id="rhealth" value="health"><img alt="" src="css/triangle.png">&nbsp;Health issues (temporary)</div> 
+            <div class="refline"><input type="radio" name="referralreason" id="rperscircum" value="perscircum"><img alt="" src="css/triangle.png">&nbsp;Personal circumstances</div>    
+            <div class="refline"><input type="radio" name="referralreason" id="contactdets" value="contactdets"><img alt="" src="css/square.png">&nbsp;Contact details not correct</div>
+        </div>
+        
+        <div class="refreason">
+            <h4>Future study decisions</h4>
+            <div class="refline"><input type="radio" name="referralreason" id="rCareers" value="9"><img alt="" src="css/square.png">&nbsp; Careers guidance</div>   
+            <div class="refline"><input type="radio" name="referralreason" id="rnextadvice" value="11"><img alt="" src="css/triangle.png">&nbsp; Qualification planning/module choice advice</div>  
+        </div>
+    </div>
+    
+    <div id="second">
+        <div class="refreason clear">
+            <h4>Support on current module</h4>
+            <div class="refline"><input type="radio" name="referralreason" id="raddsupport" value="2"><img alt="" src="css/triangle.png">&nbsp;Additional support session</div>
+            <div class="refline"><input type="radio" name="referralreason" id="rprogcon" value="progcon"><img alt="" src="css/triangle.png">&nbsp;Progress concerns</div>
+            <div class="refline"><input type="radio" name="referralreason" id="rengaged" value="14"><img alt="" src="css/triangle.png">&nbsp;Non-engagement/not responding to contact</div>
+            <div class="refline"><input type="radio" name="referralreason" id="rstudyskills" value="10"><img alt="" src="css/square.png">&nbsp;Study skills resources</div>
+        </div>
+        
+        <div class="refreason">
+            <h4>Assessment</h4>
+            <div class="refline"><input type="radio" name="referralreason" id="rassextns">&nbsp;Assignment extensions</div>
+            <div class="refline" style="margin-bottom: 50px"><input type="radio" name="referralreason" id="rassnosub" value="3"><img alt="" src="css/triangle.png">&nbsp;Assignment non-submission - Non submission of TMA01 is chased by a series of SST automated interventions.  Please only use this option for TMA02 onwards.</div>
+            <div class="refline"><input type="radio" name="referralreason" id="rexamsupp" value="7"><img alt="" src="css/triangle.png">&nbsp;Examination/EMA support</div>
+        </div>
+    </div>
+
+    <div id="third">
+        <div class="clear">
+            <h4>Deferral/Cancellation/Withdrawal</h4>
+            <div class="refline"><input type="radio" name="referralreason" id="rwithdraw" value="12"><img alt="" src="css/triangle.png">&nbsp;Concerns about continuing/wishes to change study plans</div>
+        </div>      
+    </div>
+</div>
+
+<div id="headers" class="clear">
+    <h5 class="hide" id="h_disability">Disability</h5>
+
+    <h5 class="hide" id="h_health">Health issues (temporary)</h5>
+    <h5 class="hide" id="h_percirc">Personal circumstances</h5>
+    <h5 class="hide" id="h_contactdet">Contact details not correct</h5>
+    <h5 class="hide" id="h_careerguid">Careers guidance</h5>
+    <h5 class="hide" id="h_qualification">Qualification/module choice advice</h5>
+
+    <h5 class="hide" id="h_alert">Student progress status at 'Alert' or 'Restricted'</h5>
+
+    <h5 class="hide" id="h_support">Additional support session</h5>
+    <h5 class="hide" id="h_extensions">Assignment extensions</h5>
+    <h5 class="hide" id="h_assigmentnonsub">Assignment non-submission</h5>
+    <h5 class="hide" id="h_concerns">Progress concerns</h5>
+    <h5 class="hide" id="h_examsupport">Examination/EMA support</h5>
+    <h5 class="hide" id="h_studyskills">Study skills resources</h5>
+
+    <h5 class="hide" id="h_nonengagement">Student not engaging with module or not responding to tutor contact</h5>
+    <h5 class="hide" id="h_withdrawal">Concerns about continuing/wishes to change study plans</h5>
+
+    <br>
+</div>
+
+<div class="hide clear" id="tbLetter">
+    <div class="trResponse"><p>The student will be sent the automated response you have selected. 
+    If you need to refer the student for any other reason please make a separate referral. 
+    If you feel this response is unsuitable please tick the box to inhibit it 
+    <input id="check1" type="checkbox" name="inhibit2"></p></div>
+    <div class="hide response" id="trLetter1"><p>You have inhibited the automated response. 
+    Please state your reasons why and what action you wish us to take.</p></div>
+</div>
+
+<div class="hide clear" id="tbLetterS">
+    <div class="trResponse"><p>The student will be sent the automated response. You should update the student's record with a statement about any contact with the student regarding their situation - please do so here, 
+    as this will be useful for any follow-up contact. <span id="sp_inhibit">If you feel this response is unsuitable please tick the box to inhibit it.
+    <input id="check2" type="checkbox" name="inhibit3"></span>
+    </p></div>
+    
+    <div class="hide response" id="trLetter2"><p>Please state your reasons why and what action you wish us to take.</p></div>
+</div>
+
+<div class="hide clear" id="health1">
+    <p>This type of referral applies to a student who has a temporary health issue (e.g. pregnancy, illness, undergoing surgery). <strong>For referral on a disability please select the Disability radio button</strong>.</p>
+    <p>This student has told me about a temporary health issue which may potentially affect their academic progress and...</p>
+    <p><input type="radio" name="healthshare" id="rhealth1" value="S"> is willing to share this information.</p>
+    <p><input type="radio" name="healthshare" id="rhealth2" value="C"> does not currently wish to share the details with any other person in the University.</p>
+</div>
+
+<div id="health2" class="hide">
+    <h5>Please provide succinct details of the health issue and how it affects the student's ability to study e.g completion of assignments, tutorial attendance, exams (limit of 750 characters)</h5>
+</div>
+
+
+<div class="hide clear" id="tbNonLetter">
+    <div class="trResponse">You have indicated that the student is not aware of this referral, 
+    therefore an automated response will not be sent. Please provide information below to update 
+    the student's record with your concerns so that the Student Support Team can make an appropriate response.</div>
+</div>
+
+<div class="hide" id="addsupp2">
+    <p><input type="radio" name="addsupp" value="1" id="YSupp"> I am prepared to provide the session myself.</p>
+    <p><input type="radio" name="addsupp" value="2" id="NSupp"> I am not prepared to provide the session myself.</p>
+</div>
+             
+<div class="hide" id="tmaextn2">
+    <p>You can manage TMA extensions for your students (including those beyond 21 days requiring central approval) 
+    by accessing the 'Manage TMA extensions' link on your Student Group Summary page on TutorHome.</p>
+</div>
+
+<div class="hide" id="disability_disclose">
+    <p>This student has told me they have a disability and...</p>
+    <p><input type="radio" name="disability" value="S" id="rdis1"> is willing to share this information so that appropriate services and facilities may be provided.</p>
+    <p><input type="radio" name="disability" value="C" id="rdis2"> wishes the information to remain strictly confidential.</p>
+</div>
+
+<div class="hide" id="disconf">
+    <p><strong>Confidentiality versus health and safety</strong></p>
+    <p>The OU has a duty of care to take action if a student is at risk of harming themselves or others. 
+    Students may well ask for confidentiality under these circumstances. However, health and safety 
+    considerations override a commitment to confidentiality in these situations.</p>
+    <p>Are you concerned that there are very significant health and safety considerations which override a commitment to confidentiality?</p>
+    <p><input type="radio" name="disconcern" id="discon1" value="Y"> Yes.</p>
+    <p><input type="radio" name="disconcern" id="discon2" value="N"> No.</p>
+</div>
+
+<h5 class="hide" id="h_disabilityInfo">Please provide the name of the disability and how it affects the student's ability to study (limit of 750 characters)</h5>
+
+<div id="disConfY" class="hide">
+    <h5>Please provide succinct details of the significant health issue which you are concerned may present a health and safety risk (limit of <span id="limit"></span>  characters)</h5>
+</div>
+
+<div id="disConfN" class="hide">
+    <h5> Details of referral</h5>
+    <div><p style="border:1px solid #999;padding:6px">This student has told me about a disability or impairment but does not wish the details to be disclosed to any other person in the University, even though this may prejudice his/her education.</p></div>
+    <p>If you wish to refer the student for other issues such as progress concerns please submit this referral and make a second separate referral.</p>
+</div>
+
+<div class="hide" id="percirc2">
+    <p>This should only be used to refer students who have told you about personal circumstances that may prejudice their academic progress.</p>
+    <p>This student has told me about personal circumstances which may potentially affect their academic progress and...</p>
+    <p><input type="radio" name="percircshare" value="S" id="percir1"> is willing to share this information.</p>
+    <p><input type="radio" name="percircshare" value="C" id="percir2"> does not currently wish to share the details with any other person in the University.</p>
+</div>
+
+<h5 id="details1h" class="hide">Please provide succinct details of the student's personal circumstances which may potentially affect their academic progress, eg completion of assignments, tutorial attendance, exams (limit of 750 characters)</h5>
+
+<div id="details1i" class="hide">
+    <h5>Details of referral</h5>
+    <div id="details5">
+        <div style="background-color:#f8f8f8;padding:8px"><p style="border:1px solid #999;padding:6px">This student has told me about personal circumstances which may potentially affect their academic progress but does not currently wish to share the details with any other person in the University.</p></div>
+        <p>If you wish to refer the student for other issues such as progress concerns please submit this referral and make a second separate referral.</p>
+    </div>
+</div>
+
+<div id="MessageA" class="hide">
+    <p>You can manage TMA extensions for your students (including those beyond 21 days requiring central approval) 
+    by accessing the 'Manage TMA extensions' link on your Student Group Summary page on TutorHome.</p>
+</div>
+
+<div id="MessageD" class="hide">
+    <p>Should you wish to update the student's record with a statement about any contact 
+    with the student regarding the assignment or extension agreed please do so here. 
+    This may be useful should the student make contact after receiving the automated response.</p>
+</div>
+  
+<div id="MessageG" class="hide">
+    <p>
+        Please state your reasons for concern / what action you wish us to take. <span class="red">Completion of the comments box is compulsory – limit of 750 characters.</span>
+    </p>
+</div>
+      
+<div id="MessageH" class="hide">
+
+    <p>The Individual Student Support is issued for a standard one hour session.</p>
+    <p>You will receive an email with authorisation for the session and details of how to claim.</p>
+    <p>Please claim for payment within one month of the session taking place. The session will be cancelled if we do not receive your claim form within two months of the session being issued.</p>
+
+    <p>Please provide a short statement to update the student's record with essential 
+    details about the nature of the support required (generic study skills or support related to the academic content).</p>
+    <p>Would you be able to provide the session?</p>
+    <p>Yes <input type="radio" name="support" id="rsupport_yes" value="1">No <input type="radio" name="support" id="rsupport_no" value="2"></p>
+</div>          
+
+<div id="MessageI" class="hide">
+    <p>Please provide a short statement to update the student's 
+    record with essential details about your concerns over the student's progress.</p>
+</div>
+
+<div id="MessageJ" class="hide">
+    <p>Please tick the relevant box below to indicate the nature of the referral.</p>
+    <br><br>
+    <ul>
+        <li><input type="radio" name="exam" id="r_exam_optA" value="a">Exam arrangments</li>
+        <li><input type="radio" name="exam" id="r_exam_optB" value="b">Exam postponement</li>
+        <li><input type="radio" name="exam" id="r_exam_optC" value="c">Revision and Exam Technique</li>
+        <li><input type="radio" name="exam" id="r_exam_optD" value="d">Exam stress</li>
+        <li><input type="radio" name="exam" id="r_exam_optE" value="e">EMA difficulties</li>
+    </ul>
+    <p>Please provide a short statement to update the student's record with essential details about your referral.</p> 
+</div>
+
+<div id="MessageK" class="hide">
+    <p>Please provide a short statement to update the student's record with essential details to enable us to make an effective personal response.</p>
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" class="hide" summary="" id="details">
+    <!--tr><td><br /></td></tr-->
+    <tbody><tr id="note1" class="zebraEven"><td><p>&nbsp;Note that the information you provide may at some point be viewed by the student and other OU staff.</p></td></tr>
+    <!--tr id="note2" class="hide"><td><p>&nbsp;Please provide succinct details of the significant health issue which you are concerned may present a health and safety risk.</p></td></tr-->
+    <tr><td id="textarea"><textarea name="othercomments" cols="40" rows="6" onkeyup="charsremaining()"></textarea></td></tr>
+    <tr class="zebraEven"><td id="tdChars"><span id="spnChars">750</span> characters remaining</td></tr>
+</tbody></table>
+
+<div id="submit" class="hide clear">
+    <asp:placeholder id="plSst">
+        <div id="sstname">
+            <p>This student will be referred to the <b>SRS</b> Student Support Team</p>
+        </div>
+    </asp:placeholder>
+    <input type="submit" class="save" value="Send Referral">
+</div>
+
+
+
+                </div>    
                         
 
 
