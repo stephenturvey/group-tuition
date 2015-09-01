@@ -32,6 +32,9 @@ a.icon-cluster  {
 	margin:0 3px;
 }
 
+/* this one was missing from th-aspx-1.0.css */
+ul.student-tools a.st-print {background-image:url(2015/icon-print.png);}
+
 /**/
 
 
