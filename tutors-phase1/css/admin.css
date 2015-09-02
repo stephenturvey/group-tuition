@@ -1,0 +1,29 @@
+﻿textarea {
+   font-family: Calibri, Arial;
+   width: 90%;
+}
+
+#directories {
+	margin: 6em 0 0 20px;
+}
+
+#directories ul {
+	width: 200px;
+	min-height: 27em;
+    
+}    
+    #directories ul li:hover {
+	    color: OrangeRed;
+    }
+    
+#tbCommand 
+{
+    display:block;
+	width: 90%;
+}
+
+div#ControlBox {
+    position: absolute;
+    left: 30%;
+    top: 17em;
+}

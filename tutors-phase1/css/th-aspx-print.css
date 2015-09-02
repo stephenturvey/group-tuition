@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* Tue 7 May 2013 */
+
+ul.student-tools,
+input[type=submit] {display:none;}
+
+ul.codes li a,
+ul.codes li strong {
+	display:inline-block;
+	padding:.3em .8em;
+	margin:0;
+	border-radius:none;
+	color:#333;
+	text-decoration:none;
+	background-color:none;
+	background-image: none;
+}
+
+ul.codes li strong {
+	background-color:none;
+	color:black;
+	background-image: none;
+}
+
+body.template-content div.ou-content ul.codes {
+	background-color:none; 
+	margin:0 0 1.5em 0; 
+	border-top:1px solid #ccc;
+}
+
+td {padding:.8em;}
+
+body.pure2cols div.ou-c1of2 {width:100%; float:left;}
+
+body.pure2cols div.ou-c2of2 {width:100%; float:left;}
+
+
+ul.ou-subnav {border-top:1px solid #ccc;}
+
+ul.ou-subnav li a, 
+ul.ou-subnav li strong, 
+ul.ou-subnav li span.other {
+	display: block;
+	padding: .3em 0;
+	text-decoration: none;
+	border-top: none;
+}
+
+ul.ou-subnav li strong {font-weight:bold; color:black;}
+
+table.simple th,
+table.simple tr td,
+table.simple tr th {border-bottom:1px solid #ddd; }
+
+.personal-info {
+	padding-left: 0;
+	background-image:none;
+	border-bottom: 1px solid #eee;
+}
+
+
+
+

@@ -1,0 +1,52 @@
+table
+{
+	margin-top: 10px;
+	margin-bottom: 7px;
+    border-collapse:collapse;
+	font-size: small;
+}
+
+table,th, td
+{
+    border: 1px solid gainsboro;
+}
+
+tr > td 
+{
+	padding: 2px 5px;
+	border-style: dashed;
+}
+
+tr.header > td
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 3px 5px;
+	color: #009;
+	background-color:#C8E8FD;
+	border-color: #7AC6E7;
+	border-style: solid;
+}
+
+tr.altRow
+{
+	background-color: #EEEEEE;
+}
+
+td.dataCell
+{
+	text-align: center;
+}
+
+td.totalCell
+{
+	text-align: center;
+	font-weight: bold;
+}
+
+#errorMessage
+{
+	font-size: 120%;
+	font-weight: bold;
+	color: red;
+}

@@ -1,0 +1,12 @@
+body, p, blockquote, ul, ol, li, form {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+body {
+	color:black;
+	background-color:white;
+}
+
+h1, h2, h3 {
+	font-family: Arial, Helvetica, sans-serif;
+}
