@@ -285,7 +285,27 @@ div.inview {padding:1em 1.5em;}
 
 
 
+@media print {
 
+body {
+	color: #000;
+	background: #fff;
+}
+
+h1 {color:#000;}
+
+.sh-header {display:none;}
+
+.box-book {
+	border-left:2px solid #000;
+	padding:0 1em 0 1.5em;
+	background-color:transparent;	
+}
+
+table tr td,
+table tr th {border-bottom:1px solid #ccc;}
+
+} /* end media query */
 
 
 
