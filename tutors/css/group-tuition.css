@@ -59,3 +59,25 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 
 /**/
+
+
+/* Media queries */
+
+
+@media print {
+
+body {
+	color: #000;
+	background: #fff;
+}
+
+h1 {color:#000;}
+
+a.link-float {display:none;}
+
+
+} /* end media query */
+
+
+
+
