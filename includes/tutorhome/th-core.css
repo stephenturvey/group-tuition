@@ -2308,7 +2308,8 @@ div.ou-c1of3 div.box h2 a.expand-icon {
 }
 
 div.ou-c1of3 div.box div.toggle-content {
-	display: none;
+	display: block;
+
 }
 
 

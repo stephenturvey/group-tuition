@@ -1,3 +1,13 @@
+
+
+/* WARNING */
+/* removed some stuff so prototype works. Do not use this version of this file in production */
+
+
+
+
+
+
 // AJAX and toggle functionality
 $(function() {
 
@@ -59,31 +69,16 @@ $(function() {
         
         var $id = $(this).attr('id');
 
-        if(typeof $(this).attr('id') != "undefined" && $id != "") {
-
-	            $id = $(this).attr('id');
-
-	            $(this).data( '$tc', $(this).parent().next()).click( function() {
-					        $(this).toggleClass( 'expand-icon' )
-					        .data( '$tc' ).slideToggle( 'fast', function() { 
-						        if ($(this).is(':hidden')) 
-						        {
-							        update($id);
-						        } 
-						        else 
-						        {
-							        update($id);
-						        }
+        
 					        });
 
 					        return false; 
 	        		});
 	        		
-        			if (state.indexOf($id) != -1)
-			        {
-			            $("#" + $id).parent().next().css('display','none');
-			            $("#" + $id).addClass('expand-icon');
-			        }
+        		
+        		/* removed some stuff so prototype works. Do not use this version of this file in production */
+
+
     		}
         });
         
