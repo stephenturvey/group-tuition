@@ -1,0 +1,10 @@
+#col1 table, td, th, fieldset {
+	border:1px dotted #cccccc;
+	border-collapse:collapse;
+	padding:5px;
+	margin: 1em 0;
+}
+
+label {
+	font-weight: bold;
+}

@@ -1,0 +1,50 @@
+@media only screen and (max-width: 640px), screen and (max-device-width: 640px) {
+	
+/* Force table to not be like tables anymore */
+div.studentdetails table,
+div.studentdetails tbody, 
+div.studentdetails th, 
+div.studentdetails td,
+div.studentdetails tr { 
+	display: block; 
+}
+	
+/* Hide table headers (but not display: none;, for accessibility) */
+div.studentdetails tr th { 
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	height:0;
+	background-color:#FFF;
+}
+
+div.studentdetails table {
+	border: none;		
+}
+	
+div.studentdetails tr {
+	border: none;
+	border-bottom: 2px solid #eee;		
+}
+	
+div.studentdetails table td  { 
+	/* Behave  like a "row" */
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+	padding-left: 50%;	
+	min-height:1.5em;	
+}
+	
+div.studentdetails td:before { 
+	/* Now like a table header */
+	position: absolute;
+	/* Top/left values mimic padding */
+	left: 1em;
+	width: 45%; 
+	padding-right: 0; 
+	
+}
+	
+}
+

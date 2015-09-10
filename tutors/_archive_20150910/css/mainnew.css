@@ -1,0 +1,676 @@
+/* MAIN SCREEN CSS FILE*/
+
+
+
+table, tr, td, th, cite, code, pre, dl,dd, dt {
+line-height: 140%;
+font-size: x-small;
+voice-family: "\"}\"";
+voice-family: inherit;
+font-size: small
+}
+
+
+
+a {
+	color: blue;
+	background-color: transparent;
+}
+
+a:hover {
+	text-decoration : none;
+	color: blue;
+	background-color: transparent;
+}
+
+
+a:active {
+	color: blue;
+	background-color: transparent;
+}
+
+#col4 { 
+	display: inline;
+	float: right;
+}
+
+img {
+	border:none;
+}
+
+/*Changes the display properties to inline so that more than one block can line up together in a horizontal fashion. The float:left bit ensures that the liquid layout is formed*/
+
+/*Sets the width of the first layout column. The height part is essential for the css to validate*/
+
+#col2 {
+	width: 38%;
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+/*Same as above but slightly smaller width for the second column*/
+
+#col3 {
+	width: 48%;
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#col4 {
+	width: 48%;
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#welcome, #sections, #messages, #favourites, #bbmessages, .sectionbox {
+	border: 1px solid #ccc;
+	margin: 0;
+	padding: 0;
+}
+
+/*Gives all the content boxes borders*/
+
+.content {
+	padding: 10px;
+}
+
+/*Ensures that all boxes containing main copy have some padding so that the content doesn't bash against the borders*/
+
+#welcome, #sections, #bbmessages {
+		margin: 10px 10px 10px 10px;
+}
+
+/*The two boxes in the left hand column on the home page have 10px of margin all the way around*/
+
+#messages, #favourites, .sectionbox, #signout {
+		margin: 10px 10px 10px 0;
+}
+
+/*The left hand margin is set to zero because the right hand margin on the first column is already set to 10px. The sectionbox class is from the secondary pages. Not entirely sure why i grouped it with this lot: CHECK*/
+
+
+#welcome h2, #sections h2, #messages h2, #favourites h2, #sectionheadercontent h2, #bbmessages h2 {
+	padding: 3px 3px 3px 3px;
+	margin: 0;
+	font-size: x-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small
+}
+
+/*All the box headers are dealt with here. A little padding is given. The font size is defined. NEED TO ADD IE5 BOX HACK*/
+
+#welcome h2 {
+	padding-left: 1em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-size: small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: medium
+}
+
+
+/*Different font face and size gives the user a good place to start when they arrive at the page*/
+
+#welcome .content ul {
+	margin: 0;
+	padding: 0 0 0 1em;
+}
+
+#favourites .content ul {
+	margin: 0;
+	padding: 0 0 0 1em;
+}
+
+#sections h2, #messages h2, #favourites h2, #bbmessages h2, #sectionheadercontent, .sectionbox h3 {
+		text-transform : uppercase;
+}
+/*HEADER tranforms*/
+
+#sections h2 {
+	background-repeat : no-repeat;
+	background-position : left;
+	color: white;
+	background-color : #0066cb;
+	border-bottom: 1px solid black;
+}
+
+
+#messages h2 {
+	background-repeat : no-repeat;
+	background-position : left;
+	background-color : #0066cb;
+	color: white;
+	border-bottom: 1px solid black;
+}
+
+#bbmessages h2 {
+	background-repeat : no-repeat;
+	background-position : left;
+	background-color : #0066cb;
+	color: white;
+	border-bottom: 1px solid black;
+}
+#favourites h2 {
+	background-repeat : no-repeat;
+	background-position : left;
+	background-color : #0066cb;
+	color: white;
+	border-bottom: 1px solid black;
+
+}
+
+/*Defines the styles for the box headers*/
+
+#favourites p {
+ 	margin-top: 0;
+	 padding-top: 0;
+ 	margin-bottom: 0;
+ 	padding-bottom: 0;
+	font-size: 0.8em;
+}
+
+.more {
+	background-image : url(../images/edit-faves.gif);
+	background-repeat : no-repeat;
+	text-align: right;
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-bottom: 8px;
+	margin: 0 0 0 0;
+	background-position : right;
+	text-transform : uppercase;
+}
+
+/*The graphically embellished 'more of the same' boxes that are in the two boxes on the home page*/
+
+#welcome h3, #sections h3, #messages h3, #favourites h3, #bbmessages h3 {
+	padding: 0;
+	margin: 0;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small
+}
+/*Relates directly to the headers within the section boxes. For example ''Personal', 'Students' etc on the home page*/
+
+#messages li, #bbmessages li {
+	list-style-type : none;
+	margin: 0.5em 0 0.0em 0;
+	padding: 0 0 0 0;
+	line-height: 110%;
+}
+
+#messages li.first, #bbmessages li.first {
+	margin: 0 0 0 0;
+}
+
+#messages li span, #bbmessages li span {
+	font-size: 0.8em;
+}
+
+#messages li a, #bbmessages li a {
+	color: #000;
+}
+
+#messages li span a, #bbmessages li span a {
+	color: blue;
+}
+
+/*Removes unwanted gaps and uses CSS to precisely match Tammy's design*/
+
+#messages ul, #bbmessages ul {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#messages ul li p, #bbmessages ul li p {
+		font-size: 0.8em;
+}
+
+#messages div.more p, #bbmessages div.more p {
+	padding: 0;
+	margin: 0;
+		font-size: 0.8em;
+}
+
+/*Removes browser-defined padding and margins around this block level element*/
+
+#sections ul {
+	margin: 0;
+	padding: 0;
+}
+#sections ul li {
+	list-style-type : none;
+}
+#sections ul li h3, #messages ul li h3 {
+	margin: 0.5em 0 -1em 0;
+	padding: 0;
+}
+
+/*This reduced the space between headings and paragraphs.*/
+
+#sections ul li h3 {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+#sections ul li p {
+	margin-top: 0;
+	margin-bottom: 0.75em;
+		font-size: 0.8em;
+}
+
+/*Controls the stuff in the sections box on the home page.*/
+
+
+#sections div.content {
+	background-color: #EEEEEE;
+	color: inherit;
+}
+
+#signout .content {
+	border: 1px solid black;
+	margin: 0;
+	padding: 0;
+	color: #003399;
+	background-color: #EEEEEE;
+	font-weight: bold;
+}
+
+#signout p {
+	margin: 0;
+	padding: 3px ;
+	text-transform: uppercase;
+}
+
+#signout img {
+	margin-right: 5px;
+}
+
+#signout a {
+	color: #003399;
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+}
+
+/* SECONDARY PAGE CONTENT 
+_______________________________________________________-*/
+
+#sectionheader {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+#sectionheadercontent {
+	border: 1px solid black;
+	background-color: #669acc;
+	color: white;
+	margin: 10px 10px 0 10px;
+	padding: 0;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+#sectionheadercontent h2 {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.sectionbox h3 {
+	padding: 3px 3px 3px 3px;
+	margin: 0;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small
+}
+
+#aa h3 {
+	padding: 3px 3px 3px 3px;
+	margin: 0;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small
+}
+
+#col1 div.sectionbox h3 {
+	color: white;
+	background-color: #0066cc;
+}
+
+#col2 div.sectionbox h3 {
+	color: black;
+	background-color: #cccccc;
+}
+
+#col3 div.sectionbox h3 {
+	color: white;
+	background-color: #0066cc;
+}
+
+#col4 div.sectionbox h3 {
+	color: white;
+	background-color: #0066cc;
+}
+
+#aa h3 {
+	color: white;
+	background-color: #0066cc;
+	text-transform : uppercase;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+#col1 div.sectionbox h3 , #col2 div.sectionbox h3, #col3 div.sectionbox h3, #col4 div.sectionbox h3 {
+	border-bottom: 1px solid black;
+}
+
+#aa h3 {
+	border-bottom: 1px solid black;
+}
+#col1 div.sectionbox {
+	margin-left: 10px;
+}
+
+#col3 div.sectionbox {
+	margin-left: 10px;
+}
+
+#aa ul {
+	margin: 0 1em 0 1em;
+	padding: 0 0 0 1em;
+}
+/*Sets the margins for unordered lists in the secondary pages content.*/
+
+#popup form {
+	text-align: center;
+}
+
+#popup div.sectionbox {
+	margin-left: 10px;
+}
+
+#popup #messages {
+	border: none;
+	margin-right: 0;
+}
+
+
+.headerstudents {
+	background-color: #ffcf00;
+	color: black;
+}
+
+/*Sets the students header bar to yellow*/
+
+.content h4 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 0 0 2em 0;
+	padding: 0;
+	text-transform: uppercase;
+font-size: x-small;
+voice-family: "\"}\"";
+voice-family: inherit;
+font-size: small
+}
+
+/*Sets the text headers such as 'current courses on the students page'*/
+
+
+
+.courses li {
+	display: inline;
+	list-style-type : none;
+	margin: 1em 1em 1em 0;
+	padding: 0;
+}
+
+.courses li a {
+	background-color: #dddddd;
+	color: blue;
+	padding: 3px;
+}
+
+/*Students pages - sets the course links up.*/
+
+.content table tr th {
+	text-align: left;
+}
+
+.content table {
+	border-top: 1px solid black;
+	margin: 0em 0 1em 0;
+	padding: 2px;
+	width: 100%;
+	height: auto;
+}
+
+#selectedcourse {
+	color: inherit;
+	background-color: #ffcf00;
+}
+
+#col1 div.sectionbox table {
+	width: 100%;
+	height: auto;
+}
+
+/*Student pages bits and bobs*/
+
+#col2 div.sectionbox div.content ul li.pdf {
+	list-style : url(../images/pdf.gif);
+	padding-left: 10px;
+}
+
+#col2 div.sectionbox div.content ul li.xls {
+	list-style : url(../images/xls.gif);
+	padding-left: 10px;
+}
+
+#col2 div.sectionbox div.content ul li.word {
+	list-style : url(../images/word.gif);
+	padding-left: 10px;
+}
+
+.studentdetails {
+	font-size:120%;
+}
+
+
+.studentdetails table th {
+	color: #000099;
+	background-color: #C8E8FD;
+	border: none;
+	padding: 4px;
+	text-align: center;
+	font-weight: normal;
+	font-size:60%;
+}
+
+.studentdetails table td {
+	border: 1px 0px 1px 1px;
+	border-style: dashed;
+	border-color: #DCDCDC;
+	padding: 1px;
+	font-size:80%;
+}
+
+.studentdetails table {
+	padding: 0px;
+	border: 0 0 0 0;
+	width: 100%;
+	height: auto;
+	border-collapse:collapse;
+	margin:2px 0 0 0; 
+}
+
+.studentdetails h4 {
+	text-transform: none;
+	color: #0066CC;
+	margin: 0 0 5px 0;
+	background-color: transparent;
+	font-size:100%;
+}
+
+p.rowheader {
+	margin: 0px 0px 0px 2px;
+}
+
+img.icon {
+	margin: 0px 0px -5px 0px;
+}
+.rowheader {
+	vertical-align:  top;
+	color: #666666;
+		margin:5px 0px 0px 0px;
+		padding:5px 0px 0px 0px;
+	font-weight:normal;
+width: 80px;
+	font-size : xx-small;
+}
+
+.smallprint p {
+	font-size: smaller;
+}
+
+.currentcourses h5 {
+	color: black;
+	font-weight : normal;
+background-color: #f4f4f4;
+	padding: 3px;
+	margin: 0 0 0 0 ;
+	border-bottom : 1px solid #0066CC;
+}
+
+.pastcourses h5 {
+	color: black;
+		font-weight : normal;
+	background-color: #f4f4f4;
+	border-bottom : 1px solid #0066CC;
+	padding: 3px;
+	margin: 0 0 0 0 ;
+}
+
+table.noborder { 
+border: none;
+}
+
+.highlight {
+padding: 1px;
+margin:0px;
+background-color: #FFE88A; }
+
+#printpage { 
+margin: 10px; }
+
+p.printheading {
+font-size: 130%;
+margin-bottom:0px;
+border-top : 1px solid #ccc;
+}
+
+p.printtext {
+margin: 0px 0px 70px 0px;}
+
+span.small { font-size: 0.8em; font-weight: normal; }
+
+#empinfo { line-height: 100%; }
+
+td.rowheader_newsm {
+border-top: none;
+border-right: none;
+border-left: none;
+background-color: #f4f4f4;
+}
+
+/* Begin feedback and help links */
+
+#feedbackandhelp, #feedbackandhelp a
+
+{
+color:white;
+background-color:transparent;
+text-decoration:none;
+}
+
+#sitebar 
+{
+position:relative;
+}
+
+#feedbackandhelp
+{
+position: absolute;
+top: 8px;
+right:5px;
+}
+
+/* End feedback and help links */
+
+/*staff self service styles */
+
+div.index_box {
+ 		font-size :1.5em;
+margin:10px 0px 10px 0px;
+padding:0px;
+border : 1px solid #ccc;
+border-collapse: collapse;
+}
+
+div.index_box p {
+ 	padding:5px;
+margin:0px;
+background-color: #FEFEFE;
+	
+}
+
+div.index_box p.a {
+padding:5px;
+margin:0px;
+background-color: #D3EEF8;
+
+	
+}
+div.index_box a.a  {
+font-size: 0.8em;
+	color: #000;
+text-decoration: none;
+}
+
+div.index_box a.a:hover  {
+font-size: 0.8em;
+	color: #003399;
+text-decoration: none;
+}
+
+/*  additions 12th Jul */
+h4.studentdet {	margin-bottom: -10px; }
+#studentdet_col1 {	width:46%; float:right; padding-left:10px; }
+#studentdet_col2{	width: 380px; padding-right:10px; }
+div.spacer {	clear:both;}
+
+p.resources { margin: 1em 0 0 0; }
+
+#aa { margin: 10px; border: 1px solid; padding: 0;  width: 90%; }
+
+#bb { width:100%; margin: 4px; }
+
+#cc { width: 50%; margin: 4px; float: right; }
+
+p.small { font-size: 75%; font-weight: normal; }
+
+div.linkcol ul { margin:0; padding:0; }
+div.linkcol ul li { margin:0 0 0 -14px; padding:0; }
+div.linkcol a.help, div.linkcol a.help:hover  { background-image:none; }
+
+div.spacer { margin: 8px; }
+div.personaldets { font-size:80%; }

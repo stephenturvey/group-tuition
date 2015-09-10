@@ -1,0 +1,120 @@
+/* Fixes for new header/footer (June 2015) */
+
+body {
+    background-color: #fff;
+    background-image: none;
+	margin:0;
+}
+
+body #ou-org {
+	margin:0 5%;
+    width: auto;
+}
+
+body #ou-header, body #ou-site-body, body #ou-site-header {
+    max-width: none;
+}
+
+.ou-search input::-moz-placeholder {
+    opacity:1;
+}
+
+div#ou-site-footer {
+    width:100% !important;
+}
+
+div.ou-contact {
+	box-shadow:none;
+	border:none;
+	background-color:transparent;
+	padding:0;
+	background-image:none;
+}
+
+div#ou-site-footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div#ou-site-footer ul li a {
+	padding:8px 15px 8px 0;
+}
+
+div#ou-site-footer ul li a:hover {
+	text-decoration:underline;
+}
+
+body .ou-footer {
+    padding: 20px 0 !important;
+}
+
+body .ou-footer .ou-contact {
+    padding-top: 0.6rem;
+}
+
+div#ou-site-footer li {
+    margin-right:1.1em;
+}
+
+div#ou-site-footer li:first {
+    margin-right:0;
+}
+
+/* End fixes */
+
+
+
+#ctl00_MainContent_tblStudents1 a img 
+{
+    display: inline !important;
+}
+
+.contentbox { 
+	margin-top: 0px; 
+	margin-right: auto; 
+	margin-bottom: 0px; 
+	margin-left: auto;	
+}
+
+.highlight {
+    padding: 1px;
+    margin:0px;
+    background-color: #FFE88A; 
+}
+
+#ou-site-header 
+{
+	
+}
+
+.altSize
+{
+	font: 140%/1.5em Tahoma,Lucida Grande,Arial,Helvetica,sans-serif;	
+}
+
+.hide 
+{
+	display: none;	
+}
+
+.show
+{
+	display:block;
+}
+
+div.sectionbox {background-image:none;}
+
+div.th-topnav {clear:both;}
+
+
+a.group:link {color: #ffffff; text-decoration: none;}
+a.group:active {color: #ffffff; text-decoration: none;}
+a.group:visited {color: #ffffff; text-decoration: none;}
+a.group:hover {color: #ffffff; text-decoration: none; }
+
+.fontsize { font-size:100%;}
+
+a.aliassubmit {
+	cursor:pointer;
+}

@@ -1,0 +1,34 @@
+#ou-topbars, #ou-footerf { display:none; }
+div.title, div.links, div.navigation { display:none; }
+#Top1_divNav { display:none; }
+
+ul.codes { display:none; }
+
+#yourcc { display:none; } 
+
+div.sectionbox { border:none; }
+
+td.navtop { display:none; }
+
+#tblStudDets td { font-size:90%; }
+
+h5 { font-size:100%; }
+
+div.lrgr2 h2 { margin-top:0; font-size:120%}
+
+div.lrgr2 h4, div.lrgr2 h5 { font-size:100%}
+
+.smallprint p {	font-size:80%; line-height:120%; margin-top:30px; }
+
+#tblStudDets td span.small { font-size:100%; }
+
+.hidethis { display:none; }
+
+div.studentdetails a.blue {
+	color:#000;
+	text-decoration:none;
+}
+
+#ou-org-header, 
+#ou-site-header,
+#ou-org-footer {display:none;}

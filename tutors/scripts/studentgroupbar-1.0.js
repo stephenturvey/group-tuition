@@ -1,4 +1,6 @@
-﻿$('document').ready(function () {
+﻿// SCRIPT DISABLED (LINE 11) FOR MOCKUP WORK
+
+$('document').ready(function () {
 
     // Get query string values of page location
     var code = getParameterByName('code', location.search);
@@ -6,7 +8,7 @@
     var alloc = getParameterByName('alloc', location.search);
 
     // Iterate through anchor elements
-    $('ul.codes li a').each(function () {
+    $('XXXul.codes li a').each(function () {
 
         // Extract query string values from anchor
         var link = $(this).attr('href');

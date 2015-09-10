@@ -1,0 +1,25 @@
+label {
+	font-weight: bold;
+}
+
+.content h4, .content p, .content address {
+	margin: 0;
+}
+
+.content h4 {
+	margin-top: 1em;
+}
+
+.small, .content address {
+	font-size: smaller;
+}
+
+.content address {
+	color: blue;
+	background-color: transparent;
+}
+
+#col1 div.sectionbox div.content li, #col2 div.sectionbox div.content li {
+	list-style-image : none;
+	list-style-type : decimal;
+}
