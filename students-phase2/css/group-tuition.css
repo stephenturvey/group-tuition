@@ -45,6 +45,8 @@ span.compulsory {
 
 table.confirmation td ul {padding-left:1.2em;}
 
+table tbody tr.waiting {border-left: 4px solid #C60;}
+
 /* sortable tables */
 
 table.sortable th:hover {
