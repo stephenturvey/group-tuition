@@ -96,6 +96,18 @@ a.print {
 }
 
 
+/* help link */
+
+a.help-link {
+	float:right; 
+	color:#fff; 
+	margin-top:15px; 
+	background:url(../img/2015/icon-help.png) 0 2px no-repeat; 
+	padding-left:20px;
+}
+
+a.help-link:hover {color:#A6D0FD; }
+
 /* buttons */
 
 a.book-now,
@@ -283,6 +295,9 @@ div.table-wrap {
 	background-attachment: local, local, scroll, scroll;
 }
 
+a.help-link span {display:none;}
+
+
 } /* end media query */
 
 
@@ -296,6 +311,7 @@ h1 {
 }
 
 div.inview {padding:1em 1.5em;}
+
 
 } /* end media query */
 
