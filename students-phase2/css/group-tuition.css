@@ -20,6 +20,21 @@ table a {
 	text-decoration:underline;
 }
 
+table a.tutorial-booked,
+table a.tutorial-waiting {
+	display:block;
+	text-decoration:none;
+	font-weight:bold;
+	padding-left:16px;
+	color:	#539d3c;
+	background:url(../img/2015/icon-tick.png) 0 3px no-repeat;
+}
+
+table a.tutorial-waiting {
+	color:	#c60;
+	background:url(../img/2015/icon-tick-orange.png) 0 3px no-repeat;
+}
+
 table img {max-width:none;}
 
 table th {font-weight:bold;}
