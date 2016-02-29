@@ -46,6 +46,9 @@ addthisevent.settings({
 <!-- new meta tag -->
 <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no" />
 
+<!-- testing only -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 </head>
 
 <body class="ou-wide ou-ia-learning ou-blend study r2r3 sh-study ou-mobile" onload="boot()">
@@ -114,10 +117,36 @@ addthisevent.settings({
 <div class="inview">
 
 <div class="box-booked">
-<p>Thank you, you have successfully been added to the waiting list. <a href="tutorials.html">Your tutorials summary</a></p>
+    <p>Thank you, you have successfully been added to the waiting list. <a href="tutorials.html">Your tutorials summary</a></p>
 </div>
-<p><a href="tutorials.html">Your tutorials</a></p>
-<div class="table-wrap"></div>
+
+<p><a href="tutorials.html">Your tutorials</a> <a href="#" style="margin-left:3em; color:#666;" id="toggle-email">[Testing only - Read email confirmation]</a></p>
+
+
+	<script>
+    $(document).ready(function(){
+        $("#email-confirmation").hide();
+        $("#toggle-email").click(function(){
+        $("#email-confirmation").slideToggle("fast");
+            return false;
+        })
+    });
+    </script>
+    
+    <div id="email-confirmation" style="margin-top:4em; border:1px solid #ccc; padding:3em 4em;">
+    
+    	<p><strong>To</strong>: [name here]<br>
+    	  <strong>From</strong>: The Open University <br>
+    	  <strong>Subject</strong>: Tutorial waiting list</p>
+        
+        <p><strong>Message</strong>:</p>
+        <p>Email text here email text here email text here.</p>
+        
+    
+    </div>
+
+
+
 </div>
 
 </div>

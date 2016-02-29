@@ -46,6 +46,10 @@ addthisevent.settings({
 <!-- new meta tag -->
 <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no" />
 
+
+<!-- testing only -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 </head>
 
 <body class="ou-wide ou-ia-learning ou-blend study r2r3 sh-study ou-mobile" onload="boot()">
@@ -132,13 +136,36 @@ addthisevent.settings({
     <span class="recurring">FREQ=DAILY;COUNT=10</span></div>
 <hr>
 
-<p><a href="#" class="print">Print this page</a></p>
+<p><a href="#" class="print">Print this page</a> <a href="#" style="margin-left:3em; color:#666;" id="toggle-email">[Testing only - Read email confirmation]</a></p>
+
+
+	<script>
+    $(document).ready(function(){
+        $("#email-confirmation").hide();
+        $("#toggle-email").click(function(){
+        $("#email-confirmation").slideToggle("fast");
+            return false;
+        })
+    });
+    </script>
+    
+    <div id="email-confirmation" style="margin-top:4em; border:1px solid #ccc; padding:3em 4em;">
+    
+    	<p><strong>To</strong>: [name here]<br>
+    	  <strong>From</strong>: The Open University <br>
+    	  <strong>Subject</strong>: Tutorial booked</p>
+        
+        <p><strong>Message</strong>:</p>
+        <p>Email text here email text here email text here.</p>
+        
+    
+    </div>
 
 <div class="table-wrap">
   <table class="confirmation">
       <tr>
         <th>Tutorial date</th>
-        <td>02/06/2016</td>
+        <td>2 June 2016 (Thu)</td>
         </tr>
       <tr>
         <th>Start time</th>
@@ -173,20 +200,39 @@ addthisevent.settings({
         <th>Tutorial venue</th>
         <td><p>Whittlebury Hall<br>
           Whittlebury<br>
-Northamptonshire<br>
-NN12 8QH</p>
+          Northamptonshire<br>
+          NN12 8QH</p>
           <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9808.287982321734!2d-1.00097535!3d52.07841925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48771cecb00f50c5%3A0xbfeff000a8b873f8!2sWhittlebury+NN12+8QH!5e0!3m2!1sen!2suk!4v1439998863616" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></p></td>
       </tr>
       <tr>
-        <th>Venue facilities</th>
-        <td><ul>
-          <li>Free parking</li>
-          <li>Wheelchair access </li>
-          <li>Hearing loop </li>
-          <li>Restaurant</li>
-        </ul></td>
-        </tr>
-  </table>
+        <th>Website</th>
+        <td><a href="http://www.whittleburyhall.co.uk/">http://www.whittleburyhall.co.uk/</a></td>
+      </tr>
+      <tr>
+        <th>Car parking</th>
+        <td>There is ample parking available for up to 100 cars free of charge</td>
+      </tr>
+      <tr>
+        <th>Disabled parking</th>
+        <td>There are 15 disabled parking spaces by the main entrance</td>
+      </tr>
+      <tr>
+        <th>Refreshments</th>
+        <td>There are vending machines in the canteen and hot food is served daily between 11am - 3pm</td>
+      </tr>
+      <tr>
+        <th>Accessibility</th>
+        <td>Classrooms are accessible by wheelchair users</td>
+      </tr>
+      <tr>
+        <th>Library</th>
+        <td>There is no library on site</td>
+      </tr>
+      <tr>
+        <th>Safety</th>
+        <td>Please observe health and safety policy at tutorial venues; you have a responsibility to ensure your own safety as well as the safety of others. You should make sure you are familiar with fire and evacuation proceedures and discuss any issues with your tutor or SST before the tutorial commences.</td>
+      </tr>
+      </table>
 </div>
 </div>
 
