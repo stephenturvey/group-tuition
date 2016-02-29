@@ -35,6 +35,8 @@ table a.tutorial-waiting {
 	background:url(../img/2015/icon-tick-orange.png) 0 3px no-repeat;
 }
 
+table a.inline {display:inline-block;}
+
 table img {max-width:none;}
 
 table th {font-weight:bold;}
