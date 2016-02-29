@@ -126,7 +126,8 @@ a.help-link:hover {color:#A6D0FD; }
 /* buttons */
 
 a.book-now,
-a.cancel {
+a.cancel,
+a.waiting {
 	color:#fff;
 	background-color:#539d3c;	
 	display:inline-block;
@@ -137,10 +138,12 @@ a.cancel {
 }
 
 a.cancel {background-color:#b52a1e;}
+a.waiting {background-color:#c60;}
 
 a.book-now:hover,
 a.book-now:visited:hover,
-a.cancel:hover {
+a.cancel:hover,
+a.waiting:hover {
 	background-color:#000;
 	color:#fff;
 }
