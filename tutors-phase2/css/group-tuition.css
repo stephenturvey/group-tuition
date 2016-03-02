@@ -32,6 +32,14 @@ a.icon-cluster  {
 	margin:0 3px;
 }
 
+a.icon-calendar  {
+	background-image:url(2015/icon-calendar-t1.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	padding:0 0 0 22px;
+	margin:0;
+}
+
 a.icon-plus {
 	background-image:url(2015/icon-plus.png);
 	background-position:0 .1em;
