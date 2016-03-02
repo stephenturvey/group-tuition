@@ -26,10 +26,10 @@ a.feedback {
 
 a.icon-cluster  {
 	background-image:url(2015/icon-cluster.png);
-	background-position:0 .3em;
+	background-position:0 2px;
 	background-repeat:no-repeat;
-	padding:0 0 0 18px;
-	margin:0 3px;
+	padding:0 0 0 22px;
+	margin:0;
 }
 
 a.icon-calendar  {
