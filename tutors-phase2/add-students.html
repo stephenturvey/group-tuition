@@ -137,48 +137,60 @@
             <div id="ou-region1">
                 <h1>Add students to attendance register</h1>
                 <div id="ou-content" class="ou-content">
-                  <p>Add students who attended &quot;Tutorial one&quot; who were not on the original list.</p>
-                  
-                <form class="tutorial-register" method="post" action="add-students-thanks.html">
+                  <p>Add students who attended &quot;Tutorial one&quot; who were not on the original list.                </p>
+                  <p>If you know the PI you do not need to enter the student name or email. If you do not know the PI please enter both student name and email instead.</p>
+                  <form class="tutorial-register" method="post" action="add-students-thanks.html">
                   <div id="add-student">
-                    
+                                      
                     <div class="scrollable">               
                     <table class="tutorial-add-student">
                       <tr>
                         <th>&nbsp;</th>
-                        <th><label>Student name</label></th>
-                        <th><label>Email</label></th>
-                        <th>PI</th>
+                        <th class="column-pi">Student PI</th>
+                        <th>&nbsp;</th>
+                        <th class="column-name_email"><label>Student name</label></th>
+                        <th class="column-name_email">&nbsp;</th>
+                        <th class="column-name_email"><label>Student Email</label></th>
                       </tr>
                       <tr>
                         <td>1.</td>
-                        <td><input name="student_name2" id="student_name5" type="text"></td>
-                        <td><input name="student_email" id="student_email" type="text"></td>
-                        <td><input name="student_pi2" id="student_pi6" type="text"></td>
+                        <td class="column-pi"><input name="student_pi2" id="student_pi6" type="text"></td>
+                        <td>or</td>
+                        <td class="column-name_email"><input name="student_name2" id="student_name5" type="text"></td>
+                        <td class="column-name_email">and</td>
+                        <td class="column-name_email"><input name="student_email" id="student_email" type="text"></td>
                       </tr>
                       <tr>
                         <td>2.</td>
-                        <td><input name="student_name2" id="student_name4" type="text"></td>
-                        <td><input name="student_email" id="student_email" type="text"></td>
-                        <td><input name="student_pi2" id="student_pi5" type="text"></td>
+                        <td class="column-pi"><input name="student_pi2" id="student_pi5" type="text"></td>
+                        <td>or</td>
+                        <td class="column-name_email"><input name="student_name2" id="student_name4" type="text"></td>
+                        <td class="column-name_email">and</td>
+                        <td class="column-name_email"><input name="student_email" id="student_email" type="text"></td>
                       </tr>
                       <tr>
                         <td>3.</td>
-                        <td><input name="student_name2" id="student_name3" type="text"></td>
-                        <td><input name="student_email" id="student_email" type="text"></td>
-                        <td><input name="student_pi2" id="student_pi4" type="text"></td>
+                        <td class="column-pi"><input name="student_pi2" id="student_pi4" type="text"></td>
+                        <td>or</td>
+                        <td class="column-name_email"><input name="student_name2" id="student_name3" type="text"></td>
+                        <td class="column-name_email">and</td>
+                        <td class="column-name_email"><input name="student_email" id="student_email" type="text"></td>
                       </tr>
                       <tr>
                         <td>4.</td>
-                        <td><input name="student_name2" id="student_name2" type="text"></td>
-                        <td><input name="student_email" id="student_email" type="text"></td>
-                        <td><input name="student_pi2" id="student_pi3" type="text"></td>
+                        <td class="column-pi"><input name="student_pi2" id="student_pi3" type="text"></td>
+                        <td>or</td>
+                        <td class="column-name_email"><input name="student_name2" id="student_name2" type="text"></td>
+                        <td class="column-name_email">and</td>
+                        <td class="column-name_email"><input name="student_email" id="student_email" type="text"></td>
                       </tr>
                       <tr>
                         <td>5.</td>
-                        <td><input name="student_name" id="student_name" type="text"></td>
-                        <td><input name="student_email" id="student_email" type="text"></td>
-                        <td><input name="student_pi" id="student_pi" type="text"></td>
+                        <td class="column-pi"><input name="student_pi" id="student_pi" type="text"></td>
+                        <td>or</td>
+                        <td class="column-name_email"><input name="student_name" id="student_name" type="text"></td>
+                        <td class="column-name_email">and</td>
+                        <td class="column-name_email"><input name="student_email" id="student_email" type="text"></td>
                       </tr>
                     </table>
                 	</div>
