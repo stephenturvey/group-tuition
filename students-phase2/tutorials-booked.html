@@ -152,12 +152,19 @@ addthisevent.settings({
     <div id="email-confirmation" style="margin-top:4em; border:1px solid #ccc; padding:3em 4em;">
     
     	<p><strong>To</strong>: [name here]<br>
-    	  <strong>From</strong>: The Open University <br>
-    	  <strong>Subject</strong>: Tutorial booked</p>
+    	  <strong>From</strong>: The Open University<br>
+    	  <strong>Subject</strong>: Tutorial booked (&lt;Event title+location here&gt;)</p>
         
         <p><strong>Message</strong>:</p>
-        <p>Email text here email text here email text here.</p>
+        <p>Dear &lt;StudentName&gt;,</p>
+        <p>This email is to confirm you are now booked on the following tutorial:</p>
+        <p><strong>Title</strong>: &lt;Tutorial title&gt;<br>
+          <strong>Start time</strong>: 11:30<br>
+          <strong>End time</strong>: 15:30<br>
+          <strong>Tutorial venue</strong>: &lt;VenueAddress+Postcode&gt;<br>
+        </p>
         
+        <p>You can find all your upcoming tutorials in <a href="tutorials.html">Your tutorials</a>.</p>
     
     </div>
 
