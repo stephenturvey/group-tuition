@@ -91,13 +91,10 @@ table.tutorial-add-student {width:auto;}
 table.tutorial-add-student input[type="text"] {font-size:1em;}
 
 table.tutorial-add-student tbody tr th,
-table.tutorial-add-student tbody tr td  {padding:12px;}
+table.tutorial-add-student tbody tr td  {padding:12px; background-color:#eee;}
 
-table.tutorial-add-student .column-pi,
-table.tutorial-add-student tbody tr td.column-pi:hover,
-table.tutorial-add-student .column-name_email,
-table.tutorial-add-student tbody tr td.column-name_email:hover {background-color:#eee;}
-
+table.tutorial-add-student tbody tr th.column-blank,
+table.tutorial-add-student tbody tr td.column-blank  {background-color:#fff;}
 
 
 @media only screen and (max-width: 600px), screen and (max-device-width: 600px) {
