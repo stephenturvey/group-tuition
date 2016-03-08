@@ -81,7 +81,7 @@ $(function() {
 	        		
         			if (state.indexOf($id) != -1)
 			        {
-			            $("#" + $id).parent().next().css('display','none');
+			            $("#" + $id).parent().next().css('display','block');
 			            $("#" + $id).addClass('expand-icon');
 			        }
     		}
