@@ -30,6 +30,34 @@
 <!-- new js -->
 <script type="text/javascript" src="js/sorttable.js"></script>
 
+<!-- new jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+// show postcode field when selected in dropdown
+				   
+		$("input#postcode").css("display","none");		   
+							   
+		$("#town_selection").change(function(){
+
+			if ($(this).val() == "postcode" ) {
+
+				$("input#postcode").css("display","inline-block");
+			}
+				
+			else {
+
+				$("input#postcode").css("display","none");
+
+			}
+		});
+});
+
+</script>
+
 <!-- new meta tag -->
 <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no" />
 </head>
@@ -143,7 +171,7 @@
 
 <h3>All other options</h3>
 
-<form class="distance-filter">
+<form id="distance-filter" class="distance-filter">
 <p>Show tutorials within 
   <select name="miles" id="miles">
     <option value="any" selected>Any</option>
@@ -159,8 +187,23 @@
     <option value="100">100</option>
   </select> 
   miles of 
-  
-  <input type="text" name="postcode" id="postcode" placeholder="Postcode/Town">
+  <select name="town_selection" id="town_selection">
+    <option value="" selected>- Please select -</option>
+    <option value="postcode">Enter postcode ></option>
+    <option value="Aberdeen">Aberdeen</option>
+    <option value="Birmingham">Birmingham</option>
+    <option value="Cambridge">Cambridge</option>
+    <option value="Daventry">Daventry</option>
+    <option value="Edinburgh">Edinburgh</option>
+    <option value="Liverpool">Liverpool</option>
+    <option value="London">London</option>
+    <option value="Manchester">Manchester</option>
+    <option value="Norwich">Norwich</option>
+    <option value="Oxford">Oxford</option>
+    <option value="Portsmouth">Portsmouth</option>
+    <option value="Southampton">Southampton</option>
+  </select> 
+  <input type="text" name="postcode" id="postcode" placeholder="Postcode">
   <input name="submit" type="button" value="Filter">
 </p>
 </form>
