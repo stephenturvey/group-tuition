@@ -136,10 +136,15 @@
                 <div id="ou-content" class="ou-content">
                 
                     
-<form name="feedback" method="post" action="venue-feedback-thanks.html" class="tutorial-feedback">
+<form name="feedback" method="get" action="venue-feedback-thanks.html" class="tutorial-feedback">
   <p><strong>Venue</strong>: Whittlebury Hall</p>
   <p><strong>Name</strong>: Ben Gurney</p>
   <p><strong>Staff ID</strong>: <span class="nolnk">0123456</span></p>
+  <p><strong><label for="sentiment">What kind of experience did you have?</label></strong></p>
+<ul>
+<li><input type="radio" name="sentiment">Positive</li>
+<li><input type="radio" name="sentiment">Negative</li>
+</ul>
   <p><strong><label for="textarea">Comments</label></strong></p>
   <p>
     <textarea name="textarea" rows="8" cols="120" id="textarea"></textarea>
