@@ -62,20 +62,14 @@
     <!-- new jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     
-    <!-- new script -->
+	<!-- check/uncheck script -->
     <script>
-    $(document).ready(function(){
-        
-        $("div#add-student").hide();
-        $("a#add-student-trigger").click(function(){
-            $("div#add-student").slideToggle("fast");
-        return false;
-        })
-        
-    });
-    
-    
-    </script>
+	$(document).ready(function(){
+	$("#check_all").change(function () {
+    $("input:checkbox").prop('checked', $(this).prop("checked"));
+	});
+	});
+	</script>   
 
 </head>
 <body class="ou-ia-tutor ou ou-panels template-content ou-pure" data-feedly-mini="yes">    
@@ -177,12 +171,14 @@
                 <h2 id="attendance-register">Attendance register</h2>
                 
                 <p class="icon-tick">You have successfully submitted the attendance record for this tutorial. To update the record, tick/untick as required and click Update Attendance Register.                </p>
+                
                 <div class="box-alert">
                   <p><strong>Missing information</strong>: we were unable to retrieve data under 'Special circumstances' for the following categories (scroll down for key): AC2, AR, SU</p>
                 </div>
+                
                 <form class="tutorial-register">
 
-                <p><input name="" type="checkbox" id="check-uncheck" value="" checked> <label for="check-uncheck">Check/Uncheck all</label></p>
+                <p><input name="" type="checkbox" id="check_all" value=""> <label for="check_all">Check/Uncheck all</label></p>
 
                 <table class="simple sortable">
                 <tr class="zebraOdd">

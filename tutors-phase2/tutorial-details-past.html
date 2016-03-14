@@ -61,7 +61,16 @@
     
     <!-- new jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    
+
+	<!-- check/uncheck script -->
+    <script>
+	$(document).ready(function(){
+	$("#check_all").change(function () {
+    $("input:checkbox").prop('checked', $(this).prop("checked"));
+	});
+	});
+	</script>   
+
 
 </head>
 <body class="ou-ia-tutor ou ou-panels template-content ou-pure" data-feedly-mini="yes">    
@@ -168,7 +177,7 @@
                 </div>
                 <form class="tutorial-register" method="get" action="tutorial-details-past-updated.html#attendance-register">
                 
-                <p><input name="" type="checkbox" id="check-uncheck" value=""> <label for="check-uncheck">Check/Uncheck all</label></p>
+                <p><input name="" type="checkbox" id="check_all" value=""> <label for="check_all">Check/Uncheck all</label></p>
                 
                 <table class="simple sortable">
                 <tr class="zebraOdd">
