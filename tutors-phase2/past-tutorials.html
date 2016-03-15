@@ -123,82 +123,95 @@
                             <li><a href="index.html">TutorHome</a></li>
                             <li><a href="students.html">Students</a></li>
                             <li><a href="your-tutorials.html">Tutorials</a></li>
-                            <li><a href="tutorial-details.html">Tutorial details</a></li>
-                       
-                            <li>Group email</li>
+                            <li>Past tutorials</li>
                         </ol>
                     </div>
                 </div>
             </div>
 
-            <div id="ou-region1">
-                <h1>Group email</h1>
-                <div id="ou-content" class="ou-content">
-                
-                    
+<div id="ou-region1">
 
-            
-    <form name="emailform" action="compose.aspx" method="post" class="ou">
+<h1>Tutorials</h1>
 
-                            
+<div id="ou-content" class="ou-content">
 
-                            <div class="recipients">
-                                <p><label for="recipients"><strong>Recipients</strong></label></p>
-                                <ul id="recipients" class="recipients">
-                                    <li><input type="checkbox" name="chkC5160977" id="name0" checked="checked"><label for="name0">Stephen Allen</label></li>
-<li><input type="checkbox" name="asdd" id="name1" checked="checked"><label for="name1">Ben Gurney</label></li>
-<li><input type="checkbox" name="asdd" id="name2" checked="checked"><label for="name2">James Nutt</label></li>
-<li><input type="checkbox" name="asdd" id="name3" checked="checked"><label for="name3">James Hart</label></li>
-<li><input type="checkbox" name="asdd" id="name4" checked="checked"><label for="name4">Sam Lecister</label></li>
-<li><input type="checkbox" name="asdd" id="name5" checked="checked"><label for="name5">Steven Price</label></li>
-<li><input type="checkbox" name="asdd" id="name6" checked="checked"><label for="name6">Stephen Turvey</label></li>
-<li><input type="checkbox" name="asdd" id="name7" checked="checked"><label for="name7">Alison Edwards</label></li>
-<li><input type="checkbox" name="asdd" id="name8" checked="checked"><label for="name8">Elle White</label></li>
-<li><input type="checkbox" name="asdd" id="name9" checked="checked"><label for="name9">Leanne Daniels</label></li>
-<li><input type="checkbox" name="asdd" id="name10" checked="checked"><label for="name10">Clare Withers</label></li>
-<li><input type="checkbox" name="asdd" id="name11" checked="checked"><label for="name11">Janet Dyson</label></li>
-<li><input type="checkbox" name="asdd" id="name12" checked="checked"><label for="name12">Nick Golding</label></li>
-<li><input type="checkbox" name="asdd" id="name13" checked="checked"><label for="name13">Anne Lane</label></li>
-<li><input type="checkbox" name="asdd" id="name14" checked="checked"><label for="name14">Pauline Leung</label></li>
+<div class="box-alert">
+    <p><strong>To do:</strong> Please submit the <a href="tutorial-details-past.html#attendance-register">attendance register</a> for Tutorial 1, Birmingham, 12 March 2016</p>
+</div>
 
-                                </ul>
-                                <p><a id="select" href="#">Select all</a> | <a id="deselect" href="#">Clear all</a></p>
-                            </div>
 
-                            <p><label for="inpSubject"><strong>Subject</strong></label></p>
+<ul class="codes">
+    <li><a href="your-tutorials.html">Your upcoming tutorials</a></li>
+    <li><strong>Your past tutorials</strong></li>
+    <li><a href="your-tutorial-cluster.html">Tutorials for all ALs in your cluster</a></li>
+</ul>
 
-                            <input name="ctl00$MainContent$inpSubject" type="text" id="ctl00_MainContent_inpSubject" placeholder="Enter your subject">
 
-                            <p><label for="message"><strong>Message content</strong></label></p>
+<h2>Your past tutorials</h2>
 
-                            <textarea name="message" id="message" cols="5" rows="10" placeholder="Enter your message"></textarea>
-
-                            
-                            <br>
-                            <br>
-
-                            <p><strong>Attachments</strong></p>
-
-                            <p>Files can't be attached directly from here, but you can upload files to a web site and include the URL(s) within your email. Tip: upload any files before you start writing the email.</p>
-
-                            
-
-                            <p><a id="upload" href="#">Upload new document</a> or <a href="http://intranet.open.ac.uk/document-publisher/review.aspx?code=TM129&amp;pres=2015B&amp;alloc=251243">Review uploaded files</a></p>
-
-                            <input type="submit" value="Preview message">
-
-                            <p>Read <a id="read" href="http://www2.open.ac.uk/tutors/communicating-with-your-students/by-group-email">about this facility</a></p>
-
-                        <input name="ctl00$MainContent$hidCourse" type="hidden" id="ctl00_MainContent_hidCourse" value="TM129"><input name="ctl00$MainContent$hidPres" type="hidden" id="ctl00_MainContent_hidPres" value="2015B"><input name="ctl00$MainContent$hidAlloc" type="hidden" id="ctl00_MainContent_hidAlloc" value="251243">
-
-                        <div style="clear:both">
-
-                    
-
-                </div></form>
-                    
                         
+<form>
 
+	<select name="filters">
+	  <option selected>Show all Modules</option>
+	  <option>M250 14J</option>
+	  <option>TM129 15B</option>
+	  <option>TM129 14J</option>
+	  <option>TU100 14J</option>
+	</select>
+	<select name="filters2">
+	  <option selected>Show all Types</option>
+	  <option value="Cluster F2F">Cluster F2F</option>
+	  <option value="Own tutor group">Own tutor group</option>
+	  <option value="Online">Online</option>
+	  </select>
+</form>                        
+
+<div class="scrollable">
+
+<table id="ctl00_MainContent_tblStudents1" class="simple sortable" border="0">
+	<thead>
+		<tr id="ctl00_MainContent_TableHeaderRow">
+		  <th>Date/Time</th>
+			<th>Module - Presentation</th><th>Tutorial title</th><th>Location</th><th class="sorttable_nosort">Students</th><th>Type</th><th style="white-space:nowrap;" class="sorttable_nosort">Actions</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+		  <td>12 March 2016 (Thu) 12:00-14:00</td>
+			<td>TM129 14J</td><td><a href="tutorial-details-past.html">Tutorial 1</a></td><td>Birmingham</td>
+			<td>9</td><td>Cluster F2F</td>
+			<td>
+            <a href="tutorial-details-past.html#attendance-register">Record attendance</a><br>
+            <a href="venue-feedback.html" class="feedback">Leave feedback on venue</a> <br> <a href="group-email.html" class="group-email">Send group email</a></td>
+		</tr><tr>
+			<td>3 March 2016 (Sat) 12:00-14:00</td>
+			<td>M250 14J</td><td><a href="tutorial-details-past.html">Tutorial 1</a></td><td>Birmingham</td>
+			<td>15</td><td>Cluster F2F</td><td><a href="tutorial-details-past.html#attendance-register">Record attendance</a><br><a href="venue-feedback.html" class="feedback">Leave feedback on venue</a> <br> <a href="group-email.html" class="group-email">Send group email</a></td>
+		</tr>
+  
+  		<tr>
+  		  <td>27 February 2016 (Thu) 12:00-14:00</td>
+			<td>TU100 14J</td><td><a href="tutorial-details-past.html">Tutorial 1</a></td><td>Birmingham</td>
+			<td>17</td><td>Cluster F2F</td><td><a href="tutorial-details-past.html#attendance-register">Record attendance</a><br><a href="venue-feedback.html" class="feedback">Leave feedback on venue</a> <br> <a href="group-email.html" class="group-email">Send group email</a></td>
+		</tr><tr>
+			<td>15 February 2016 (Wed) 19:00-21:00</td>
+			<td>TM129 14J</td><td><a href="tutorial-details-past.html">Tutorial 1</a></td><td>Birmingham</td>
+			<td>12</td><td>Cluster F2F</td><td><a href="tutorial-details-past.html#attendance-register">Record attendance</a><br><a href="venue-feedback.html" class="feedback">Leave feedback on venue</a> <br> <a href="group-email.html" class="group-email">Send group email</a></td>
+		</tr>
+			
+	</tbody>
+</table>
+                        </div>
+                        
+                            
+                             
+                            
+                        
+                              
+                         
+                             
+                            
+                        
 
                 </div>
 
@@ -228,7 +241,7 @@
     <script type="text/javascript" src="scripts/master.js"></script>
         
     <!-- TutorHome Top Nav JS -->
-    <script type="text/javascript" src="/includes/tutorhome/th-topnav.js"></script>
+    <script type="text/javascript" src="../includes/tutorhome/th-topnav.js"></script>
 
     <!-- / TutorHome Top Nav JS -->
     <script type="text/javascript">$(thTopNavInit);</script>

@@ -1,7 +1,7 @@
 var pathname = window.location.pathname;
 // Gets the current page name
 var pagename = pathname.substring(pathname.lastIndexOf("/") + 1, pathname.length);
-var select = function(pos) { $('ul.ou-sections > li:nth-Child(' + pos + ') > a').addClass('xou-selected');} 
+//var select = function(pos) { $('ul.ou-sections > li:nth-Child(' + pos + ') > a').addClass('ou-selected');} 
 
 $('document').ready(function() {
 

@@ -122,7 +122,7 @@
                         <ol class="ou-ancestors">
                             <li><a href="index.html">TutorHome</a></li>
                             <li><a href="students.html">Students</a></li>
-                            <li>Your tutorials</li>
+                            <li>Tutorials</li>
                         </ol>
                     </div>
                 </div>
@@ -130,17 +130,26 @@
 
 <div id="ou-region1">
 
-<h1>Your tutorials</h1>
+<h1>Tutorials</h1>
 
 <div id="ou-content" class="ou-content">
+
 <div class="box-alert">
-    <p><strong>To do:</strong> Please submit the <a href="tutorial-details-past.html#attendance-register">attendance register</a> for Tutorial 1</p>
+    <p><strong>To do:</strong> Please submit the <a href="tutorial-details-past.html#attendance-register">attendance register</a> for Tutorial 1, Birmingham, 12 March 2016</p>
 </div>
 
 
-<h2>Upcoming tutorials</h2>
+<ul class="codes">
+    <li><strong>Your upcoming tutorials</strong></li>
+    <li><a href="past-tutorials.html">Your past tutorials</a></li>
+    <li><a href="your-tutorial-cluster.html">Tutorials for all ALs in your cluster</a></li>
+</ul>
 
-<p>You can also <a href="your-tutorial-cluster.html">see all tutorials for all ALs within your cluster</a>.</p>
+
+
+<h2>Your upcoming tutorials</h2>
+
+<!--<p>You can also <a href="your-tutorial-cluster.html">see all tutorials for all ALs within your cluster</a>.</p>-->
 
 <form>
 
@@ -154,8 +163,9 @@
 
 	<select name="filters">
 	  <option selected>Show all Types</option>
-	  <option>Cluster F2F</option>
-	  <option>Own tutor group</option>
+	  <option value="Cluster F2F">Cluster F2F</option>
+	  <option value="Own tutor group">Own tutor group</option>
+	  <option value="Online">Online</option>
     </select>
 
 </form>
@@ -168,146 +178,147 @@
 <table id="ctl00_MainContent_tblStudents1" class="simple sortable" border="0">
 	<thead>
 		<tr id="ctl00_MainContent_TableHeaderRow">
-			<th>Date</th><th>Module - Presentation</th><th>Tutorial title</th><th>Location</th><th class="sorttable_nosort">Students</th><th>Type</th><th style="white-space:nowrap;" class="sorttable_nosort">Actions</th>
+			<th>Date/Time</th><th>Module - Presentation</th><th>Tutorial title</th><th>Location</th><th class="sorttable_nosort">Students</th><th>Type</th>
+			<th style="white-space:nowrap;" class="sorttable_nosort">Send group email</th>
 		</tr>
 	</thead><tbody>
 		<tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>M250 14J</td><td><a href="tutorial-details.html">Tutorial 1</a></td><td>Birmingham</td>
+			<td>2 June 2016 (Thu) 12:00-14:00</td><td>M250 14J</td><td><a href="tutorial-details.html">Tutorial 1</a></td><td>Birmingham</td>
 			<td>17</td><td>Cluster F2F</td>
 			<td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr><tr>
-			<td>04/06/2016 (Sat) 12:00-14:00</td><td>TM129 15B</td><td><a href="tutorial-details.html">Tutorial 1</a></td><td>Birmingham</td>
+			<td>4 June 2016 (Sat) 12:00-14:00</td><td>TM129 15B</td><td><a href="tutorial-details.html">Tutorial 1</a></td><td>Birmingham</td>
 			<td>15</td><td>Own tutor group</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr>
   
   		<tr>
-			<td>09/06/2016 (Thu) 12:00-14:00</td>
+			<td>9 June 2016 (Thu) 12:00-14:00</td>
 			<td>TM129 14J</td><td><a href="tutorial-details.html">Tutorial 1</a></td>
 			<td>Online</td>
 			<td>22</td><td>Online</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr><tr>
-			<td>15/06/2016 (Wed) 19:00-21:00</td><td>TU100 14J</td><td><a href="tutorial-details.html">Tutorial 1</a></td><td>Birmingham</td>
+			<td>15 June 2016 (Wed) 19:00-21:00</td><td>TU100 14J</td><td><a href="tutorial-details.html">Tutorial 1</a></td><td>Birmingham</td>
 			<td>9</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr>
   
   		<tr>
-			<td>22/06/2016 (Wed) 19:00-22:00</td><td>M250 14J</td>
+			<td>22 June 2016 (Wed) 19:00-22:00</td><td>M250 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 3</a></td><td>Birmingham</td>
 			<td>17</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr><tr>
-			<td>29/06/2016 (Wed) 09:00-11:00</td><td>TM129 15B</td>
+			<td>29 June 2016 (Wed) 09:00-11:00</td><td>TM129 15B</td>
 			<td><a href="tutorial-details.html">Tutorial 3</a></td><td>Birmingham</td><td>20</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr>
   
   		<tr>
-			<td>02/06/2016 (Thu) 06:00-07:30</td><td>M250 14J</td>
+			<td>3 July 2016 (Thu) 06:00-07:30</td><td>M250 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 3</a></td>
 			<td>Online</td>
 			<td>21</td><td>Online</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr><tr>
-			<td>02/06/2016 (Thu) 05:45-09:00</td><td>TU100 14J</td>
+			<td>9 July 2016 (Thu) 05:45-09:00</td><td>TU100 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 3</a></td><td>Milton Keynes</td>
 			<td>21</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr>
   
   		<tr>
-			<td>02/06/2016 (Thu) 03:00-05:00</td><td>TM129 15B</td>
+			<td>15 July 2016 (Thu) 03:00-05:00</td><td>TM129 15B</td>
 			<td><a href="tutorial-details.html">Tutorial 3</a></td><td>Milton Keynes</td>
 			<td>18</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr><tr>
-			<td>02/06/2016 (Thu) 23:00-00:00</td><td>TM129 14J</td>
+			<td>22 July 2016 (Thu) 23:00-00:00</td><td>TM129 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 3</a></td>
 			<td>Online</td>
 			<td>19</td><td>Online</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr>
   
   		<tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>TM129 15B</td>
+			<td>27 July 2016 (Thu) 12:00-14:00</td><td>TM129 15B</td>
 			<td><a href="tutorial-details.html">Tutorial 3</a></td><td>Milton Keynes</td>
 			<td>15</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr><tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>TM129 15B</td>
+			<td>1 August 2016 (Thu) 12:00-14:00</td><td>TM129 15B</td>
 			<td><a href="tutorial-details.html">Tutorial 3</a></td><td>Milton Keynes</td>
 			<td>10</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr>
   
   		<tr>
-			<td>02/06/2016 (Thu) 22:00-00:00</td><td>TM129 14J</td>
+			<td>5 August 2016 (Thu) 22:00-00:00</td><td>TM129 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 4</a></td><td>Coventry</td>
 			<td>19</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr><tr>
-			<td>02/06/2016 (Thu) 02:00-07:00</td><td>M250 14J</td>
+			<td>7 August 2016 (Thu) 02:00-07:00</td><td>M250 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 4</a></td><td>Coventry</td>
 			<td>19</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr>
   
   		<tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>TM129 14J</td>
+			<td>14 August 2016 (Thu) 12:00-14:00</td><td>TM129 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 4</a></td><td>Coventry</td>
 			<td>10</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr><tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>TM129 14J</td>
+			<td>18 August 2016 (Thu) 12:00-14:00</td><td>TM129 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 5</a></td>
 			<td>Online</td>
 			<td>8</td><td>Online</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr>
   
   		<tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>TU100 14J</td>
+			<td>23 August 2016 (Thu) 12:00-14:00</td><td>TU100 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 5</a></td><td>Wolverhampton</td>
 			<td>4</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr><tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>TM129 15B</td>
+			<td>26 August 2016 (Thu) 12:00-14:00</td><td>TM129 15B</td>
 			<td><a href="tutorial-details.html">Tutorial 5</a></td><td>Wolverhampton</td>
 			<td>15</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr>
   
   		<tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>TM129 14J</td>
+			<td>29 August 2016 (Thu) 12:00-14:00</td><td>TM129 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 5</a></td><td>Wolverhampton</td>
 			<td>15</td><td>Cluster F2F</td><td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr><tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>TU100 14J</td>
+			<td>31 August 2016 (Thu) 12:00-14:00</td><td>TU100 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 5</a></td><td>Wolverhampton</td>
 			<td>16</td><td>Cluster F2F</td>
 			<td><a href="group-email.html" class="group-email">Send group email</a></td>
 		</tr>
   
   		<tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>TM129 14J</td>
+			<td>2 September 2016 (Thu) 12:00-14:00</td><td>TM129 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 6</a></td>
 			<td>Online</td>
 			<td>19</td><td>Online</td>
 			<td><a href="group-email.html" class="group-email">Send group email</a></td>
 			</tr>
   		<tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>TM129 15B</td>
+			<td>10 September 2016 (Thu) 12:00-14:00</td><td>TM129 15B</td>
 			<td><a href="tutorial-details.html">Tutorial 6</a></td><td>Birmingham</td>
 			<td>12</td><td>Cluster F2F</td>
 			<td><a href="group-email.html" class="group-email">Send group email</a></td>
 			</tr>
   
   		<tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>M250 14J</td>
+			<td>12 September 2016 (Thu) 12:00-14:00</td><td>M250 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 6</a></td><td>Birmingham</td>
 			<td>13</td><td>Cluster F2F</td>
 			<td><a href="group-email.html" class="group-email">Send group email</a></td>
 			</tr>
   		<tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>M250 14J</td>
+			<td>18 September 2016 (Thu) 12:00-14:00</td><td>M250 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 6</a></td><td>Birmingham</td>
 			<td>24</td><td>Cluster F2F</td>
 			<td><a href="group-email.html" class="group-email">Send group email</a></td>
 			</tr>
   
   		<tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>TU100 14J</td>
+			<td>3 October 2016 (Thu) 12:00-14:00</td><td>TU100 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 6</a></td><td>Birmingham</td>
 			<td>14</td><td>Cluster F2F</td>
 			<td><a href="group-email.html" class="group-email">Send group email</a></td>
 			</tr>
   		<tr>
-			<td>02/06/2016 (Thu) 12:00-14:00</td><td>TM129 14J</td>
+			<td>6 October 2016 (Thu) 12:00-14:00</td><td>TM129 14J</td>
 			<td><a href="tutorial-details.html">Tutorial 6</a></td>
 			<td>Online</td>
 			<td>14</td><td>Online</td>
@@ -320,7 +331,7 @@
                         
 
                         
-                              
+<!--
                              
 <h2>Past tutorials</h2>
                         
@@ -373,7 +384,7 @@
 </table>
                         </div>
                         
-                            
+-->                          
                              
                             
                         

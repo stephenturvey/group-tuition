@@ -122,8 +122,8 @@
                         <ol class="ou-ancestors">
                             <li><a href="index.html">TutorHome</a></li>
                             <li><a href="students.html">Students</a></li>
-                            <li><a href="your-tutorials.html">Your tutorials</a></li>
-                            <li>Your tutorial cluster</li>
+                            <li><a href="your-tutorials.html">Tutorials</a></li>
+                            <li><strong>Tutorials for all ALs in your cluster</strong></li>
                         </ol>
                     </div>
                 </div>
@@ -131,23 +131,37 @@
 
             <div id="ou-region1">
               
-              <h1>Your tutorial cluster</h1>
+              <h1>Tutorials</h1>
                 
               <div id="ou-content" class="ou-content">
 
-                <ul class="codes">
-                  <li><a href="#">M250 - 2014J</a></li>
-                  <li><a href="#">TM129 - 2014J</a></li>
-                  <li><a href="#">TU100 - 2014J</a></li>
-                  <li class="noline"><a href="#">TM129 - 2015B</a></li>
-                </ul>
+<div class="box-alert">
+    <p><strong>To do:</strong> Please submit the <a href="tutorial-details-past.html#attendance-register">attendance register</a> for Tutorial 1, Birmingham, 12 March 2016</p>
+</div>
+
+
+<ul class="codes">
+    <li><a href="your-tutorials.html">Your upcoming tutorials</a></li>
+    <li><a href="past-tutorials.html">Your past tutorials</a></li>
+    <li><strong>Tutorials for all ALs in your cluster</strong></li>
+</ul>
+
+<!--<ul class="codes">
+  <li><a href="#">M250 - 2014J</a></li>
+  <li><a href="#">TM129 - 2014J</a></li>
+  <li><a href="#">TU100 - 2014J</a></li>
+  <li class="noline"><a href="#">TM129 - 2015B</a></li>
+</ul>-->
                 
-                <h2>M250 - 2014J</h2>
+                <h2>Tutorials for all ALs in your cluster</h2>
+                <p style="float:right; margin:0; padding:0;">Email all tutors in cluster: <a href="mailto:test@test.com,test2@test2.com,test3@test3.com?subject=M250 tutor group cluster" class="group-email">M250 14J</a>, <a href="mailto:test@test.com,test2@test2.com,test3@test3.com?subject=TM129 tutor group cluster" class="group-email">TM129 15B</a>, <a href="mailto:test@test.com,test2@test2.com,test3@test3.com?subject=TM129 tutor group cluster" class="group-email">TM129 14J</a>, <a href="mailto:test@test.com,test2@test2.com,test3@test3.com?subject=TU100 tutor group cluster" class="group-email">TU100 14J</a></p>
+              
+                <!--<a href="your-tutorial-cluster.html" class="link-float icon-cluster">Your tutorial cluster</a>
+                
     
                 <ul class="student-tools">
-                    <li><a href="mailto:test@test.com,test2@test2.com,test3@test3.com?subject=M250 tutor group cluster" class="group-email">Email all tutors using default mail client</a></li>
-                    
-                </ul>
+                	<li>Email all tutors in cluster: <a href="mailto:test@test.com,test2@test2.com,test3@test3.com?subject=M250 tutor group cluster" class="group-email">M250 14J</a>, <a href="mailto:test@test.com,test2@test2.com,test3@test3.com?subject=TM129 tutor group cluster" class="group-email">TM129 15B</a>, <a href="mailto:test@test.com,test2@test2.com,test3@test3.com?subject=TM129 tutor group cluster" class="group-email">TM129 14J</a>, <a href="mailto:test@test.com,test2@test2.com,test3@test3.com?subject=TU100 tutor group cluster" class="group-email">TU100 14J</a></li>
+                </ul>  -->
 <!-- not needed
                 <table class="simple sortable">
                     <tr class="zebraOdd"><th>Tutor name</th>
@@ -176,8 +190,21 @@
       
                         
 <form>
-  
-  <select name="filters">
+
+	<select name="filters">
+	  <option selected>Show all Modules</option>
+	  <option>M250 14J</option>
+	  <option>TM129 15B</option>
+	  <option>TM129 14J</option>
+	  <option>TU100 14J</option>
+	</select>
+	<select name="filters2">
+	  <option selected>Show all Types</option>
+	  <option value="Cluster F2F">Cluster F2F</option>
+	  <option value="Own tutor group">Own tutor group</option>
+	  <option value="Online">Online</option>
+	  </select>
+	<select name="filters">
       <option selected>Show all Tutors</option>
       <option>Rob Halford (you)</option>
       <option>Andy Clarke</option>
@@ -197,21 +224,24 @@
 <table id="ctl00_MainContent_tblStudents1" class="simple sortable" border="0">
     <thead>
         <tr id="ctl00_MainContent_TableHeaderRow">
-            <th>Date</th>
-            <th>Tutor</th>
+          <th>Date/Time</th>
+          <th>Module - Presentation</th>
+          <th>Tutor</th>
             <th>Tutorial title</th>
             <th>Location</th>
-            <th>Students</th>
+            <th class="sorttable_nosort">Students</th>
             <th>Type</th>
         </tr>
     </thead><tbody>
         <tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
-            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Rob Halford (you)</a></td>
+          <td>2 June 2016 (Thu) 12:00-14:00</td>
+          <td>M250 14J</td>
+          <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Rob Halford (you)</a></td>
             <td><a href="tutorial-details.html">Tutorial 1</a></td><td>Birmingham</td><td>20</td>
             <td>Cluster F2F</td>
             </tr><tr>
-            <td>04/06/2016 (Thu) 12:00-14:00</td>
+            <td>4 June 2016 (Sat) 12:00-14:00</td>
+            <td>TM129 15B</td>
             <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jeremy Keith</a></td>
             <td><a href="tutorial-details.html">Tutorial 1</a></td><td>Birmingham</td>
             <td>15</td>
@@ -219,13 +249,15 @@
         </tr>
   
         <tr>
-            <td>09/06/2016 (Thu) 12:00-14:00</td>
-            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jason Snell</a></td>
+          <td>9 June 2016 (Thu) 12:00-14:00</td>
+          <td>TM129 14J</td>
+          <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jason Snell</a></td>
             <td><a href="tutorial-details.html">Tutorial 1</a></td><td>Birmingham</td>
             <td>22</td>
             <td>Cluster F2F</td>
         </tr><tr>
-            <td>15/06/2016 (Thu) 12:00-14:00</td>
+            <td>15 June 2016 (Wed) 19:00-21:00</td>
+            <td>TU100 14J</td>
             <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Marco Arment</a></td>
             <td><a href="tutorial-details.html">Tutorial 1</a></td><td>Birmingham</td>
             <td>9</td>
@@ -233,14 +265,16 @@
         </tr>
   
         <tr>
-            <td>22/06/2016 (Thu) 12:00-14:00</td>
-            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">John Siracussa</a></td>
+          <td>22 June 2016 (Wed) 19:00-22:00</td>
+          <td>M250 14J</td>
+          <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">John Siracussa</a></td>
             
             <td><a href="tutorial-details.html">Tutorial 3</a></td><td>Online</td>
             <td>17</td>
             <td>Online</td>
         </tr><tr>
-            <td>29/06/2016 (Thu) 12:00-14:00</td>
+            <td>29 June 2016 (Wed) 09:00-11:00</td>
+            <td>TM129 15B</td>
             <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Casey Liss</a></td>
             
             <td><a href="tutorial-details.html">Tutorial 3</a></td><td>Online</td><td>20</td>
@@ -248,14 +282,16 @@
         </tr>
   
         <tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
-            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jason Snell</a></td>
+          <td>3 July 2016 (Thu) 06:00-07:30</td>
+          <td>M250 14J</td>
+          <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jason Snell</a></td>
             
             <td><a href="tutorial-details.html">Tutorial 3</a></td><td>Birmingham</td>
             <td>21</td>
             <td>Own tutor group</td>
         </tr><tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
+            <td>9 July 2016 (Thu) 05:45-09:00</td>
+            <td>TU100 14J</td>
             <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">John Siracussa</a></td>
             
             <td><a href="tutorial-details.html">Tutorial 3</a></td><td>Milton Keynes</td>
@@ -264,14 +300,16 @@
         </tr>
   
         <tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
-            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Andy Clarke</a></td>
+          <td>15 July 2016 (Thu) 03:00-05:00</td>
+          <td>TM129 15B</td>
+          <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Andy Clarke</a></td>
            
             <td><a href="tutorial-details.html">Tutorial 3</a></td><td>Milton Keynes</td>
             <td>18</td>
             <td>Cluster F2F</td>
         </tr><tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
+            <td>22 July 2016 (Thu) 23:00-00:00</td>
+            <td>TM129 14J</td>
             <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Rob Halford (you)</a></td>
             
             <td><a href="tutorial-details.html">Tutorial 3</a></td><td>Milton Keynes</td>
@@ -280,14 +318,16 @@
         </tr>
   
         <tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
-            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jason Snell</a></td>
+          <td>27 July 2016 (Thu) 12:00-14:00</td>
+          <td>TM129 15B</td>
+          <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jason Snell</a></td>
             
             <td><a href="tutorial-details.html">Tutorial 3</a></td><td>Milton Keynes</td>
             <td>15</td>
             <td>Cluster F2F</td>
         </tr><tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
+            <td>1 August 2016 (Thu) 12:00-14:00</td>
+            <td>TM129 15B</td>
             <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Casey Liss</a></td>
            
             <td><a href="tutorial-details.html">Tutorial 3</a></td><td>Milton Keynes</td>
@@ -296,14 +336,16 @@
         </tr>
   
         <tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
-            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Marco Arment</a></td>
+          <td>5 August 2016 (Thu) 22:00-00:00</td>
+          <td>TM129 14J</td>
+          <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Marco Arment</a></td>
             
             <td><a href="tutorial-details.html">Tutorial 4</a></td><td>Coventry</td>
             <td>19</td>
             <td>Cluster F2F</td>
         </tr><tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
+            <td>7 August 2016 (Thu) 02:00-07:00</td>
+            <td>M250 14J</td>
             <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jason Snell</a></td>
             
             <td><a href="tutorial-details.html">Tutorial 4</a></td><td>Coventry</td>
@@ -312,14 +354,16 @@
         </tr>
   
         <tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
-            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">John Siracussa</a></td>
+          <td>14 August 2016 (Thu) 12:00-14:00</td>
+          <td>TM129 14J</td>
+          <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">John Siracussa</a></td>
            
             <td><a href="tutorial-details.html">Tutorial 4</a></td><td>Coventry</td>
             <td>10</td>
             <td>Cluster F2F</td>
         </tr><tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
+            <td>18 August 2016 (Thu) 12:00-14:00</td>
+            <td>TM129 14J</td>
             <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Marco Arment</a></td>
            
             <td><a href="tutorial-details.html">Tutorial 5</a></td><td>Wolverhampton</td>
@@ -328,14 +372,16 @@
         </tr>
   
         <tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
-            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Andy Clarke</a></td>
+          <td>23 August 2016 (Thu) 12:00-14:00</td>
+          <td>TU100 14J</td>
+          <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Andy Clarke</a></td>
             
             <td><a href="tutorial-details.html">Tutorial 5</a></td><td>Wolverhampton</td>
             <td>4</td>
             <td>Cluster F2F</td>
         </tr><tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
+            <td>26 August 2016 (Thu) 12:00-14:00</td>
+            <td>TM129 15B</td>
             <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Casey Liss</a></td>
             
             <td><a href="tutorial-details.html">Tutorial 5</a></td><td>Wolverhampton</td>
@@ -344,14 +390,16 @@
         </tr>
   
         <tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
-            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">John Siracussa</a></td>
+          <td>29 August 2016 (Thu) 12:00-14:00</td>
+          <td>TM129 14J</td>
+          <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">John Siracussa</a></td>
            
             <td><a href="tutorial-details.html">Tutorial 5</a></td><td>Wolverhampton</td>
             <td>15</td>
             <td>Cluster F2F</td>
         </tr><tr>
-            <td>02/06/2016 (Thu) 12:00-14:00</td>
+            <td>31 August 2016 (Thu) 12:00-14:00</td>
+            <td>TU100 14J</td>
             <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Andy Clarke</a></td>
            
             <td><a href="tutorial-details.html">Tutorial 5</a></td><td>Wolverhampton</td>
