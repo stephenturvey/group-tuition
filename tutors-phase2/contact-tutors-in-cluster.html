@@ -58,19 +58,6 @@
 
     <!-- new js -->
 	<script type="text/javascript" src="scripts/sorttable.js"></script>
-    
-    <!-- new jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-	<!-- check/uncheck script -->
-    <script>
-	$(document).ready(function(){
-	$("#check_all").change(function () {
-    $("input:checkbox").prop('checked', $(this).prop("checked"));
-	});
-	});
-	</script>   
-
 
 </head>
 <body class="ou-ia-tutor ou ou-panels template-content ou-pure" data-feedly-mini="yes">    
@@ -136,240 +123,121 @@
                             <li><a href="index.html">TutorHome</a></li>
                             <li><a href="students.html">Students</a></li>
                             <li><a href="your-tutorials.html">Tutorials</a></li>
-                            <li>Tutorial details</li>
+                            <li><strong>Contact tutors in your cluster</strong></li>
                         </ol>
                     </div>
                 </div>
             </div>
 
             <div id="ou-region1">
-                <h1>Tutorial details</h1>
-                <div id="ou-content" class="ou-content">
-<h2>Tutorial overview</h2>
-                <table class="simple">
-                  <tr class="zebraOdd"><td>Tutorial title</td><td>Tutorial one</td></tr> 
-                  <tr>
-                    <td>Date</td>
-                    <td>12 March 2016 (Mon)</td>
-                  </tr> 
-                  <tr class="zebraOdd">
-                    <td>Time</td>
-                    <td>09:00 - 13:00</td>
-                  </tr>
-                  <tr class="zebraOdd"><td>Module/presentation</td><td>M250 14J</td></tr>
-                  <tr><td>Type</td><td>Cluster face to face</td></tr>
-                  <tr class="zebraOdd"><td>Tutorial description</td><td>Preparation for the first assignment</td></tr> 
-                  <tr><td>Learning objectives</td><td>TBC</td></tr>
-                  <tr class="zebraOdd"><td>Location</td><td>Birmingham</td></tr>  
-                  <tr><td>Venue</td>
-                  <td><a href="venue-details.html">Whittlebury Hall</a> - <a href="venue-feedback.html">Leave feedback</a></td></tr>
-                  <tr>
-                    <td>Room</td>
-                    <td>102</td>
-                  </tr> 
-                  <tr><td>Tutor</td><td>Rob Halford (you), Jeremy Keith</td></tr>
-                </table>
+              
+              <h1>Tutorials</h1>
                 
-                <h2 id="attendance-register">Attendance register</h2>
-                <p>Please place a tick alongside the names of all students who attended this tutorial and click Submit Attendance Register. If a student attended who wasn't on the original list you can add them using the  link below.                </p>
-                <p><a href="add-students.html">Add attendees not on the register</a></p>
-                
-                <!--
-                <div class="box-alert">
-                  <p><strong>Missing information</strong>: we were unable to retrieve data under 'Special circumstances' for the following categories (scroll down for key): AC2, D, SU</p>
-                </div>
-                -->
-                
-                <form class="tutorial-register" method="get" action="tutorial-details-past-updated.html#attendance-register">
-                
-                <p><input name="" type="checkbox" id="check_all" value=""> <label for="check_all">Check/Uncheck all</label></p>
-                
-                <table class="simple sortable">
-                <tr class="zebraOdd">
-                  <th class="sorttable_nosort" style="width:80px">Attended</th>
-                  <th>Student name</th>
-                  <th>PI</th>
-                  <th>Special circumstances</th>
-                </tr>
-                <tr>
-                  <td><label for="checkbox"><input name="checkbox" type="checkbox" id="checkbox"></label>
-                  </td>
-                  <td><a href="student-details.html">Ben Gurney</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr class="zebraOdd">
-                  <td><label for="checkbox5">
-                    <input name="checkbox2" type="checkbox" id="checkbox5">
-                  </label></td>
-                  <td><a href="student-details.html">Steven Price</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td><label for="checkbox6">
-                    <input name="checkbox3" type="checkbox" id="checkbox6">
-                  </label></td>
-                  <td><a href="student-details.html">Jack Chapple</a></td>
-                  <td>123456</td>
-                  <td> N</td>
-                </tr>
-                <tr class="zebraOdd">
-                  <td><label for="checkbox7">
-                    <input name="checkbox4" type="checkbox" id="checkbox7">
-                  </label></td>
-                  <td><a href="student-details.html">James Nutt</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td><label for="checkbox8">
-                    <input name="checkbox5" type="checkbox" id="checkbox8">
-                  </label></td>
-                  <td><a href="student-details.html">James Hart</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr class="zebraOdd">
-                  <td><label for="checkbox9">
-                    <input name="checkbox6" type="checkbox" id="checkbox9">
-                  </label></td>
-                  <td><a href="student-details.html">Sam Leicester</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td><label for="checkbox10">
-                    <input name="checkbox7" type="checkbox" id="checkbox10">
-                  </label></td>
-                  <td><a href="student-details.html">Stephen Turvey</a></td>
-                  <td>123456</td>
-                  <td> N</td>
-                </tr>
-                <tr class="zebraOdd">
-                  <td><label for="checkbox11">
-                    <input name="checkbox8" type="checkbox" id="checkbox11">
-                  </label></td>
-                  <td><a href="student-details.html">Kapil Dev</a></td>
-                  <td>123456</td>
-                  <td> 25</td>
-                </tr>
-                <tr>
-                  <td><label for="checkbox12">
-                    <input name="checkbox9" type="checkbox" id="checkbox12">
-                  </label></td>
-                  <td><a href="student-details.html">Elle White</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr class="zebraOdd">
-                  <td><label for="checkbox13">
-                    <input name="checkbox10" type="checkbox" id="checkbox13">
-                  </label></td>
-                  <td><a href="student-details.html">Clare Withers</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td><label for="checkbox14">
-                    <input name="checkbox11" type="checkbox" id="checkbox14">
-                  </label></td>
-                  <td><a href="student-details.html">Leanne Daniels</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr class="zebraOdd">
-                  <td><label for="checkbox15">
-                    <input name="checkbox12" type="checkbox" id="checkbox15">
-                  </label></td>
-                  <td><a href="student-details.html">Anne Lane</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td><label for="checkbox16">
-                    <input name="checkbox13" type="checkbox" id="checkbox16">
-                  </label></td>
-                  <td><a href="student-details.html">Sarah Parish</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr class="zebraOdd">
-                  <td><label for="checkbox17">
-                    <input name="checkbox14" type="checkbox" id="checkbox17">
-                  </label></td>
-                  <td><a href="student-details.html">Kaldora Pellis</a></td>
-                  <td>123456</td>
-                  <td> AB</td>
-                </tr>
-                <tr>
-                  <td><label for="checkbox18">
-                    <input name="checkbox15" type="checkbox" id="checkbox18">
-                  </label></td>
-                  <td><a href="student-details.html">Janet Dyson</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr class="zebraOdd">
-                  <td><label for="checkbox19">
-                    <input name="checkbox16" type="checkbox" id="checkbox19">
-                  </label></td>
-                  <td><a href="student-details.html">Pauline Leung</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td><label for="checkbox21">
-                    <input name="checkbox17" type="checkbox" id="checkbox21">
-                  </label></td>
-                  <td><a href="student-details.html">Nick Golding</a></td>
-                  <td>123456</td>
-                  <td>&nbsp;</td>
-                  </tr>
-                </table>
-                
-                <p>
-                  <input type="submit" name="button" id="button" value="Submit Attendance Register">
-                </p>
-                </form>
-                
-                
-                
-                <ul class="student-tools">
-                  <li><a href="group-email.html" class="group-email">Send the students a group email</a></li>
-                  <li><a href="/your-record/p14.dll?T18TM129_2014J_243990" class="st-doc">Download your student details file</a></li>
-                  <li><a href="students4.aspx?code=TM129&amp;pres=2014J&amp;alloc=243990&amp;xx=D201508280836_74 " class="st-print">Print your student list</a></li>
-                 </ul>
+              <div id="ou-content" class="ou-content">
+              
+<ul class="codes">
+    <li><a href="your-tutorials.html">Your upcoming tutorials</a></li>
+    <li><a href="past-tutorials.html">Your past tutorials</a></li>
+    <li><a href="your-tutorial-cluster.html">Tutorials for all ALs in your cluster</a></li>
+    <li><strong>Contact tutors in your cluster</strong></li>
+</ul>
 
-				<h2>Key</h2>
-                <p class="key">
-                               N = New to OU study<br>
-                               D = Disability<br>
-                               AB = Assessment Banking.  See <a href="http://www2.open.ac.uk/tutors/deferral-with-assessment-banking"> further details</a>.<br>
-                               18 = Under 18 (including YASS).<br>
-                               25 = Under 25 (but at least 18).<br>
-                               C = Contact history available.<br>
-                               P = Based in prison.  See <a href="http://www2.open.ac.uk/tutors/students-in-prison-or-secure-units"> further details</a>.<br>
-                               SU = Based in secure unit.  See <a href="http://www2.open.ac.uk/tutors/students-in-prison-or-secure-units"> further details</a>.<br>
-                               
-                               OpenPlus = a collaborative scheme. See <a href="http://intranet6.open.ac.uk/science/main/information-tutors-and-regional-advisors"> further details</a>.<br>
-                               GSS = Global Science Scheme.<br>
-                               IND = Has visited <a href="http://www.open.ac.uk/learning/new/">induction website</a>.<br>
-                               <span class="alert">ALERT</span> = Student has either failed or withdrawn part-way through two modules in succession.<br>
-                               <span class="alert">RESTRICTED</span> = Student has either failed or withdrawn part-way through three modules in succession.<br>
-                               AC2 = Academic conduct case has been raised against the student.<br>
-                               AC5 = Academic conduct case has been resolved.<br>
-                               <span class="alert">Updated</span> = Student record updated in the last 14 days.</p>
-
-           
-
-            
-    
-                    
+<div class="box-alert">
+	<p><strong>To do:</strong> Please submit the <a href="tutorial-details-past.html#attendance-register">attendance register</a> for Tutorial 1, Birmingham, 12 March 2016</p>
+</div>
+      
                         
+<form>
+
+	<select name="filters">
+	  <option>Choose Module</option>
+	  <option selected>M250 14J</option>
+	  <option>TM129 15B</option>
+	  <option>TM129 14J</option>
+	  <option>TU100 14J</option>
+	</select>
+</form>
 
 
-                </div>
+
+<div class="scrollable">
+<h2>M250 14J</h2>
+
+<p>To email all tutors in this cluster you may like to copy and paste the email addresses below into your preferred email client:</p>
+
+<form>
+<!--<script>
+textarea.onfocus = function() { this.select(); };
+</script>-->
+<textarea class="copy-paste">j.keith@open.ac.uk, j.snell@open.ac.uk, m.arment@open.ac.uk, j.siracussa@open.ac.uk, c.liss@open.ac.uk, p.atkins@open.ac.uk, a.clarke@open.ac.uk</textarea>
+</form>
+
+<table id="ctl00_MainContent_tblStudents1" class="simple sortable" border="0">
+    <thead>
+        <tr id="ctl00_MainContent_TableHeaderRow">
+          <th>Tutor</th>
+            <th class="sorttable_nosort">Email</th>
+            <th class="sorttable_nosort">Telephone</th>
+            <th class="sorttable_nosort">Staff directory</th>
+            </tr>
+    </thead><tbody>
+        <tr>
+          <td>Rob Halford (you)</td>
+            <td>r.halford@open.ac.uk</td>
+            <td>01234 5678910</td>
+            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Link</a></td>
+            </tr>
+        <tr>
+            <td>Jeremy Keith</td>
+            <td>j.keith@open.ac.uk</td><td>01234 5678910</td>
+            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Link</a></td>
+            </tr>
+  
+        <tr>
+          <td>Jason Snell</td>
+            <td>j.snell@open.ac.uk</td><td>01234 5678910</td>
+            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Link</a></td>
+            </tr>
+        <tr>
+            <td>Marco Arment</td>
+            <td>m.arment@open.ac.uk</td><td>01234 5678910</td>
+            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Link</a></td>
+            </tr>
+  
+        <tr>
+          <td>John Siracussa</td>
+            
+            <td>j.siracussa@open.ac.uk</td><td>01234 5678910</td>
+            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Link</a></td>
+            </tr>
+        <tr>
+            <td>Casey Liss</td>
+            
+            <td>c.liss@open.ac.uk</td><td>01234 5678910</td>
+            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Link</a></td>
+            </tr>
+  
+        <tr>
+          <td>Pat Atkins</td>
+            
+            <td>p.atkins@open.ac.uk</td><td>01234 5678910</td>
+            <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Link</a></td>
+            </tr>
+  
+        <tr>
+          <td>Andy Clarke</td>
+          
+          <td>a.clarke@open.ac.uk</td><td>01234 5678910</td>
+          <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Link</a></td>
+        </tr>
+            
+    </tbody>
+</table>
+                        </div>
+
+              </div>
+
+
 
             </div>
 

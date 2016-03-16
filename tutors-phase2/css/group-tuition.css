@@ -138,6 +138,20 @@ form.tutorial-register input[type=submit] {
 	font-size:1em;
 }
 
+form textarea.copy-paste {
+	font-size:1em;
+	padding:10px;
+	width:50%;
+	height:50px;
+}
+
+@media only screen and (max-width: 800px), screen and (max-device-width: 800px) {
+
+form textarea.copy-paste {width:90%;}
+
+} /* end media query */
+
+
 /**/
 
 
