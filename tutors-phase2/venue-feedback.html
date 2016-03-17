@@ -132,19 +132,33 @@
             </div>
 
             <div id="ou-region1">
+            
                 <h1>Venue feedback</h1>
                 <div id="ou-content" class="ou-content">
                 
+                <p>This feedback will go to those at the OU who manage the tutorial venues and not to the venues themselves.</p>
+                
                     
 <form name="feedback" method="get" action="venue-feedback-thanks.html" class="tutorial-feedback">
+  
   <p><strong>Name</strong>: Rob Halford</p>
   <p><strong>Staff ID</strong>: <span class="nolnk">0123456</span></p>
   <p><strong>Venue</strong>: Whittlebury Hall</p>
-  <p><strong><label for="sentiment">What kind of experience did you have?</label></strong></p>
+  <p><strong>Date of tutorial</strong></p>
+
 <ul>
-<li><input type="radio" name="sentiment">Positive</li>
-<li><input type="radio" name="sentiment">Negative</li>
+    <li><input type="radio" name="tut_date" id="tut_date1"> <label for="tut_date1">12 March 2016</label></li>
+    <li><input type="radio" name="tut_date" id="tut_date2"> <label for="tut_date2">5 March 2016</label></li>
+    <li><input type="radio" name="tut_date" id="tut_date3"> <label for="tut_date3">19 February 2016</label></li>
 </ul>
+
+  <p><strong><label for="sentiment">What kind of experience did you have?</label></strong></p>
+
+<ul>
+    <li><input type="radio" name="sentiment" id="sentiment1"> <label for="sentiment1">Positive</label></li>
+    <li><input type="radio" name="sentiment" id="sentiment2"> <label for="sentiment2">Negative</label></li>
+</ul>
+
   <p><strong><label for="textarea">Comments</label></strong></p>
   <p>
     <textarea name="textarea" rows="8" cols="120" id="textarea"></textarea>
