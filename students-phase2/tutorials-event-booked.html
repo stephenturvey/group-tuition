@@ -186,10 +186,10 @@ $(document).ready(function() {
 <form id="distance-filter" class="distance-filter">
 <p>Show tutorials within 
   <select name="miles" id="miles">
-    <option value="any" selected>Any</option>
+    <option value="any">Any</option>
     <option value="10">10</option>
     <option value="20">20</option>
-    <option value="30">30</option>
+    <option value="30" selected>30</option>
     <option value="40">40</option>
     <option value="50">50</option>
     <option value="60">60</option>
@@ -200,7 +200,7 @@ $(document).ready(function() {
   </select> 
   miles of 
   <select name="town_selection" id="town_selection">
-    <option value="" selected>- Please select -</option>
+    <option value="">- Please select -</option>
     <option value="postcode">Enter postcode ></option>
     <option value="Aberdeen">Aberdeen</option>
     <option value="Birmingham">Birmingham</option>
@@ -211,7 +211,7 @@ $(document).ready(function() {
     <option value="London">London</option>
     <option value="Manchester">Manchester</option>
     <option value="Norwich">Norwich</option>
-    <option value="Oxford">Oxford</option>
+    <option value="Oxford" selected>Oxford</option>
     <option value="Portsmouth">Portsmouth</option>
     <option value="Southampton">Southampton</option>
   </select> 
@@ -226,6 +226,7 @@ $(document).ready(function() {
   <thead>
     <tr>
       <th>Date</th>
+      <th>Distance (miles)</th>
       <th>Location</th>
       <th>Venue</th>
       <th>Time</th>
@@ -237,6 +238,7 @@ $(document).ready(function() {
   <tbody>
     <tr>
       <td>7 June 2015 (Tue)</td>
+      <td>25</td>
       <td>Milton Keynes</td>
       <td><a href="tutorials-venue.html">Walton Hall</a></td>
       <td>19:00 - 21:00</td>
@@ -246,6 +248,7 @@ $(document).ready(function() {
       </tr>
     <tr>
       <td>12 June 2016 (Sun)</td>
+      <td>29</td>
       <td>Whittlebury</td>
       <td><a href="tutorials-venue.html">Whittlebury Hall</a></td>
       <td>11:30 - 15:30</td>
@@ -255,7 +258,8 @@ $(document).ready(function() {
       </tr>
     <tr>
       <td>15 June 2016 (Wed)</td>
-      <td>Liverpool</td>
+      <td>18</td>
+      <td>Banbury</td>
       <td>TBC</td>
       <td>10:00 - 13:00</td>
       <td>Mr Arnold Palmer</td>
@@ -264,6 +268,7 @@ $(document).ready(function() {
       </tr>
     <tr>
       <td>21 June 2016 (Tues)</td>
+      <td>-</td>
       <td>Online</td>
       <td>Online</td>
       <td>11:00 - 12:00</td>
