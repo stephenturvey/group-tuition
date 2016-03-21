@@ -112,6 +112,11 @@ a.print {
 	display:inline-block;
 }
 
+p.nothing-here {
+	color:#777;
+	padding:10px 0 30px 0;	
+}
+
 
 /* help link */
 
