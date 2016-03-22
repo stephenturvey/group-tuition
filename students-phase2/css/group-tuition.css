@@ -117,6 +117,11 @@ p.nothing-here {
 	padding:10px 0 30px 0;	
 }
 
+p.number-results {
+	color:#777;
+	padding:10px 0 20px 0;	
+}
+
 
 /* help link */
 
@@ -247,6 +252,8 @@ form.filter-events span {margin-right:10px;}
 form.filter-events span {color:#666;}
 
 form.filter-events input.datepicker {width:70px;}
+
+form.filter-events input.keyword {width:90px;}
 
 /**/
 

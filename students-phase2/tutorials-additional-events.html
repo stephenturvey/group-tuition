@@ -110,18 +110,12 @@
 
 <div class="inview">
 
-<h2>Search events</h2>
-
-<form name="" action="" class="search-events">
-    <p><input type="text" name="keyword" id="keyword" placeholder="Keyword"> 
-    <input type="submit" name="search-events" id="search-events" value="Search events"></p>
-</form>
-
 <h2>Filter events</h2>
 
 <form id="" class="filter-events">
-<p><select name="from" id="from">
-  <option selected>From all</option>
+<p>
+<select name="from" id="from">
+  <option selected>All organisers</option>
   <option>Arts SST</option>
   <option>BBC</option>
   <option>Careers</option>
@@ -132,11 +126,13 @@
   <option>OUSA</option>
   <option>Science SST</option>
 </select> 
-  <select name="for" id="for">
+
+<select name="for" id="for">
     <option value="all" selected>For all</option>
     <option value="AA100">AA100</option>
-  </select> 
-  <select name="location" id="location">
+</select> 
+
+<select name="location" id="location">
     <option value="" selected>All locations</option>
     <option value="Aberdeen">Aberdeen</option>
     <option value="Birmingham">Birmingham</option>
@@ -151,19 +147,23 @@
     <option value="Portsmouth">Portsmouth</option>
     <option value="Southampton">Southampton</option>
   </select> 
-    <span>Date from: <input type="text" name="date-from" class="datepicker"> To: <input type="text" name="date-to" class="datepicker"></span>
+    <span><label for="date-from">Date from:</label> <input type="text" name="date-from" id="date-from" class="datepicker"> <label for="date-to">To:</label> <input type="text" name="date-to" id="date-to" class="datepicker"></span>
+    <span><label for="keyword">Keyword:</label> <input type="text" name="keyword" id="keyword" class="keyword"></span>
   <input name="submit" type="button" value="Filter results">
 </p>
 </form>
+
+<p class="number-results">Displaying 122 events</p>
 
 <div class="table-wrap">
   <table class="event-listings sortable">
       <thead>
         <tr>
-          <th>From</th>
+          <th>Title</th>
+          <th>Organiser</th>
           <th>For</th>
-          <th>Date, Time</th>
-          <th>Description</th>
+          <th>Date</th>
+          <th>Time</th>
           <th>Location</th>
           <th>Venue</th>
           <th class="sorttable_nosort">Action</th>
@@ -171,55 +171,61 @@
       </thead>
       <tbody>
         <tr>
+          <td><a href="tutorials-additional-events-details.html">Title or desc here</a></td>
           <td>OUSA</td>
           <td>All students</td>
-          <td sorttable_customkey="20160609">9 June 2016 (Thu), 11:30-15:30</td>
-          <td><a href="tutorials-additional-events-details.html">Title or desc here</a></td>
+          <td sorttable_customkey="20160609">9 June 2016 (Thu)</td>
+          <td>11:30-15:30</td>
           <td>Whittlebury</td>
           <td><a href="tutorials-venue.html">Whittlebury Hall</a></td>
           <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
         </tr>
         <tr>
+          <td><a href="tutorials-additional-events-details.html">Title or desc here</a></td>
           <td>BBC</td>
           <td>All students</td>
-          <td sorttable_customkey="20160612">12 June 2016 (Sun), 19:00-20:00</td>
-          <td><a href="tutorials-additional-events-details.html">Title or desc here</a></td>
+          <td sorttable_customkey="20160612">12 June 2016 (Sun)</td>
+          <td>19:00-20:00</td>
           <td>Milton Keynes</td>
           <td><a href="tutorials-venue.html">Walton Hall</a></td>
           <td>Just turn up</td>
         </tr>
         <tr>
+          <td><a href="tutorials-additional-events-details.html">Title or desc here</a></td>
           <td>Guest lecturer</td>
           <td>AA100</td>
-          <td sorttable_customkey="20160621">21 June 2016 (Tue), 18:00-20:30</td>
-          <td><a href="tutorials-additional-events-details.html">Title or desc here</a></td>
+          <td sorttable_customkey="20160621">21 June 2016 (Tue)</td>
+          <td>18:00-20:30</td>
           <td>Bath</td>
           <td>TBC</td>
           <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
         </tr>
         <tr>
+          <td><a href="tutorials-additional-events-details.html">Title or desc here</a></td>
           <td>Maths SST</td>
           <td>All students</td>
-          <td sorttable_customkey="20160704">4 July 2016 (Thu), 11:30-15:30</td>
-          <td><a href="tutorials-additional-events-details.html">Title or desc here</a></td>
+          <td sorttable_customkey="20160704">4 July 2016 (Thu)</td>
+          <td>11:30-15:30</td>
           <td>Whittlebury</td>
           <td><a href="tutorials-venue.html">Whittlebury Hall</a></td>
           <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
         </tr>
         <tr>
+          <td><a href="tutorials-additional-events-details.html">Title or desc here</a></td>
           <td>Careers Advisory Service</td>
           <td>All students</td>
-          <td sorttable_customkey="20160719">19 July 2016 (Sun), 13:30-16:00</td>
-          <td><a href="tutorials-additional-events-details.html">Title or desc here</a></td>
+          <td sorttable_customkey="20160719">19 July 2016 (Sun)</td>
+          <td>13:30-16:00</td>
           <td>Milton Keynes</td>
           <td><a href="tutorials-venue.html">Walton Hall</a></td>
           <td>Just turn up</td>
         </tr>
         <tr>
+          <td><a href="tutorials-additional-events-details.html">Title or desc here</a></td>
           <td>Open Learn</td>
           <td>All students</td>
-          <td sorttable_customkey="20160805">5 August 2016 (Tue), 11:00-13:00</td>
-          <td><a href="tutorials-additional-events-details.html">Title or desc here</a></td>
+          <td sorttable_customkey="20160805">5 August 2016 (Tue)</td>
+          <td>11:00-13:00</td>
           <td>Bath</td>
           <td>TBC</td>
           <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
