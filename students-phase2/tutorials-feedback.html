@@ -102,9 +102,22 @@
 <h2>Venue feedback form</h2>
 
 <form name="feedback" method="post" action="tutorials-feedback-thanks.html" class="tutorial-feedback">
-  <p><strong>Tutorial</strong>: Effective presentation skills, Mr Saul Smith, 20 August 2015</p>
   <p><strong>Name</strong>: Kapil Dev</p>
   <p><strong>PI</strong>: <span class="nolnk">U2415726</span></p>
+  
+  <p><strong>Date of tutorial</strong></p>
+
+<ul>
+    <li><input type="radio" name="tut_date" id="tut_date1"> <label for="tut_date1">12 March 2016</label></li>
+</ul>
+
+  <p><strong><label for="sentiment">What kind of experience did you have?</label></strong></p>
+
+<ul>
+    <li><input type="radio" name="sentiment" id="sentiment1"> <label for="sentiment1">Positive</label></li>
+    <li><input type="radio" name="sentiment" id="sentiment2"> <label for="sentiment2">Negative</label></li>
+</ul>
+
   <p><strong><label for="textarea">Comments</label></strong></p>
   <p>
   	<textarea name="textarea" rows="6" id="textarea"></textarea>
