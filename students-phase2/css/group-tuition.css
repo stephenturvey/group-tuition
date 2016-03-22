@@ -213,6 +213,7 @@ iframe {
 }
 
 
+
 /**/
 
 /* forms */
@@ -236,6 +237,16 @@ form.distance-filter p {
 	color:#666;
 	line-height:140%;
 }
+
+form.search-events {margin-bottom:20px;}
+form.filter-events {margin-bottom:30px;}
+
+form.filter-events select,
+form.filter-events span {margin-right:10px;}
+
+form.filter-events span {color:#666;}
+
+form.filter-events input.datepicker {width:70px;}
 
 /**/
 
@@ -322,6 +333,8 @@ div.table-wrap {
 
 a.help-link span {display:none;}
 
+form.filter-events span {display:block; padding:10px 0; margin-right:0;}
+
 
 } /* end media query */
 
@@ -336,6 +349,10 @@ h1 {
 }
 
 div.inview {padding:1em 1.5em;}
+
+form.filter-events select,
+form.filter-events span {margin-right:5px;}
+
 
 
 } /* end media query */
