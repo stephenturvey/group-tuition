@@ -44,6 +44,13 @@ table th {font-weight:bold;}
 table th,
 table td {padding:0.5em 1em;}
 
+table tr {
+	border-bottom: none;
+	border-top:1px solid #eee;
+}
+
+table thead tr {border-top:none;}
+
 table td.booked {
 	color:#539d3c;
 	font-weight:bold;
@@ -63,6 +70,7 @@ span.compulsory {
 table.confirmation td ul {padding-left:1.2em;}
 
 table tbody tr.waiting {border-left: 4px solid #C60;}
+
 
 /* sortable tables */
 
@@ -86,7 +94,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 /**/
 
 
-
 hr {
 	border:none;
 	border-top:1px solid #eee;
@@ -94,9 +101,7 @@ hr {
 	margin:30px 0;	
 }
 
-h2.book-title {
-	margin-bottom:25px;	
-}
+h2.book-title {margin-bottom:25px;}
 
 h3 {
 	font-size:1.1em;
@@ -121,6 +126,37 @@ p.number-results {
 	color:#777;
 	padding:10px 0 20px 0;	
 }
+
+p.back-link {
+	margin:0;	
+}
+
+p.back-link a {
+	background:url(../img/2015/icon-back.png) 0 4px no-repeat;
+	display:inline-block;
+	padding:3px 0 3px 22px;
+	text-decoration:none;	
+}
+
+
+
+/* page footer */
+
+.page-footer {margin:40px 0 0 0; border-top:1px solid #eee; padding-top:30px;}
+
+.page-footer h2 {
+	font-size:1em;
+	font-weight:bold;
+	margin:0;
+	color:#555;
+}
+
+.page-footer p {
+	margin:10px 0 20px 0;
+	color:#555;
+}
+
+
 
 
 /* help link */
@@ -155,10 +191,19 @@ a.waiting {background-color:#c60;}
 a.book-now:hover,
 a.book-now:visited:hover,
 a.cancel:hover,
-a.waiting:hover {
-	background-color:#000;
+a.waiting:hover {color:#fff;}
+
+a.book-now:hover,
+a.book-now:visited:hover {
+	background-color:#386B28;
 	color:#fff;
 }
+
+a.cancel:hover {background-color:#671B16;}
+
+a.waiting:hover {background-color:#8D4700;}
+
+
 
 /**/
 
@@ -217,7 +262,7 @@ iframe {
 	border-radius:0 0.5em 0.5em 0;	
 }
 
-
+.item {margin-bottom:30px;}
 
 /**/
 
@@ -227,6 +272,13 @@ form.tutorial-feedback textarea {
 	width:50%;
 	font-size:1em;
 	padding:0.5em;	
+}
+
+form.tutorial-feedback ul,
+form.tutorial-feedback ul li {
+	list-style:none;
+	margin:0;
+	padding:0;
 }
 
 form.distance-filter {margin:20px 0;}
