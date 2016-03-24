@@ -71,6 +71,14 @@ table.confirmation td ul {padding-left:1.2em;}
 
 table tbody tr.waiting {border-left: 4px solid #C60;}
 
+th.table-heading {
+	font-size:1.4em; 
+	padding:30px 0 10px 0; 
+	font-weight:normal;
+}
+
+th.table-heading-first {padding:0 0 10px 0; }
+
 
 /* sortable tables */
 
