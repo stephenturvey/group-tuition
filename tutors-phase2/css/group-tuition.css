@@ -127,6 +127,24 @@ div#add-student {padding-left:0;}
 /**/
 
 
+/* page footer */
+
+.page-footer {margin:40px 0 0 0; border-top:1px solid #eee; padding-top:30px;}
+
+div#ou-region1 .page-footer h2 {
+	font-size:1.1em;
+	font-weight:bold;
+	margin:0;
+	color:#555;
+}
+
+.page-footer p {
+	margin:10px 0 20px 0;
+	color:#555;
+}
+
+
+
 
 /* forms */
 
