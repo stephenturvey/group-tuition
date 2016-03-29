@@ -289,6 +289,8 @@ form.tutorial-feedback ul li {
 	padding:0;
 }
 
+form.tutorial-feedback ul li {margin-bottom:5px;}
+
 form.distance-filter {margin:20px 0;}
 
 form.distance-filter input[type="text"] {
@@ -418,6 +420,7 @@ div.inview {padding:1em 1.5em;}
 form.filter-events select,
 form.filter-events span {margin-right:5px;}
 
+form.tutorial-feedback textarea {width:90%;}
 
 
 } /* end media query */

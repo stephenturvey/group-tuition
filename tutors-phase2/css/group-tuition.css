@@ -164,9 +164,28 @@ form textarea.copy-paste {
 	height:50px;
 }
 
+form.tutorial-feedback textarea {
+	width:50%;
+	font-size:1em;
+	padding:0.5em;	
+}
+
+body.template-content #ou-region1 .ou-content form.tutorial-feedback ul,
+body.template-content #ou-region1 .ou-content form.tutorial-feedback ul li {
+	list-style:none;
+	background-image:none;
+	margin:0;
+	padding:0;
+}
+
+body.template-content #ou-region1 .ou-content form.tutorial-feedback ul li {margin-bottom:5px;}
+
+
 @media only screen and (max-width: 800px), screen and (max-device-width: 800px) {
 
-form textarea.copy-paste {width:90%;}
+form textarea.copy-paste,
+form.tutorial-feedback textarea {width:90%;}
+
 
 } /* end media query */
 
