@@ -123,7 +123,7 @@
                             <li><a href="index.html">TutorHome</a></li>
                             <li><a href="students.html">Students</a></li>
                             <li><a href="your-tutorials.html">Tutorials</a></li>
-                            <li><strong>Tutorials for all ALs in your cluster</strong></li>
+                            <li><strong>All tutorials in your cluster</strong></li>
                         </ol>
                     </div>
                 </div>
@@ -137,11 +137,11 @@
 <ul class="codes">
     <li><a href="your-tutorials.html">Your upcoming tutorials</a></li>
     <li><a href="past-tutorials.html">Your past tutorials</a></li>
-    <li><strong>Tutorials for all ALs in your cluster</strong></li>
+    <li><strong>All tutorials in your cluster</strong></li>
     <li><a href="contact-tutors-in-cluster.html">Contact tutors in your cluster</a></li>
 </ul>
 
-                <h2>Tutorials for all ALs in your cluster</h2>
+                <h2>Tutorials for all tutors in your cluster</h2>
                 <p style="float:right; margin:0; padding:0;">Contact tutors in cluster: <a href="contact-tutors-in-cluster.html">M250 14J</a>, <a href="contact-tutors-in-cluster.html">TM129 15B</a>, <a href="contact-tutors-in-cluster.html">TM129 14J</a>, <a href="contact-tutors-in-cluster.html">TU100 14J</a></p>
               
                 <!--<a href="your-tutorial-cluster.html" class="link-float icon-cluster">Your tutorial cluster</a>
@@ -186,6 +186,7 @@
 	  <option>TM129 14J</option>
 	  <option>TU100 14J</option>
 	</select>
+    
 	<select name="filters">
       <option selected>Show all Tutors</option>
       <option>Rob Halford (you)</option>
@@ -197,12 +198,13 @@
       <option>John Siracussa</option>
       <option>Marco Arment</option>
     </select>
-	<select name="filters2">
+    
+	<select name="filters">
 	  <option selected>Show all Types</option>
-	  <option value="Cluster F2F">Cluster F2F</option>
-	  <option value="Own tutor group">Own tutor group</option>
-	  <option value="Online">Online</option>
-	  </select>
+	  <option value="Module Event">Module Event</option>
+	  <option value="Cluster Event">Cluster Event</option>
+	  <option value="Tutor Group Event">Tutor Group Event</option>
+    </select>
 
 </form>
 
@@ -217,7 +219,7 @@
           <th>Tutor</th>
             <th>Tutorial title</th>
             <th>Location/Venue</th>
-            <th class="sorttable_nosort">Students</th>
+            <th class="sorttable_nosort">Students booked</th>
             <th>Type</th>
         </tr>
     </thead><tbody>
@@ -228,7 +230,7 @@
             <td><a href="tutorial-details.html">Tutorial 1</a></td>
             <td><a href="venue-details.html">Birmingham, Whittlebury Hall</a></td>
             <td><a href="tutorial-details.html#students_attending">20</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
             </tr><tr>
             <td sorttable_customkey="20160604">4 June 2016 (Sat) 12:00-14:00</td>
             <td>TM129 15B</td>
@@ -236,7 +238,7 @@
             <td><a href="tutorial-details.html">Tutorial 1</a></td>
             <td><a href="venue-details.html">Birmingham, Ramada Hotel</a></td>
             <td><a href="tutorial-details.html#students_attending">15</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr>
   
         <tr>
@@ -246,7 +248,7 @@
             <td><a href="tutorial-details.html">Tutorial 1</a></td>
             <td>Online</td>
             <td><a href="tutorial-details.html#students_attending">22</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr><tr>
             <td sorttable_customkey="20160615">15 June 2016 (Wed) 19:00-21:00</td>
             <td>TU100 14J</td>
@@ -254,7 +256,7 @@
             <td><a href="tutorial-details.html">Tutorial 1</a></td>
             <td><a href="venue-details.html">Birmingham, Whittlebury Hall</a></td>
             <td><a href="tutorial-details.html#students_attending">9</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr>
   
         <tr>
@@ -265,7 +267,7 @@
             <td><a href="tutorial-details.html">Tutorial 3</a></td>
             <td><a href="venue-details.html">Birmingham, Digbeth College</a></td>
             <td><a href="tutorial-details.html#students_attending">17</a></td>
-            <td>Online</td>
+            <td>Module Event</td>
         </tr><tr>
             <td sorttable_customkey="20160629">29 June 2016 (Wed) 09:00-11:00</td>
             <td>TM129 15B</td>
@@ -274,7 +276,7 @@
             <td><a href="tutorial-details.html">Tutorial 3</a></td>
             <td><a href="venue-details.html">Birmingham, TBA</a></td>
             <td><a href="tutorial-details.html#students_attending">20</a></td>
-            <td>Online</td>
+            <td>Module Event</td>
         </tr>
   
         <tr>
@@ -285,7 +287,7 @@
             <td><a href="tutorial-details.html">Tutorial 3</a></td>
             <td>Online</td>
             <td><a href="tutorial-details.html#students_attending">21</a></td>
-            <td>Own tutor group</td>
+            <td>Tutor Group Event</td>
         </tr><tr>
             <td sorttable_customkey="20160709">9 July 2016 (Thu) 05:45-09:00</td>
             <td>TU100 14J</td>
@@ -294,7 +296,7 @@
             <td><a href="tutorial-details.html">Tutorial 3</a></td>
             <td><a href="venue-details.html">Milton Keynes, Walton Hall</a></td>
             <td><a href="tutorial-details.html#students_attending">21</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr>
   
         <tr>
@@ -305,7 +307,7 @@
             <td><a href="tutorial-details.html">Tutorial 3</a></td>
             <td><a href="venue-details.html">Milton Keynes, TBA</a></td>
             <td><a href="tutorial-details.html#students_attending">18</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr><tr>
             <td sorttable_customkey="20160722">22 July 2016 (Thu) 23:00-00:00</td>
             <td>TM129 14J</td>
@@ -314,7 +316,7 @@
             <td><a href="tutorial-details.html">Tutorial 3</a></td>
             <td>Online</td>
             <td><a href="tutorial-details.html#students_attending">19</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr>
   
         <tr>
@@ -325,7 +327,7 @@
             <td><a href="tutorial-details.html">Tutorial 3</a></td>
             <td><a href="venue-details.html">Milton Keynes, MK College</a></td>
             <td><a href="tutorial-details.html#students_attending">15</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr><tr>
             <td sorttable_customkey="20160801">1 August 2016 (Thu) 12:00-14:00</td>
             <td>TM129 15B</td>
@@ -334,7 +336,7 @@
             <td><a href="tutorial-details.html">Tutorial 3</a></td>
             <td><a href="venue-details.html">Milton Keynes, Walton Hall</a></td>
             <td><a href="tutorial-details.html#students_attending">10</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr>
   
         <tr>
@@ -345,7 +347,7 @@
             <td><a href="tutorial-details.html">Tutorial 4</a></td>
             <td><a href="venue-details.html">Coventry, TBA</a></td>
             <td><a href="tutorial-details.html#students_attending">19</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr><tr>
             <td sorttable_customkey="20160807">7 August 2016 (Thu) 02:00-07:00</td>
             <td>M250 14J</td>
@@ -354,7 +356,7 @@
             <td><a href="tutorial-details.html">Tutorial 4</a></td>
             <td><a href="venue-details.html">Coventry, Community Centre</a></td>
             <td><a href="tutorial-details.html#students_attending">19</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr>
   
         <tr>
@@ -365,7 +367,7 @@
             <td><a href="tutorial-details.html">Tutorial 4</a></td>
             <td><a href="venue-details.html">Coventry, Community Centre</a></td>
             <td><a href="tutorial-details.html#students_attending">10</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr><tr>
             <td sorttable_customkey="20160818">18 August 2016 (Thu) 12:00-14:00</td>
             <td>TM129 14J</td>
@@ -374,7 +376,7 @@
             <td><a href="tutorial-details.html">Tutorial 5</a></td>
             <td>Online</td>
             <td><a href="tutorial-details.html#students_attending">8</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr>
   
         <tr>
@@ -385,7 +387,7 @@
             <td><a href="tutorial-details.html">Tutorial 5</a></td>
             <td><a href="venue-details.html">Wolverhampton, WC College</a></td>
             <td><a href="tutorial-details.html#students_attending">4</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr><tr>
             <td sorttable_customkey="20160826">26 August 2016 (Mon) 12:00-14:00</td>
             <td>TM129 15B</td>
@@ -394,7 +396,7 @@
             <td><a href="tutorial-details.html">Tutorial 5</a></td>
             <td><a href="venue-details.html">Wolverhampton, Town Hall</a></td>
             <td><a href="tutorial-details.html#students_attending">15</a></td>
-            <td>Cluster F2F</td>
+            <td>Cluster Event</td>
         </tr>
             
     </tbody>
