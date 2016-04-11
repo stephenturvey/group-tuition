@@ -383,6 +383,12 @@ ol.ou-breadcrumb li:first-child {background-image:none;}
 /* Tooltips
 ---------------------------------------------------------------------- */
 
+img.icon-tooltip {
+	display:inline-block; 
+	vertical-align:middle; 
+	margin-top:-2px;
+}
+
 /* Add this attribute to the element that needs a tooltip */
 [data-tooltip] {
   position: relative;
