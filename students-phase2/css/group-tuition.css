@@ -26,7 +26,7 @@ table a.tutorial-waiting {
 	text-decoration:none;
 	font-weight:bold;
 	padding-left:16px;
-	color:	#539d3c;
+	color:	#3F762D;
 	background:url(../img/2015/icon-tick.png) 0 3px no-repeat;
 }
 
@@ -63,7 +63,7 @@ table.confirmation tbody tr:nth-of-type(even) td {background-color:transparent;}
 table.event-listings td {vertical-align: middle;}
 
 span.compulsory {
-	color:red;
+	color:#d90000;
 	font-weight:bold;
 }
 
@@ -185,7 +185,7 @@ a.book-now,
 a.cancel,
 a.waiting {
 	color:#fff;
-	background-color:#539d3c;	
+	background-color:#3F762D;	
 	display:inline-block;
 	padding:3px 8px;
 	margin-right:3px;
@@ -203,7 +203,7 @@ a.waiting:hover {color:#fff;}
 
 a.book-now:hover,
 a.book-now:visited:hover {
-	background-color:#386B28;
+	background-color:#305A22;
 	color:#fff;
 }
 
