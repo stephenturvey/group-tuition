@@ -206,6 +206,13 @@ form.tutorial-feedback textarea {width:90%;}
 
 .box-alert strong {color:red;}
 
+.box-alert ul {
+	margin-top:15px;
+	margin-bottom:1px !important;
+}
+
+.box-alert ul strong {color:black;}
+
 .box-alert a.hide-msg {
 	float:right;
 	display:inline-block;

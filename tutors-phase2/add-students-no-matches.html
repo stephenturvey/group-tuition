@@ -137,6 +137,9 @@
             <div id="ou-region1">
                 <h1>Add students to attendance register</h1>
                 <div id="ou-content" class="ou-content">
+                  <div class="box-alert">
+                    <p><strong>No matches found: </strong>Please check you have typed the information correctly and try again.</p>
+                  </div>
                   <p>Add students who attended the following tutorial who were not on the original list:</p>
                   <p><strong>Tutorial one, 12 March 2016 (Mon) 09:00 - 13:00 at Whittlebury Hall</strong></p>
 
@@ -155,9 +158,8 @@
                     </div>
                     
                     
-                    <div class="student-details-full" id="student-details-full">
+                    <div class="student-details-full student-details-error" id="student-details-full">
                     <p>If you don't have the student's PI, we need <strong>both</strong> first name and surname plus <strong>either</strong> postcode or email address.</p>
-                    
                     <div class="scrollable">               
                     <table class="tutorial-add-student">
                       <tr>
@@ -169,10 +171,10 @@
                         <th><label for="student_email">Email</label></th>
                       </tr>
                       <tr>
-                        <td><input name="student_name" id="student_name" type="text"></td>
-                        <td><input name="student_surname" id="student_surname" type="text"></td>
+                        <td><input name="student_name" type="text" id="student_name" value="David"></td>
+                        <td><input name="student_surname" type="text" id="student_surname" value="Duchovny"></td>
                         <td class="column-blank">+</td>
-                        <td><input name="student_postcode" id="student_postcode" type="text"></td>
+                        <td><input name="student_postcode" type="text" id="student_postcode" value="MK18 1JH"></td>
                         <td>or</td>
                         <td><input name="student_email" id="student_email" type="text"></td>
                       </tr>
@@ -198,7 +200,7 @@
                 </div>
                 
                 
-                </div>
+              </div>
 
             </div>
 
