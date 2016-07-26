@@ -1,0 +1,15 @@
+body
+{
+}
+
+.outer {background-image: url(img/orange-top3.jpg); background-repeat:no-repeat;}
+
+.inline {display:inline;}
+
+.tabledata {margin:0;padding:0;list-style-type:none;}
+
+.error1 {font-size:130%;line-height:120%;}
+
+.submit {width:15em;}
+
+#note {color:#c00;font-size:120%;}

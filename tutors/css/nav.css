@@ -1,0 +1,173 @@
+#nav {
+	color: black;
+	background-color: #dddddd;
+	margin: 0 0 0 0;
+	text-align: right;
+	font-weight: normal;
+	background-position : bottom left;
+	background-repeat : no-repeat;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-bottom: 1px solid #0066cc;
+	font-size: 0.8em;
+}
+/* student pages second level navigation  */
+#nav2 {
+	color: black;
+	background-color: #ffffff;
+	margin: 0 0 15px 0;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+
+}
+
+#nav2 ul, #nav2 ul li {
+display:inline;
+	margin: 0;
+	padding: 0;
+}
+
+#nav2 a {
+	text-decoration: none;
+	color: black;
+	background-color: transparent;
+	padding: 2px 10px;
+	margin: 0;
+	border-right: 1px solid #6699cc ;
+}
+
+#nav2 a:hover {
+	background-color: #0066cc;
+	color: white;
+}
+
+
+#nav2 a.sel {
+	background-color : #C8E8FD;
+}
+/* end student pages second level navigation */
+
+/* student pages third level navigation  */
+
+td.navtop {
+	vertical-align:top;
+	background-color:white;
+}
+#nav3 {
+	color:black;
+	background-color:#fff;
+	margin:0;
+	font-weight:normal;
+	margin:5px 0 10px 0;
+	font-family:Verdana,Geneva,Arial,Helvetica,sans-serif;
+}
+
+#nav3 ul, #nav3 ul li {
+	margin:0;
+	padding:2px;
+}
+
+#nav3 a {
+	text-decoration:underline;
+	color:#03c;
+	background-color: transparent;
+	padding:2px 2px;
+	margin:0;
+	border-right:none;
+}
+
+#nav3 a:hover {
+	background-color: transparent;
+}
+
+#nav3 a.sel {
+	background-color : #C8E8FD;
+}
+
+/* end student pages third level navigation */
+
+#nav ul, #nav ul li {
+display:inline;
+	margin: 0;
+	padding: 0;
+}
+
+#nav ul  li {
+	list-style-type : none;
+}
+
+#nav ul li a.last {
+	border-right: 2px solid #dddddd;
+	padding-right: 0;
+	margin-right:0;
+}
+
+
+#nav a {
+	text-decoration: none;
+	color: black;
+	background-color: transparent;
+	padding: 2px 6px;
+	margin: 0;
+	border-right: 1px solid #6699cc ;
+	border-left: 1px solid #dddddd;
+}
+
+#nav a.signout {
+	padding-right: 0;
+	padding-left: 5px;
+	border:none;
+	font-weight:bold;
+	
+}
+
+#nav li.x a {
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+#nav a:hover {
+	color: #0066cb;
+	background-color: transparent;
+}
+
+#nav a.selected {
+	color: white;
+	background-color: #6699CC;
+}
+
+#nav ul {
+	padding: 5px 10px;
+	display: block;
+	margin: 0;
+}
+.hide {
+	display: none;
+}
+
+#nav img {
+	margin: 0 2px 0 0;
+}
+
+#logoff {
+	float: left;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	width: 15%;
+}
+
+#logoff p {
+	padding: 5px 10px;
+}
+
+#navitems {
+float: left;	
+height: auto;
+margin: 0;
+padding: 0;
+text-align: right;
+width: 85%;
+}
+
+#nav2 a.noline { border:0; }
+

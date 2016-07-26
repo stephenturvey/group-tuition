@@ -1,0 +1,15 @@
+#ContextForm
+{
+	width:17em;
+}
+
+table.contactsummary td.col
+{
+	width:8%;
+}
+
+#instructions li
+{
+	position: relative; 
+	top: .7em;
+}

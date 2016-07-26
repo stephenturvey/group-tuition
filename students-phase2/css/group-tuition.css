@@ -1,0 +1,538 @@
+@charset "UTF-8";
+
+/* GROUP TUITION - STUDENT STYLES */
+
+a:visited {color:#880088;}
+
+body.ou-wide .r2 { width: 100% }
+
+body.ou-wide .r2 .ou-content {border-radius:0.5em;}
+
+div.inview {padding:1.2em 2em;}
+
+
+/* tables */
+
+table {margin-bottom:30px;}
+
+table a {
+	color:#039;
+	text-decoration:underline;
+}
+
+table a.tutorial-booked,
+table a.tutorial-waiting {
+	display:block;
+	text-decoration:none;
+	font-weight:bold;
+	padding-left:16px;
+	color:	#3F762D;
+	background:url(../img/2015/icon-tick.png) 0 3px no-repeat;
+}
+
+table a.tutorial-waiting {
+	color:	#c60;
+	background:url(../img/2015/icon-tick-orange.png) 0 3px no-repeat;
+}
+
+table a.inline {display:inline-block;}
+
+table img {max-width:none;}
+
+table th {font-weight:bold;}
+
+table th,
+table td {padding:0.5em 1em;}
+
+table tr {
+	border-bottom: none;
+	border-top:1px solid #eee;
+}
+
+table thead tr {border-top:none;}
+
+table td.booked {
+	color:#539d3c;
+	font-weight:bold;
+}
+
+table tbody tr:nth-of-type(even) td {background-color:#f5f5f5;}
+
+table.confirmation tbody tr:nth-of-type(even) td {background-color:transparent;}
+
+table.event-listings td {vertical-align: middle;}
+
+span.compulsory {
+	color:#d90000;
+	font-weight:bold;
+}
+
+table.confirmation td ul {padding-left:1.2em;}
+
+table tbody tr.waiting {border-left: 4px solid #C60;}
+
+th.table-heading {
+	font-size:1.4em; 
+	padding:30px 0 10px 0; 
+	font-weight:normal;
+}
+
+th.table-heading-first {padding:0 0 10px 0; }
+
+
+/* sortable tables */
+
+table.sortable th:hover {
+	cursor:pointer;
+	color:#444;
+}
+
+table.sortable th.sorttable_nosort:hover {
+	cursor: text;
+	color:#000;
+}
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B2\25Bc";
+	font-size:9px;
+	color:#ccc;
+}
+
+
+/**/
+
+
+hr {
+	border:none;
+	border-top:1px solid #eee;
+	padding:0;
+	margin:30px 0;	
+}
+
+h2.book-title {margin-bottom:25px;}
+
+h3 {
+	font-size:1.1em;
+	font-weight:bold;
+	color:black;	
+}
+
+a.print {
+	background-image:url(../img/2015/icon-print.png);
+	background-position:0 0.2em;
+	background-repeat:no-repeat;
+	padding-left:20px;
+	display:inline-block;
+}
+
+p.nothing-here {
+	color:#777;
+	padding:10px 0 10px 0;	
+}
+
+p.number-results {
+	color:#777;
+	padding:10px 0 20px 0;	
+}
+
+p.back-link {
+	margin:0;	
+}
+
+p.back-link a {
+	background:url(../img/2015/icon-back.png) 0 4px no-repeat;
+	display:inline-block;
+	padding:3px 0 3px 22px;
+	text-decoration:none;	
+}
+
+
+
+/* page footer */
+
+.page-footer {margin:40px 0 0 0; border-top:1px solid #eee; padding-top:30px;}
+
+.page-footer h2 {
+	font-size:1em;
+	font-weight:bold;
+	margin:0;
+	color:#555;
+}
+
+.page-footer p {
+	margin:10px 0 20px 0;
+	color:#555;
+}
+
+
+
+
+/* help link */
+
+a.help-link {
+	float:right; 
+	color:#fff; 
+	margin-top:15px; 
+	background:url(../img/2015/icon-help.png) 0 2px no-repeat; 
+	padding-left:20px;
+}
+
+a.help-link:hover {color:#A6D0FD; }
+
+/* buttons */
+
+a.book-now,
+a.cancel,
+a.waiting {
+	color:#fff;
+	background-color:#3F762D;	
+	display:inline-block;
+	padding:3px 8px;
+	margin-right:3px;
+	border-radius:4px;
+	text-decoration:none;
+}
+
+a.cancel {background-color:#b52a1e;}
+a.waiting {background-color:#c60;}
+
+a.book-now:hover,
+a.book-now:visited:hover,
+a.cancel:hover,
+a.waiting:hover {color:#fff;}
+
+a.book-now:hover,
+a.book-now:visited:hover {
+	background-color:#305A22;
+	color:#fff;
+}
+
+a.cancel:hover {background-color:#671B16;}
+
+a.waiting:hover {background-color:#8D4700;}
+
+
+
+/**/
+
+
+/* map */
+
+iframe {
+	width:400px;
+	height:300px;
+	padding:0;
+	margin:0;	
+}
+
+/**/
+
+/* boxes */
+
+
+.box-book p,
+.box-booked p,
+.box-warning p,
+.box-waiting p {margin:0;}
+
+.box-booked {
+	background-color:#eee;
+	background-image:url(../img/2015/icon-tick.png);
+	background-position:1em 1.3em;
+	background-repeat:no-repeat;
+	padding:1em 1.5em 1em 2.5em;
+	margin:0 0 20px 0;
+	border-radius:0 0.5em 0.5em 0;	
+	border-left:4px solid #539d3c;
+}
+
+.box-warning {
+	background-color:#eee;
+	padding:1em 1.5em 1em 1.5em;
+	margin: 0 0 20px 0;
+	border-left:4px solid #b52a1e;
+	border-radius:0 0.5em 0.5em 0;	
+}
+
+.box-book {
+	background-color:#eee;
+	border-left:4px solid #539d3c;
+	padding:1em 1.5em 1.5em 2em;
+	margin: 1em 0 0 0;
+	border-radius:0 0.5em 0.5em 0;	
+}
+
+.box-book ul {
+	margin:10px 0 0 0;
+	padding:0 0 0 15px;
+}
+
+.box-book ul li {margin-bottom:3px;}
+
+.box-waiting {
+	background-color:#eee;
+	border-left:4px solid #C60;
+	padding:1em 1.5em 1em 2em;
+	margin: 0 0 20px 0;
+	border-radius:0 0.5em 0.5em 0;	
+}
+
+.item {margin-bottom:30px;}
+
+/**/
+
+/* forms */
+
+form.tutorial-feedback textarea {
+	width:50%;
+	font-size:1em;
+	padding:0.5em;	
+}
+
+form.tutorial-feedback ul,
+form.tutorial-feedback ul li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+form.tutorial-feedback ul li {margin-bottom:5px;}
+
+form.distance-filter {margin:20px 0;}
+
+form.distance-filter input[type="text"] {
+	font-size:.9em;
+	margin:0 3px;
+	padding:3px;
+	width:100px;
+}
+
+form.distance-filter p {
+	color:#666;
+	line-height:140%;
+}
+
+form.search-events {margin-bottom:20px;}
+form.filter-events {margin-bottom:30px;}
+
+form.filter-events select,
+form.filter-events span {margin-right:10px;}
+
+form.filter-events span {color:#666;}
+
+form.filter-events input.datepicker {width:70px;}
+
+form.filter-events input.keyword {width:90px;}
+
+/**/
+
+
+/* breadcrumb */
+
+ol.ou-breadcrumb,
+ol.ou-breadcrumb li {
+	margin:0;
+	padding:0;
+	list-style:none;	
+}
+
+ol.ou-breadcrumb {margin:20px 0 5px 0;}
+
+ol.ou-breadcrumb li {
+	display:inline;
+	background-image: url(../img/menu-arrow-right.png);
+    background-position: 0 .3em;
+    background-repeat: no-repeat;
+	padding-left:10px;
+	margin-right:5px;
+}
+
+ol.ou-breadcrumb li:first-child {background-image:none;}
+	
+/**/
+
+
+/* AddThisEvent Calendar theme CSS (see confirmation page)
+---------------------------------------------------------------------- */
+
+ 
+/* General */
+.addthisevent 							{visibility:hidden;}
+.addthisevent span 						{display:none!important;}
+.addthisevent .data 					{display:none!important;}
+
+/* The button */
+.addthisevent-drop 						{margin:0 0 20px 0; display:inline-block;position:relative;z-index:999998;font-family:arial;font-weight:bold;font-size:14px;cursor:pointer;text-decoration:none;color:#555!important;background:#fff url(../img/2015/icon-calendar-t1.png) no-repeat 9px 50%!important;border:1px solid #d9d9d9;cursor:pointer;padding:9px 12px 8px 35px;-moz-border-radius:2px;-webkit-border-radius:2px;}
+.addthisevent-drop:hover 				{border:1px solid #aab9d4;color:#555;font-weight:bold;font-size:14px;text-decoration:none;}
+.addthisevent-drop:active 				{top:1px;}
+.addthisevent-selected 					{background-color:#f7f7f7;}  
+
+/* The drop down */
+.addthisevent_dropdown 					{width:200px;position:absolute;z-index:99999;padding:6px 0px 0px 0px;background:#fff;text-align:left;display:none;margin-top:-2px;margin-left:-1px;border-top:1px solid #c8c8c8;border-right:1px solid #bebebe;border-bottom:1px solid #a8a8a8;border-left:1px solid #bebebe;-moz-border-radius:2px;-webkit-border-radius:2px;-webkit-box-shadow:1px 3px 6px rgba(0,0,0,0.15);-moz-box-shadow:1px 3px 6px rgba(0,0,0,0.15);box-shadow:1px 3px 6px rgba(0,0,0,0.15);}
+.addthisevent_dropdown span 			{display:block;line-height:110%;background:#fff;text-decoration:none;font-size:12px;color:#6d84b4;padding:8px 10px 9px 15px;}
+.addthisevent_dropdown span:hover 		{background:#f4f4f4;color:#6d84b4;text-decoration:none;font-size:12px;}
+.addthisevent_dropdown em 				{color:#bbb!important;font-size:12px!important;font-weight:normal!important;}
+.addthisevent_dropdown .copyx 			{height:21px;display:block;position:relative;cursor:default;}
+.addthisevent_dropdown .brx 			{height:1px;overflow:hidden;background:#e0e0e0;position:absolute;z-index:100;left:10px;right:10px;top:9px;}
+.addthisevent_dropdown .frs 			{background:#fff;color:#cacaca!important;cursor:pointer;font-size:9px!important;font-style:normal!important;font-weight:normal!important;line-height:110%!important;padding-left:10px;position:absolute;right:10px;text-align:right;text-decoration:none;top:5px;z-index:101;}
+.addthisevent_dropdown .frs:hover 		{color:#999!important;}
+
+/**/
+
+
+/* Tooltips
+---------------------------------------------------------------------- */
+
+img.icon-tooltip {
+	display:inline-block; 
+	vertical-align:middle; 
+	margin-top:-2px;
+}
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 200px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width: 800px) {
+
+/* make tables scrollable at smaller screen sizes */
+
+table tbody tr:nth-of-type(even) td {background-color:transparent;}
+
+div.table-wrap {
+	overflow-x: scroll;
+	background-image: 
+		-webkit-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)), 
+		-webkit-linear-gradient(right, #ffffff, rgba(255, 255, 255, 0)), 
+		-webkit-linear-gradient(left, #c3c3c5, rgba(195, 195, 197, 0)), 
+		-webkit-linear-gradient(right, #c3c3c5, rgba(195, 195, 197, 0));
+	background-image: 
+		linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)), 
+		linear-gradient(right, #ffffff, rgba(255, 255, 255, 0)), 
+		linear-gradient(left, #c3c3c5, rgba(195, 195, 197, 0)), 
+		linear-gradient(right, #c3c3c5, rgba(195, 195, 197, 0));
+	background-position: 0 0, 100% 0, 0 0, 100% 0;
+	background-repeat: no-repeat;
+	background-size: 4em 100%, 4em 100%, 1em 100%, 1em 100%;
+	background-attachment: local, local, scroll, scroll;
+}
+
+form.filter-events span {display:block; padding:10px 0; margin-right:0;}
+
+
+} /* end media query */
+
+
+
+@media screen and (max-width: 400px) {
+	
+h1 {
+    font-size: 1.6em;
+    padding: .5em .5em 1em .5em;
+	line-height:130%;
+}
+
+div.inview {padding:1em 1.5em;}
+
+form.filter-events select,
+form.filter-events span {margin-right:5px;}
+
+form.tutorial-feedback textarea {width:90%;}
+
+
+} /* end media query */
+
+
+
+
+@media print {
+
+body {
+	color: #000;
+	background: #fff;
+}
+
+h1 {color:#000;}
+
+.sh-header,
+ol.ou-breadcrumb,
+a.print,
+div.addthisevent-drop {display:none;}
+
+.box-book,
+.box-booked {
+	border-left:2px solid #000;
+	padding:0 1em 0 1.5em;
+	background-color:transparent;	
+}
+
+table tr td,
+table tr th {border-bottom:1px solid #ccc;}
+
+} /* end media query */
+
+
+

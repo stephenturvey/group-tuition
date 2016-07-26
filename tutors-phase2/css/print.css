@@ -1,0 +1,83 @@
+/* PRINT STYLES */
+
+#oubar, #sitebar, #nav, #nav2, #nav3, #sbh3, #sbh4 {
+	display: none;
+}
+
+body, p, ul, ol, li, dl, dt, dd, blockquote {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 150%;
+}
+
+a:link:after, a:visited:after {
+   content: " (" attr(href) ") ";
+   }
+   
+/*This is part of the W3C spec for CSS-3. It makes browsers that support css-3 display the url of links after the link text so you know where the links are point to. As of 18/12/02 the W3C CSS validator does not support CSS-3 and thus says this style sheet is not valid CSS. When the validator is updated, this CSS file will validate.
+
+since this site is a portal of maily links, if any pages are to be printed out, it makes more sense to give an idication of where the links go. At this point (18/12/02) only Mozilla/Gekko based browsers have support for CSS-3.
+*/
+   
+   
+h1, h2, h3, h4, h5, h6 {
+	line-height: normal;
+}
+
+h1, h2, h3 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h4, h5, h6 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+div.studentdetails {
+	font-size: 0.85em;
+	line-height: normal;
+}
+
+div.studentdetails h2 {
+	font-size: 1.5em;
+}
+
+div.currentcourses h4 {
+	font-size: 1.1em;
+}
+
+div.currentcourses h5 {
+	font-size: 1.0em;
+}
+
+div.pastcourses h4 {
+	font-size: 1.1em;
+}
+
+div.pastcourses h5 {
+	font-size: 1.0em;
+}
+
+div.smallprint p {
+	font-size: 0.8em;
+}
+
+td.rowheader {
+	font-size: 0.9em;
+}
+
+p.rowheader {
+	font-size: 1.0em;
+}
+
+#footer {
+	display: none;
+}
+
+p.pasthd {
+	color: #000;
+}
+
+td.rowheader_newsm {
+	font-size: 0.8em;
+}
+

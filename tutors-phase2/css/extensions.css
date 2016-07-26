@@ -1,0 +1,111 @@
+﻿#ContextForm
+{
+	padding:8px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-color:white;
+	border:1px solid #555;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-box-shadow: 2px 5px 10px #AAA;
+	-moz-box-shadow: 2px 5px 10px #AAA;
+}
+ 
+#ContextForm div
+{
+	margin-bottom:8px;
+}
+ 
+#ContextForm span
+{
+	margin-left:8px;
+	padding-top:10px;
+	font-weight:bold;
+}
+ 
+#ContextForm a
+{
+	display:block;
+	padding-bottom:6px;
+}
+ 
+#ContextForm a:hover
+{
+	color:#E75900;
+}
+ 
+#ContextForm select, #ContextForm input
+{
+	width:140px;
+}
+ 
+#ContextForm img
+{
+	float:right;
+}
+ 
+#ContextForm span.validationMessage
+{
+	color:red;
+	display:none;
+}
+
+#OUContextDelete
+{
+	margin-top:6px;
+}
+ 
+#JSON
+{
+	display:none;
+	margin:8px;
+	padding:10px;
+	border:2px solid green;
+	background-color:#CCFFCC;
+	word-wrap:break-word;
+}
+
+#ContextForm #loader
+{
+	float:left;
+	display:none;
+}
+ 
+#loader.updateDelete
+{
+	padding-top:8px;
+}
+ 
+#ContextForm #actions
+{
+	float:right;
+}
+ 
+#confirm, #ajaxErrorModal
+{
+	margin-top:10px;
+	display:none;
+}
+ 
+#confirm span, #ajaxErrorModal span
+{
+	margin:6px;
+	font-weight:normal;
+	display:block;
+	padding-top:0px;
+}
+ 
+#ContextForm #yes, #ContextForm #no, #ContextForm #ok
+{
+	width:40%;
+}
+ 
+#confirm img, #ajaxErrorModal img
+{
+	float:none;
+}
+
+table.simple tr {border: 1px solid #ddd;}
+
+td.selectable {border-left:1px solid #ddd;}

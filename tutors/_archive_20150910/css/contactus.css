@@ -1,0 +1,15 @@
+span.red { color:#c00; }
+
+p.faq {
+	width:600px;
+	margin-left:20px;
+}
+
+p.installed 
+{
+	clear:both;
+}
+
+.left {
+	float:left;
+}

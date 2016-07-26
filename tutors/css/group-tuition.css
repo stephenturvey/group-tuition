@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/* GROUP TUITION - TUTOR STYLES */
+
+
+a.link-float {float:right;}
+
+div#ou-region1 h2 {margin: .8em 0 .8em 0;}
+
+
+/* icons */
+
+a.group-email {
+	background-image:url(2015/icon-group-email.png);
+	background-position:0 .1em;
+	background-repeat:no-repeat;
+	padding:0 0 0 20px;
+	margin:0 3px;	
+}
+
+a.feedback {
+	background-image:url(2015/icon-comment.png);
+	background-position:0 .3em;
+	background-repeat:no-repeat;
+	padding:0 0 0 18px;
+	margin:0 3px;
+}
+
+a.icon-cluster  {
+	background-image:url(2015/icon-cluster.png);
+	background-position:0 .3em;
+	background-repeat:no-repeat;
+	padding:0 0 0 18px;
+	margin:0 3px;
+}
+
+/* this one was missing from th-aspx-1.0.css */
+ul.student-tools a.st-print {background-image:url(2015/icon-print.png);}
+
+/**/
+
+
+/* sortable tables */
+
+table.sortable th:hover {
+	cursor:pointer;
+	color:#eee;
+}
+
+table.sortable th.sorttable_nosort:hover {
+	cursor: text;
+	color:#fff;
+}
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B2\25Bc";
+	font-family: arial;
+	font-size:9px;
+	color:#E6B49B;
+}
+
+
+/**/
+
+body.template-content div.ou-content ul.no-space {margin-bottom:0;}
+
+
+/* Media queries */
+
+
+@media print {
+
+body {
+	color: #000;
+	background: #fff;
+}
+
+h1 {color:#000;}
+
+a.link-float {display:none;}
+
+
+} /* end media query */
+
+
+
+

@@ -1,0 +1,67 @@
+h1.tcp
+{
+	font-size:140%;
+	font-weight:bold;
+}
+
+#inpCode
+{
+	width:100px;
+}
+
+table.tcp
+{
+	margin:20px 0 20px 0;
+	padding:0;
+	border:solid 1px #ccc;
+}
+
+table.tcp th
+{
+	vertical-align:top;
+	font-size:110%;
+	text-align:center;
+	font-weight:bold;
+	margin:0;
+	padding:0 5px 1px 5px;
+}
+
+table.tcp th.l1
+{
+	text-align:left;
+	padding-left:1em;
+}
+
+table.tcp td
+{
+	font-size:120%;
+	text-align:center;
+	margin:0;
+	padding:2px 5px 2px 5px;
+	border-top:dotted 1px #ccc;
+	vertical-align:top;
+}
+
+table.tcp td.r1
+{
+	text-align:right;
+	padding-right:2.5em;
+}
+
+table.tcp td.r2
+{
+	text-align:right;
+	padding-right:2.0em;
+}
+
+table.tcp td.l1
+{
+	text-align:left;
+	padding-left:1em;
+}
+
+table.tcp td.r3
+{
+	text-align:right;
+	padding-right:1em;
+}

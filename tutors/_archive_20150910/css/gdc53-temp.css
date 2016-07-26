@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* CSS Document */
+
+div.message {border:1px solid #ddd; border-radius:0.5em; margin-bottom:1.5em;}
+div#ou-region1 div.message h2 {margin-top:.5em;}
+div.message.sticky {border-color: #ddd;}
+div.message-header {clear:both; overflow:hidden; background-color:#f2f2f2; padding:.5em 1.5em .8em 1.5em; border-radius:4px 4px 0 0;}
+div.message.sticky div.message-header {background:#FFEFC2 url(icon-sticky.png) 98% 1em no-repeat;}
+p.mark {display:inline; float:right; margin:0; padding:0;}
+p.time {display:inline; float:left; margin:0; padding:0; color:#666;}
+div.message-content {padding:.5em 1.5em;}
+
+
+
+.st-date {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.st-date {
+    background-color: #FFFFFF;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 0 0 0 0;
+    width: 4em;
+}
+
+.st-day {
+    background-color: #FFFFFF;
+    border-radius: 0 0 8px 8px;
+    border: 2px solid #555;
+	border-top:none;
+    display: block;
+    font-size: 200%;
+    padding: 8px 0;
+    text-align: center;
+	background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+	background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+	background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+	background-image: linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #EEEEEE),
+		color-stop(1, #FFFFFF));
+}
+
+.st-month {
+    background-color: #990000;
+    color: #FFFFFF;
+    display: block;
+    font-size: 80%;
+    padding: 2px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.stories .story {
+    margin: 0 0 2em 6em;
+    border-bottom: 1px solid #eee;
+	position:relative;
+}
+
+.stories .story:last-child {
+    border-bottom: none;
+}
+
+.story p {margin:0 0 1.5em 0;}
+
+body.ou-panels div#ou-region1 .story h2 {
+    font-size: 1.8em;
+    font-weight: normal;
+	line-height:1.4em;
+	background-image:none;
+	background-color:transparent;
+	text-shadow:none;
+	padding:0;
+	margin:0 0 .2em 0;
+}
+
+body.ou-panels .story h2 a {
+	text-decoration:none;
+}
+
+body.ou-panels .sticky h2 a {
+	background-image:url(icon-sticky.png);
+	background-repeat:no-repeat;
+	background-position:top right;
+	padding-right:30px;
+
+}
+
+
+.story a.remove {
+	background-image: url('icon-delete.png');
+	background-position: left top;
+	background-repeat: no-repeat;
+	display: inline-block;
+	border: 0;
+	height: 11px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-indent: -999em;
+	width: 11px;
+}
+
+.story a.remove:hover {
+	background-position: bottom left;
+}
+
+p.subtext {color:#666;}
+
+/*  */
+

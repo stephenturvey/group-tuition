@@ -1,0 +1,83 @@
+#oulogo {
+	width: 70px;
+	height: auto;
+}
+
+table.layout {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#oubar {
+	color: black;
+	background-color: #ffcc00;
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid black;
+	margin: 0;
+	padding: 0;
+}
+
+#oubar form {
+	margin: 0;
+	padding: 0;
+}
+
+#oubar img {
+	border: 0;
+}
+
+#sitebar {
+	color: White;
+	background-color: #0066cc;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 2px 0 0 0;
+	background-image : url(../images/site-header/site-header-bg.gif);
+	background-repeat : no-repeat;
+}
+
+#nav {
+	color: #0066cc;
+	background-color: #dddddd;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+#search {
+	color: #0066cc;
+	background-color: #dddddd;
+	padding: 10px 0 0 0;
+	background-image : url(../images/search-corner.gif);
+	background-position : top left;
+	background-repeat : no-repeat;
+}
+
+#sitebar h1 {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#sitebar label {
+	text-transform : none;
+	font-weight: bold;
+}
+
+#sitebar 
+
+{
+	position:relative;
+}
+
+#feebackandhelp
+
+{
+	position:absolute;
+	top: 5px;
+	right:5px;
+}

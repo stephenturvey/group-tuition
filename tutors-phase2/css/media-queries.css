@@ -1,0 +1,444 @@
+
+@media only screen and (max-width: 640px), screen and (max-device-width: 640px) {
+	
+/* general styles */
+body {
+   margin:0;
+   font-family: Arial,Helvetica,sans-serif;
+   font-size: 75%;
+}
+
+/* OU header and footer */
+body.ou-blend div#ou-org-footer {
+	padding-top:0;	
+}
+
+body.ou-blend div#ou-org-footer div.ou-grid {
+    background-image: none;
+	min-height: 0;	
+}
+
+div#ou-org-header {
+	width:auto;
+	margin:0 5%;
+}
+
+
+/* remove floats and width */
+div.col1,
+div.col2,
+div.column1,
+div.column2,
+div.column3,
+div.column2and3 {
+    float: none;
+    margin: 0;
+    width: auto !important;
+}
+
+#studentdet_col1 {
+    float: none;
+    padding-left: 0;
+    width: auto;
+}
+
+#studentdet_col2 {
+    padding-right: 0;
+    width: auto;
+}
+
+
+div.container {
+    clear: both;
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+
+/* remove border-radius and border */
+div.mail_box, 
+div.students_box, 
+div.toplinks_box, 
+div.links_box, 
+div.students_box,
+div.messages_box,
+div.news_box,
+div.whats_box {
+	border:none;
+	border-radius:0;
+	margin:0;	
+}
+
+div.info_box, 
+div.sites_box,
+div#col1 {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+div.newscontent {
+    border: none;
+    border-radius: 0;    
+}
+
+
+/* headers */
+div.info_box h2, 
+div.sites_box h2, 
+div.sectionbox h2 {   
+    border-radius: 0;
+	font-size: 1.3em; 
+	padding: 0.4em 0.8em 0.3em 0.8em;  
+	text-shadow: none;
+	line-height: 1.6em; 
+}
+
+div.news_box h2,
+div.messages_box h2,
+div.whats_box h2,
+div.links_box h2,
+div.toplinks_box h2,
+div.students_box h2,
+div.mail_box h2,
+h1.news {
+	border-radius:0;	
+	font-size: 1.3em;
+	padding: 0.4em 0.8em 0.3em 0.8em; 
+	text-shadow: none;
+	line-height: 1.6em; 
+}
+
+
+h1.news span.link a {
+    color: #FFFFFF;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+div.sectionbox {
+	border:none;
+}
+
+/* remove list images */
+div.home_container ul li a, 
+div.container ul.links li a, 
+a.alar {
+	background-image:none;
+	padding:1em;
+}
+
+
+
+div.content {
+    padding:1em 1em;
+}
+
+ul.codes {
+	border-radius:0;
+}
+
+ul.codes li {
+	display:block;
+	padding-left:1em;
+	border-right:0;	
+	margin-bottom:0.5em;
+}
+
+
+
+
+
+
+/* scrollable tables */
+table#tblStudDets  {
+    display:block;
+	margin-bottom: 2em;
+    overflow-x: auto;	
+}
+
+table.noborder {
+    display:block;
+	margin-bottom: 2em;
+    overflow-x: auto;	
+}
+
+table.archive {
+	display:block;
+	margin-bottom: 2em;
+    overflow-x: auto;	
+}
+
+table.archive td {
+	min-width:6em;
+}
+
+
+/* home page */
+div.links_box div.desc, 
+div.toplinks_box div.desc {
+    color: #666666;
+    margin: 0;
+	padding:1em
+}
+
+#alias {
+    background-color: #666666;    
+    color: #FFFFFF;
+    float: right;   	
+}
+
+div.more_sm p, 
+div.more p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* extensions page */
+
+#ContextForm {
+    background-color: #EEE;
+    border:none;
+    border-radius:0;    
+    padding: 1em;
+    position:static;	
+	display:block;
+	float:none; 	
+	clear:both;  
+}
+
+
+#ContextForm select, 
+#ContextForm input,
+#ContextForm textarea {
+    width: 75%;
+	padding: 0.5em;
+	margin: 0 0 1em;
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;	
+}
+
+#ContextForm div  {
+	display: block;
+    margin: 0;
+	padding:0;	
+}
+
+#ContextForm br  {
+	display:none;	
+}
+
+
+#ContextForm div label {
+	display: block;
+    margin: 0;	
+	padding:0;	
+}
+
+#ContextForm #actions {
+    float: none;
+}
+
+#ContextForm span {
+    font-weight: bold;
+	display:block;
+    margin-left: 0;
+	margin-bottom: 1em;
+    padding-top: 0;
+}
+
+
+/* news */
+.newstory {
+    margin: 0;
+    padding: 0;
+}
+
+p.newstitle {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 1em;
+    text-align: left;
+	font-weight:bold;		
+}
+
+span.story {
+    float: none;    
+}
+
+span.story {
+    border-top:1px solid #EEE;
+	display:block;
+	line-height: 150%;
+    margin:0;
+    padding:1em;
+    width: auto;
+}
+
+div.extralinks {
+    float: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: auto;
+}
+
+ul.newsitems {
+    list-style: none outside none;
+    margin:0 0 1em 0;
+	padding:0;
+    text-align: left;
+}
+
+ul.newsitems li{
+    width: auto;
+}
+
+ul.newsitems li a {    
+	padding:0 1em;  
+	border-top:none;  
+}
+
+ul.newsitems li.contacty {
+    padding-left:1em;
+	 
+	   
+}
+
+span.link a {
+    color: #FFFFFF;
+    float: none;
+    font-size: 0.5em;
+    font-weight: normal;
+    text-decoration: none;
+	display:block;
+}
+
+/* student referral form */
+form#refform {
+    margin: 0;
+    padding: 0;	
+}
+
+.contentbox {
+    margin: 0;
+	padding:0;
+}
+
+div#toparea {
+	background-color: #EEE;
+	border-top:none;
+	padding:1em;
+	
+}
+
+select#selregion,
+input#prevcontactdate {
+	width: 100%;
+	padding: 0.5em;
+	margin: 0 0 1em;
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;		
+}
+
+input#prevcontactdate {
+	width: 75%;	
+}
+
+table#reasons2 td {
+	display:block;
+	padding:0.5em 0;
+}
+
+td#tdChars,
+p#guidance {
+	font-size:1em !important;	
+}
+
+table.extra td {
+	padding:0;		
+}
+
+div.content  {
+	padding:0;
+	margin:0 1em;
+}
+
+div.extra {
+    margin:0;
+	padding:0;
+}
+
+div.refreason {
+	float: none;
+    margin-right: 0;
+    width: auto;	
+}
+
+div.refline {
+    height: auto;
+}
+
+input[name="referralreason"] {
+    float: none;
+    margin-top: 0;
+}
+
+div#first,
+div#second {
+    width: auto;
+	height:auto;
+}
+
+
+/* regions */
+form#regionform select {
+	width: 75%;
+	padding: 0.5em;
+	margin: 0 0 1em;
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;		
+}
+
+/* compose email */
+div.studentdetails ul li {
+	padding-bottom:0.5em;	
+}
+
+div.studentdetails ul  {	
+	-moz-column-count:2;
+	-webkit-column-count:2;
+	column-count:2;
+	
+	
+}
+
+.studentdetails h4 {
+	margin:1em 0;
+}
+
+table.noborder > tbody > tr > td {
+	width:auto;
+}
+
+input#inpSubject,
+textarea[name="taBody"] {
+	width: 75%;
+	padding: 0.5em;
+	margin: 0 0 1em;
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;	
+}
+
+a {
+	word-wrap:break-word;
+}
+	
+}
+

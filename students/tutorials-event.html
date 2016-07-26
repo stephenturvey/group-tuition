@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Tutorial 1 - Open University</title>
+<title>Tutorial - Open University</title>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 
@@ -27,7 +27,11 @@
 <script type="text/javascript" src="includes/studenthome-menu-2012.js"></script>
 <script type="text/javascript" src="js/site.js"></script>
 
+<!-- new js -->
+<script type="text/javascript" src="js/sorttable.js"></script>
 
+<!-- new meta tag -->
+<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no" />
 </head>
 
 <body class="ou-wide ou-ia-learning ou-blend study r2r3 sh-study ou-mobile ou-full" onload="boot()">
@@ -74,101 +78,162 @@
 
 <div class="grid">
 
+<ol class="ou-breadcrumb">
+	<li><a href="tutorials.html">Your tutorials</a></li>
+	<li><a href="tutorials-b716.html">Tutorials for B716</a></li>
+	<li>Tutorial 2</li>
+</ol>
+
+
 
 <div class="r2">
 <div class="ou-content" id="ou-content">
 
-<h1 class="h1main">Tutorial 1: Getting ready for your first assignment</h1>
+<h1 class="h1main">B716 Tutorial 2</h1>
 
 <div class="inview">
-  <h2>Event description</h2>
+
+<h2>Tutorial description</h2>
 
 <p>This tutorial will help you prepare for your first assignment for B716.</p>
 
-<h2>Event objectives</h2>
+<h2>Tutorial objectives</h2>
+
 <ul>
   <li>Know how to write for University</li>
   <li>Where to get books and other sources</li>
   <li> Know how to cite references    </li>
   <li>How to submit an assignment</li>
-  </ul>
-<h2>Contact</h2>
-<p><a href="#">Ask a question about this tutorial</a></p>
+</ul>
+  
+<h2>Help</h2>
+<p>See <a href="http://www2.open.ac.uk/students/help/topic/tutorials-and-residential-schools">the Help Centre</a> or <a href="http://www2.open.ac.uk/students/help/your-contacts#q13">ask a specific question</a> about this tutorial.</p>
 
 <hr>
 
-<h2>Book B716 event</h2>
+<h2 class="book-title">Book B716 Tutorial</h2>
+
+<h3>Suggested options (based on your location)</h3>
 
 <div class="table-wrap">
-<table class="event-listings">
+<table class="event-listings sortable">
   <thead>
     <tr>
-      <th>Event date</th>
-      <th class="last">Location</th>
-      <th class="last">Venue</th>
-      <th class="last">Start time</th>
-      <th class="last">End time</th>
-      <th class="last">Type</th>
-      <th class="last">Tutor</th>
-      <th class="last">Book</th>
-    </tr>
+      <th>Tutorial date</th>
+      <th>Location</th>
+      <th>Venue</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th>Type</th>
+      <th>Tutor</th>
+      <th>Book by</th>
+      <th class="sorttable_nosort">Book</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15/06/2016</td>
+      <td>Liverpool</td>
+      <td>To be confirmed</td>
+      <td>10:00</td>
+      <td>13:00</td>
+      <td>Face to face tutorial</td>
+      <td>Mr Arnold Palmer</td>
+      <td>01/06/2016</td>
+      <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
+      </tr>
+    <tr>
+      <td>21/06/2016</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>11:00</td>
+      <td>12:00</td>
+      <td>Online tutorial</td>
+      <td>Mrs Alison Perkins</td>
+      <td>06/06/2016</td>
+      <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+<h3>All other options</h3>
+
+<form class="distance-filter">
+<p>Show tutorials within 
+  <select name="miles" id="miles">
+    <option value="any" selected>Any</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+    <option value="40">40</option>
+    <option value="50">50</option>
+    <option value="60">60</option>
+    <option value="70">70</option>
+    <option value="80">80</option>
+    <option value="90">90</option>
+    <option value="100">100</option>
+  </select> 
+  miles of 
+  <input type="text" name="postcode" id="postcode" placeholder="Postcode/Town">
+  <input name="submit" type="button" value="Filter">
+</p>
+</form>
+
+
+<div class="table-wrap">
+<table class="event-listings sortable">
+  <thead>
+    <tr>
+      <th>Tutorial date</th>
+      <th>Location</th>
+      <th>Venue</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th>Type</th>
+      <th>Tutor</th>
+      <th>Book by</th>
+      <th class="sorttable_nosort">Book</th>
+      </tr>
   </thead>
   <tbody>
     <tr>
       <td>02/06/2016</td>
       <td>Whittlebury</td>
       <td><a href="tutorials-venue.html">Whittlebury Hall</a></td>
-      <td>11:30am</td>
-      <td>15:30pm</td>
+      <td>11:30</td>
+      <td>15:30</td>
       <td>Face to face tutorial</td>
       <td>Mr Saul Smith</td>
-      <td><a href="#" class="book-now">Book now</a></td>
-    </tr>
+      <td>17/06/2016</td>
+      <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
+      </tr>
     <tr>
       <td>09/06/2016</td>
       <td>London</td>
       <td><a href="tutorials-venue.html">Camden Community Centre</a></td>
-      <td>09:30am</td>
-      <td>12:30pm</td>
+      <td>09:30</td>
+      <td>12:30</td>
       <td>Face to face tutorial</td>
       <td>Mrs Janet Argyle</td>
-      <td><a href="#" class="book-now">Book now</a></td>
-      </tr>
-    <tr>
-      <td>15/06/2016</td>
-      <td>Liverpool</td>
-      <td>To be confirmed</td>
-      <td>10:00am</td>
-      <td>13:00pm</td>
-      <td>Face to face tutorial</td>
-      <td>Mr Arnold Palmer</td>
-      <td><a href="#" class="book-now">Book now</a></td>
-      </tr>
-    <tr>
-      <td>21/06/2016</td>
-      <td>n/a</td>
-      <td>n/a</td>
-      <td>11:00am</td>
-      <td>12:00pm</td>
-      <td>Online tutorial</td>
-      <td>Mrs Alison Perkins</td>
-      <td><a href="#" class="book-now">Book now</a></td>
+      <td>28/06/2016</td>
+      <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
       </tr>
     <tr>
       <td>27/06/2016</td>
       <td>London</td>
       <td><a href="tutorials-venue.html">Dog and Duck</a></td>
-      <td>13:00pm</td>
-      <td>17:00pm</td>
+      <td>13:00</td>
+      <td>17:00</td>
       <td>Face to face tutorial</td>
       <td>Mrs Sarah Upstone</td>
-      <td><a href="#" class="book-now">Book now</a></td>
+      <td>12/06/2016</td>
+      <td><a href="tutorials-book.html" class="book-now">Book now</a></td>
     </tr>
   </tbody>
 </table>
 </div>
-
-<p><a href="tutorials.html">Back to Tutorials</a></p>
+<p><a href="tutorials-b716.html">Back to B716 tutorials</a></p>
 </div>
 
 </div>

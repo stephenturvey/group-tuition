@@ -1,0 +1,285 @@
+@import url('master-screen.css');
+
+table.archive {
+	width:93%;
+	margin:2em 3%; 
+	padding:0px;
+}
+
+table.archive td { 
+	
+}
+
+h1.news {
+	/*text-align:left;
+	margin:5px;
+	font-size:210%; 
+	padding:12px 10px 4px 8px;
+	font-weight:normal;*/
+	padding: .5em .8em .4em .8em;
+	margin:0;
+	color:#fff;
+	font-size: 2.7em;
+	font-weight:normal;
+	font-family: "Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
+	border-radius:4px 4px 0 0;
+	line-height: 100%;
+	text-shadow: 0 1px 3px #036;
+	background-color: #296e8f;
+	background-image: url(../img/bg-h1.jpg);
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+
+div.container { 
+	padding: 0;
+	margin: 1.5em 0 0 0;
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+span.link a {
+	float:right;
+	font-size:.5em;
+	font-weight:normal;
+	color:#03c;
+	color:#fff;
+	text-decoration:none;
+}
+
+span.date {
+	font-size:x-small;
+	font-weight:bold;
+}
+
+p {
+	margin-top:0px;
+	margin-bottom:10px;
+	line-height:140%;
+}
+
+#topwrap {
+	position:relative;
+	margin:0;
+	padding:0;
+	border:none;
+	text-align:left;
+	width:100%;
+	height:auto;
+}
+
+
+#oulink {
+	width:100px;
+	height:35px;
+	display:block;
+	margin:0 0 0 5px;
+	padding:0;
+	background-image:url(../images/oulogo.gif);
+	background-repeat:no-repeat;
+	text-indent:-1000em;
+	border:none;
+	background-position : 0 -2px;
+	text-decoration:none;
+}
+
+
+#tutorhomelink {
+	width: 425px;
+	height:35px;
+	display:block;
+	margin:0 0 0 5px;
+	padding:0;
+	background-image : url(../images/tutor_home_logo.gif);
+	background-repeat : no-repeat;
+	text-indent: -1000em;
+	border:none;
+	text-decoration:none;
+}
+
+#access {
+	display:none;
+}
+
+#contentwrap {
+	position:relative;
+	margin:0 auto;
+	padding:0 0 0 0;
+	border:none;
+	width: 100%;
+	height:auto;
+	text-align:center;
+}
+
+#col1 {
+	position:relative;
+	width:50%;
+	height:auto;
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+
+#col1 h3 {
+	padding-left: 20px;
+	background-image : url(../images/messages-icon.gif);
+	background-repeat : no-repeat;
+	background-position : 5px 5px;
+}
+
+#col2 h3 {
+	padding-left: 25px;
+	background-image : url(../images/links-icon.gif);
+	background-repeat : no-repeat;
+	background-position : 5px 5px;
+}
+
+#col2 {
+	position:absolute;
+	top:0;
+	right:0;
+	width:50%;
+	height:auto;
+	text-align:left;
+}
+
+p.newsdate {
+	text-align:left;
+	margin:0;
+	padding: .5em 1em;
+	font-size: 1em;
+	background-color: #eee;
+	border-top: 1px solid #ddd;
+}
+
+p.newstitle {
+	text-align:left;
+	margin:0;
+	padding: 15px;
+	font-size: 1.6em;
+	font-family: "Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
+}
+
+img { border:0px; }
+
+img.news { margin:5px 5px -1px 3px; }
+
+img.newsimage {	border:1px solid #000; }
+
+h3.news {
+	color:white;
+	background-color:#0066cc;
+	text-transform:uppercase; 
+	text-align:left; 
+	padding:5px; 
+	margin:10px 10px 0 10px; 
+	font-size:1.3em;
+	padding-left:20px;
+	background-image:url(../images/messages-icon.gif);
+	background-repeat:no-repeat;
+	background-position:5px 5px;
+	border-top:1px solid #000;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+}
+
+span.newsimage {
+	float:left;
+	padding: 5px 10px 0px 0px ;
+}
+
+span.story {
+	padding:0 0 0 15px; 
+	margin:0;
+	line-height:150%;
+	width:60%;
+}
+
+.newstory { 
+	padding:0 2em;
+	margin:1.5em 0 0 0;
+}
+
+div.extralinks {
+	text-align:left;
+	float:right;
+	width:25%;
+	padding:0;
+	margin:0;
+}
+
+.extralinks img {display:none;}
+
+div.spacer { clear:both; }
+
+span.extralinks li { padding:2px 0px; }
+
+ul.newsitems {
+	text-align:left;
+	list-style:none;
+	margin:0;
+}
+
+ul.newsitems li { padding:0; margin:0; width:100%; }
+
+ul.newsitems li a {display:block; padding:.5em; margin:0; border-top:1px solid #eee; }
+
+ul.newsitems li.contact {
+	text-align:left;
+}
+
+ul.newsitems li.contacty {
+	text-align:left;
+	color:#999;
+	padding:0 0 0 .5em;
+	margin:1em 0 0 0;
+	text-transform:uppercase;
+}
+
+span.caption {
+	display:block;
+	text-align:left;
+	padding:3px;
+	margin:0;
+	font-size:100%;
+}
+
+a {
+	text-decoration:none;
+	color:#039;
+}
+
+a:hover { text-decoration:underline; }
+
+div.news2sectionbox { border:1px; }
+
+span.story {
+	float:left;
+	text-align:left;
+
+}
+
+div.newscontent {
+	margin:0;
+	padding:0;
+	border:1px solid #ddd;
+	border-radius:0 0 .5em .5em;
+}
+
+.sectionbox div.newscontent {
+	border:none;
+	border-radius:none;
+}
+
+p {	border:none; }
+
+p.textbg {
+	
+}
+
+p.err {
+	text-align:left;
+}
+	
+a.nav1 { color:#039; }

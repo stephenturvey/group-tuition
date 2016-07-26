@@ -1,0 +1,370 @@
+@charset "UTF-8";
+
+/* OULIFE HEADER - APRIL 2013 - 13/9/13 by StephenT */
+/* Edited by Antony McEvoy - IT 01/1013 */
+
+div#ou-org {
+  max-width: 85em /* (85 x 12 = 1020px) */;
+  min-width: none;
+}
+
+div#ou-org-header {min-height:0; font-size:small;}
+
+a#ou-skip,
+a.ou-skip /* added 13/9/13 */ {
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-indent: -5000em;
+}
+
+a#ou-skip:focus, a#ou-skip:active,
+a.ou-skip:focus, a.ou-skip:active /* added 13/9/13 */ {
+  width:auto; 
+  height:auto; 
+  display:inline-block; 
+  text-indent:0; 
+  position:absolute; 
+  top:1em; 
+  left:1em; 
+  z-index:1; 
+  background-color:#fff; 
+  padding:1em; 
+  margin:0; 
+  background-color:#eee; 
+  border:2px solid #000; 
+  color:#000; 
+  text-decoration:none;
+}
+
+/* Old OU Life Header and Footer - Retro-fit 
+  Any references in the CSS above to #oulifehdr can be removed once all sites use the new html structure
+*/
+
+div#oulifehdr {
+  width: 100%;
+  max-width: 85em /* (85 x 12 = 1020px) */;
+  min-width: none;
+  margin: 0 auto;
+  padding: 0;
+  font-family: verdana,sans-serif;
+  font-size: 13px;
+}
+
+div#oulifehdr img {
+  border-width: 0;
+}
+
+div#oulife-clear {
+  clear:both;
+}
+
+div#oulifespc {
+  clear:both;
+  height:32px;
+  position:relative;
+}
+
+div#oulifeftr {
+  width:100%;
+  max-width:1200px;
+  min-width:770px;
+  margin:0 auto 10px auto;
+  padding:0;
+  font-family:verdana,sans-serif;
+  height:54px;
+  position:relative;
+}
+
+div#oulifeftr1 {
+  margin:0 37px 0 49px;
+  background-position:0 0;
+  background-repeat:no-repeat;
+  background-color:#ccd6e0;
+  background-image:url(img/oulife-ftr-middle.gif);
+  background-repeat:repeat-x;
+  background-position:0 0;
+  height:54px;
+  position:relative;
+}
+
+div#oulifeftr p {
+  font-size:110%;
+  font-weight:bold;
+  position:relative;
+}
+
+div#oulifeftr p.lt {
+  margin:0;
+  padding:25px 0 0 5px;
+}
+
+div#oulifeftr p.rt {
+  float:right;
+  margin:-1.2em 5px 0 0;
+}
+
+div#oulifeftr p span {
+  margin:0;
+  padding:0 0 0 16px;
+}
+
+div#oulifeftr p a {
+  color:#425466;
+  text-decoration:none;
+}
+
+div#oulifeftr p a:hover {
+  text-decoration:underline;
+}
+
+#oulifeftrl {
+  float:left;
+  margin-left:36px;
+}
+
+#oulifeftrr {
+  float:right;
+  margin-right:24px;
+}
+
+
+.oulife-header {
+  position:relative;
+  width:100%;
+  float:left;
+  padding:0;
+  /* *padding-bottom:1em; for ie7 and below */
+  margin:0 0 0 0;
+  clear:both;
+  background-color:#eee;
+  border-radius:0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius:0 0 6px 6px;
+  font-family:"Myriad Pro", Calibri, Tahoma, "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+
+.oulife-header a {text-decoration:none;}
+
+.oulife-header a.oulife-logo img {
+  display:inline-block;
+  margin:.8em 1.5em .8em 1em;
+  float:left;
+}
+
+.oulife-header ul,
+.oulife-header ul li {
+  margin: 0;
+  padding:0;
+  list-style:none;
+  float:left;
+}
+
+.oulife-header ul {margin:1.6em 0 0 0;}
+
+.oulife-header ul li {
+  float:left;
+  margin:0 .8em 0 0;
+  
+  /*added by Antony*/
+  white-space: nowrap;
+}
+
+.oulife-header ul li a,
+#oulifehdr ul li a {
+  display:block;
+  padding:.2em .5em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  color:#039;
+  font-weight:bold;
+  font-size:1em;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.oulife-header ul li a:hover {
+  background-color:#fff; 
+  color:#222;
+}
+
+/* selectable header items based on body class */
+.oulife-header ul li.selected a,
+body.ou-link-intranet-home div.oulife-header ul li a.ou-link-intranet-home,
+body.ou-link-units div.oulife-header ul li a.ou-link-units,
+body.ou-link-az div.oulife-header ul li a.ou-link-az,
+body.ou-link-staff div.oulife-header ul li a.ou-link-staff,
+body.ou-link-locations div.oulife-header ul li a.ou-link-locations,
+body.ou-link-student-home div.oulife-header ul li a.ou-link-student-home,
+body.ou-link-tutor-home div.oulife-header ul li a.ou-link-tutor-home,
+body.ou-link-ou-home div.oulife-header ul li a.ou-link-ou-home,
+body.ou-link-sign-out div.oulife-header ul li a.ou-link-sign-out {
+  background-color:#9E2761;
+  background-image:url(bg-selected.png);
+  background-position:center left;
+  background-repeat:repeat-x;
+  color:#fff;
+}
+
+.oulife-header ul.list2 {
+  float:right;
+  margin-right:185px;
+  /*added by Antony*/
+  margin-bottom: 2em;
+}
+
+.oulife-header ul.list2 li {margin:0 .8em 0 0;}
+
+.oulife-header ul.list2 li a,
+#oulifehdr ul.list2 li a {
+  display:block;
+  padding:.3em 0 .1em 0;
+  border-radius:0;
+  color:#666;
+  font-weight:normal;
+  font-size:.9em;
+}
+
+.oulife-header ul.list2 li a:hover,
+#oulifehdr ul.list2 li a:hover {
+  background-color:transparent;
+  color:#000;
+}
+
+.oulife-header form {
+  position:absolute;
+  top:1.6em;
+  right:1em;
+  display:block;
+  border:1px solid #bbb;
+  background-color: #fff;
+  overflow:hidden;
+}
+
+.oulife-header input#oulife-search {
+  position:relative;
+  width:120px ;
+  padding:4px;
+  margin:0;
+  margin-right:30px;
+  background-color:#fff;
+  border:1px solid #fff;
+  outline:0;
+}
+
+
+.oulife-header input#oulife-search:focus {
+  border:1px solid #A3336B;
+  background-color:#fff;
+}
+
+.oulife-header button.oulife-submit {
+  border: 1px solid #fff;
+  padding: 0;
+  background: url(img/icon-magni.png) 50% 0px no-repeat;
+  text-indent: 22px;
+  overflow: hidden;
+  width: 22px;
+  height: 19px;
+  position: absolute;
+  right: 4px;
+  top: 3px;
+  cursor:pointer;
+}
+
+.oulife-header button.oulife-submit:focus {
+  border:1px solid #fff;
+}
+
+
+
+/*for APS sites*/
+#tscontent
+{
+float: left;
+width: 100%;
+}
+/*end*/
+
+@media only screen and (max-width: 940px), screen and (max-device-width: 940px) {
+  
+/* styles for tablet devices */
+
+div#oulifehdr
+{
+	min-width: 0;
+}
+.oulife-header ul.list1 {
+  width:80%;
+}
+
+.oulife-header ul.list2 {
+  float:left;
+  width:80%;
+  margin-top:.5em;
+  margin-right:0;
+  margin-bottom:1em;
+  padding-left:.5em;
+}
+
+.oulife-header input#oulife-search {
+  width: 190px;
+}
+
+}
+
+@media only screen and (max-width: 680px), screen and (max-device-width: 680px) {
+
+/* styles for mobile devices */
+
+body {margin:0;}
+
+.oulife-header {
+  border-radius:0;
+}
+
+.oulife-header a.oulife-logo img {
+  display: block;
+  margin: .8em 1.5em .8em 1.5em;
+  float: none;
+}
+
+.oulife-header ul.list1,
+.oulife-header ul.list2 {
+  margin-left: 1.5em;
+  margin-top:.5em;
+  width:auto;
+}
+
+.oulife-header ul.list2 {
+  float:left;
+  margin-right:0;
+  margin-bottom:1em;
+  padding-left:.5em;
+}
+
+.oulife-header ul li {
+  margin: 0 .2em 0 0;
+}
+
+.oulife-header form {
+  right: 1.5em;
+}
+
+.oulife-header input#oulife-search {
+  width: 160px;
+}
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+/* High Resolution Screens (Retina iPhone) */
+
+.oulife-header button.oulife-submit {
+  background-image: url(icon-magni-2x.png);
+  background-size:16px 16px;
+}
+
+}

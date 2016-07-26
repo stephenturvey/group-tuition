@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:/*100%*/ /*12px;*/ background-color:white; line-height:130%; margin:0; padding:0;  background-color:#fff; xbackground-image:url(m-bg.jpg); background-position:bottom left; background-repeat:repeat-x;}
+
+div#ou-header {border-bottom:thin dotted #ccc; padding:0 0.5em; background-color:#fff;}
+
+a {color:#000099; text-decoration:none;}
+a:hover {background-color: #FFFF66;}
+p.link-nav {font-size:small; margin:0; padding:0.5em 0; float:right;}
+p.link-nav a {color:#666;}
+h1 {font-size:100%; margin:0; padding:0.5em 0;}
+h2,h3,h4,h5,h6 {font-size:100%;}
+
+div#ou {/*width:240px;*/ /*border:1px solid black;*/ padding:0; margin:0; max-width:30em;}
+
+a#link-ou {display:block; background-image:url(m-shield.jpg); background-position:center right; background-repeat:no-repeat; padding:0.5em 0; text-decoration:none; font-weight:bold; font-size:100%;}
+a#link-ou:hover {background-color:#fff;}
+
+
+a#sign-out {display:block; padding:0.5em; border:thin solid white;text-decoration:none; background-color:white; margin:0.5em 0; background-image:url(m-key.png); background-repeat:no-repeat; background-position:left center; padding-left:1em;}
+a#sign-out:hover {border-color:#c10031;}
+div#ou-footer {padding:0 0.5em; border-top:thin dotted #ccc;}
+div#ou-footer ul {margin:0; padding:0;}
+div#ou-footer ul li {list-style-type:none; margin:0; padding:0;}
+div#site {background-color:#fff;}
+div#site-header {padding:0 0.5em; background-color:#fff;}
+div#site-footer {padding:0 0.5em; background-color:#fff;}
+div#site-footer ul {margin:1em 0; padding:0;}
+div#site-footer ul li {list-style-type:none; margin:0; padding:0;}
+
+div#site-body { margin:0; padding:0 0.5em; background-color:#fff;}
+
+
+/* FAF styles */
+
+h1.faf {color:#4E1F7B;}
+h1.faf em {color:#B5A4CB; font-style:normal;}
+p.faf-intro {background-color:#F1F0F7; padding:0.5em; margin:0;}
+ul.faf {margin:0; padding:0;}
+ul.faf li {margin:0;list-style-type:none; border-top:thin solid #fff;}
+ul.faf li a {display:block; padding:0.5em 1em; background-color:#F1F0F7; color:white;}
+ul.faf li a:hover {background-color:#FFFF99;}
+
+ul.faf li a.c1 {background-color:#485466}
+ul.faf li a.c2 {background-color:#80004F}
+ul.faf li a.c3 {background-color:#394437}
+ul.faf li a.c4 {background-color:#8C002D}
+ul.faf li a.c5 {background-color:#4E1F7B}
+
+body.wide div#site-body {padding:0;}
+

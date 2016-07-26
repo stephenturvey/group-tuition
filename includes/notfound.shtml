@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Page not found</title>
+<style type="text/css" media="all"> 
+
+<!-- @import "http://www.open.ac.uk/css/error3.css"; @import "/includes/header2.css"; -->
+</style>
+
+<script type="text/javascript" src="/includes/header.js"></script>
+</head>
+<body>
+<div id="body_content">
+<!--#include virtual="/includes/header-centre-09.html" -->
+
+<div class="all_content">
+<div class="page_content">
+
+
+<div class="col1">
+ 
+  <div><img src="http://www.open.ac.uk/img/err_block_sm.jpg" width="200" height="200" alt="" />
+      </div>
+   </div>
+
+   <a name="content"></a> <div class="col2and3"> <img src="http://www.open.ac.uk/img/strap_err.gif" width="342" class="slogan" height="40" alt="We're sorry" /> 
+      <p class="error">We could not find the page you requested. 
+        <br />
+<br /><br />
+Either use the back button to go back to where you started and try another link.
+
+<br /><br />Or use <a href="http://www.open.ac.uk/search">search</a> to find what you were looking for.</p>
+ <div class="spacer"> </div>
+
+    </div>
+   
+   
+ </div>
+ <div class="spacer"></div>
+</div>
+
+<!--#include virtual="/includes/footer-09.html" -->
+</div>
+<script type="text/javascript">//<![CDATA[
+SiTrackTracer("/error.gif","errorpage=yes");
+//]]></script>
+</body>
+</html>

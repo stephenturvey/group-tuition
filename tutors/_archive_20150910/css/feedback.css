@@ -1,0 +1,95 @@
+body {
+	text-align:center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size: x-small;
+voice-family: "\"}\"";
+voice-family: inherit;
+font-size: small
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	text-align:center;
+	color: black;
+	background-color: #A9D4FF;
+	padding: 2px;
+	border:1px solid black;
+font-size: x-small;
+voice-family: "\"}\"";
+voice-family: inherit;
+font-size: small
+}
+
+hr {
+	display:none;
+}
+
+#feedback {
+	width: 400px;
+	height:auto;
+	margin: 0 auto;
+	text-align:center;
+}
+
+table {
+	padding:0;
+	margin:0;
+}
+
+td {
+	width: 50%;
+	padding: 5px;
+	margin:0;
+	border: 1px dotted #cccccc;
+	border-collapse: collapse;
+}
+
+th {
+	display:none;
+}
+
+form {
+	text-align:left;
+}
+
+label {
+	font-weight:bold;
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
+
+li {
+	list-style-type : none;
+	margin: 0;
+	padding:0;
+}
+
+td p {
+	text-align: right;
+}
+
+.submit {
+	text-align: center;
+	height:auto;
+	border: 1px dotted #cccccc;
+	margin-left:2px;
+	margin-right:2px;
+}
+
+
+address {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.blurb {
+	margin-top: 20px;
+}
+
+#thanks form{
+	text-align:center;
+}
