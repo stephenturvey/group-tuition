@@ -61,7 +61,16 @@
     
     <!-- new jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    
+
+	<!-- check/uncheck script -->
+    <script>
+	$(document).ready(function(){
+	$("#check_all").change(function () {
+    $("input:checkbox").prop('checked', $(this).prop("checked"));
+	});
+	});
+	</script>   
+
 
 </head>
 <body class="ou-ia-tutor ou ou-panels template-content ou-pure" data-feedly-mini="yes">    
@@ -127,19 +136,313 @@
                             <li><a href="index.html">TutorHome</a></li>
                             <li><a href="students.html">Students</a></li>
                             <li><a href="your-tutorials.html">Tutorials</a></li>
-                            <li><a href="tutorial-details-past.html">Tutorial details</a></li>
-                            <li><a href="add-students.html">Add students</a></li>
-                            <li>Thanks</li>
+                            <li>Tutorial details</li>
                         </ol>
                     </div>
                 </div>
             </div>
 
             <div id="ou-region1">
-                <h1>Thanks</h1>
+                <h1>Tutorial details</h1>
                 <div id="ou-content" class="ou-content">
-                  <p class="icon-tick">Thank you. The OU has received your submission and the information will be handled internally. Please note that the attendance register within TutorHome will not be updated to reflect these additions.</p>
-                  <p><a href="tutorial-details-past.html">Back to Tutorial details</a></p>
+
+<div class="on-this-page">
+  <h2>On this page</h2>
+  <ul>
+    <li><a href="#section-overview">Tutorial overview</a></li>
+    <li><a href="#attendance-register">Attendance register</a></li>
+  </ul>
+</div>
+
+<h2 id="section-overview">Tutorial overview</h2>
+                <table class="simple">
+                  <tr class="zebraOdd"><td>Tutorial title</td><td>Tutorial one</td></tr> 
+                  <tr>
+                    <td>Date</td>
+                    <td>12 March 2016 (Mon)</td>
+                  </tr> 
+                  <tr class="zebraOdd">
+                    <td>Time</td>
+                    <td>09:00 - 13:00</td>
+                  </tr>
+                  <tr class="zebraOdd"><td>Module/presentation</td><td>M250 14J</td></tr>
+                  <tr><td>Type</td><td>Cluster face to face</td></tr>
+                  <tr class="zebraOdd"><td>Tutorial description</td><td>Preparation for the first assignment</td></tr> 
+                  <tr><td>Learning objectives</td><td>To be confirmed</td></tr>
+                  <tr class="zebraOdd"><td>Location</td><td>Birmingham</td></tr>  
+                  <tr><td>Venue</td>
+                  <td><a href="venue-details.html">Whittlebury Hall</a> - <a href="venue-feedback.html">Leave feedback</a></td></tr>
+                  <tr>
+                    <td>Room</td>
+                    <td>102</td>
+                  </tr> 
+                  <tr><td>Tutor</td><td>Rob Halford (you), <a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jeremy Keith</a></td></tr>
+                </table>
+                
+                <h2 id="attendance-register">Attendance register</h2>
+                <p>Please place a tick alongside the names of all students who attended this tutorial and click Submit Attendance Register. If a student attended who wasn't on the original list you can add them using '<a href="add-students.html">Add students to attendance register</a>'.
+                <!--
+                <div class="box-alert">
+                  <p><strong>Missing information</strong>: we were unable to retrieve data under 'Special circumstances' for the following categories (scroll down for key): AC2, D, SU</p>
+                </div>
+                -->                </p>
+                <form class="tutorial-register" method="get" action="attendance-register-thanks.html">
+                
+                <p><input name="" type="checkbox" id="check_all" value=""> <label for="check_all">Check/Uncheck all</label></p>
+                
+                <table class="simple sortable">
+                <tr class="zebraOdd">
+                  <th class="sorttable_nosort" style="width:80px">Attended</th>
+                  <th>Student name</th>
+                  <th>PI</th>
+                  <th>Tutor</th>
+                  <th class="sorttable_nosort">Special circumstances</th>
+                </tr>
+                <tr>
+                  <td><label for="checkbox"><input name="checkbox" type="checkbox" id="checkbox"></label>
+                  </td>
+                  <td><a href="student-details.html">Ben Gurney</a></td>
+                  <td>123456</td>
+                  <td><a class="blue" href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Pat Atkins</a></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="zebraOdd">
+                  <td><label for="checkbox5">
+                    <input name="checkbox2" type="checkbox" id="checkbox5">
+                  </label></td>
+                  <td><a href="student-details.html">Steven Price</a></td>
+                  <td>123456</td>
+                  <td>Rob Halford (you)</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><label for="checkbox6">
+                    <input name="checkbox3" type="checkbox" id="checkbox6">
+                  </label></td>
+                  <td><a href="student-details.html">Jack Chapple</a></td>
+                  <td>123456</td>
+                  <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jeremy Keith</a></td>
+                  <td> N</td>
+                </tr>
+                <tr class="zebraOdd">
+                  <td><label for="checkbox7">
+                    <input name="checkbox4" type="checkbox" id="checkbox7">
+                  </label></td>
+                  <td><a href="student-details.html">James Nutt</a></td>
+                  <td>123456</td>
+                  <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jason Snell</a></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><label for="checkbox8">
+                    <input name="checkbox5" type="checkbox" id="checkbox8">
+                  </label></td>
+                  <td><a href="student-details.html">James Hart</a></td>
+                  <td>123456</td>
+                  <td><a class="blue" href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Pat Atkins</a></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="zebraOdd">
+                  <td><label for="checkbox9">
+                    <input name="checkbox6" type="checkbox" id="checkbox9">
+                  </label></td>
+                  <td><a href="student-details.html">Sam Leicester</a></td>
+                  <td>123456</td>
+                  <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Marco Arment</a></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><label for="checkbox10">
+                    <input name="checkbox7" type="checkbox" id="checkbox10">
+                  </label></td>
+                  <td><a href="student-details.html">Stephen Turvey</a></td>
+                  <td>123456</td>
+                  <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Dmitri Petrescu</a></td>
+                  <td> N</td>
+                </tr>
+                <tr class="zebraOdd">
+                  <td><label for="checkbox11">
+                    <input name="checkbox8" type="checkbox" id="checkbox11">
+                  </label></td>
+                  <td><a href="student-details.html">Kapil Dev</a></td>
+                  <td>123456</td>
+                  <td>Rob Halford (you)</td>
+                  <td> 25</td>
+                </tr>
+                <tr>
+                  <td><label for="checkbox12">
+                    <input name="checkbox9" type="checkbox" id="checkbox12">
+                  </label></td>
+                  <td><a href="student-details.html">Elle White</a></td>
+                  <td>123456</td>
+                  <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jeremy Keith</a></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="zebraOdd">
+                  <td><label for="checkbox13">
+                    <input name="checkbox10" type="checkbox" id="checkbox13">
+                  </label></td>
+                  <td><a href="student-details.html">Clare Withers</a></td>
+                  <td>123456</td>
+                  <td><a class="blue" href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Pat Atkins</a></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><label for="checkbox14">
+                    <input name="checkbox11" type="checkbox" id="checkbox14">
+                  </label></td>
+                  <td><a href="student-details.html">Leanne Daniels</a></td>
+                  <td>123456</td>
+                  <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Marco Arment</a></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="zebraOdd">
+                  <td><label for="checkbox15">
+                    <input name="checkbox12" type="checkbox" id="checkbox15">
+                  </label></td>
+                  <td><a href="student-details.html">Anne Lane</a></td>
+                  <td>123456</td>
+                  <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jason Snell</a></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><label for="checkbox16">
+                    <input name="checkbox13" type="checkbox" id="checkbox16">
+                  </label></td>
+                  <td><a href="student-details.html">Sarah Parish</a></td>
+                  <td>123456</td>
+                  <td><a class="blue" href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Pat Atkins</a></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="zebraOdd">
+                  <td><label for="checkbox17">
+                    <input name="checkbox14" type="checkbox" id="checkbox17">
+                  </label></td>
+                  <td><a href="student-details.html">Kaldora Pellis</a></td>
+                  <td>123456</td>
+                  <td>Rob Halford (you)</td>
+                  <td> AB</td>
+                </tr>
+                <tr>
+                  <td><label for="checkbox18">
+                    <input name="checkbox15" type="checkbox" id="checkbox18">
+                  </label></td>
+                  <td><a href="student-details.html">Janet Dyson</a></td>
+                  <td>123456</td>
+                  <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Marco Arment</a></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="zebraOdd">
+                  <td><label for="checkbox19">
+                    <input name="checkbox16" type="checkbox" id="checkbox19">
+                  </label></td>
+                  <td><a href="student-details.html">Pauline Leung</a></td>
+                  <td>123456</td>
+                  <td>Rob Halford (you)</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><label for="checkbox21">
+                    <input name="checkbox17" type="checkbox" id="checkbox21">
+                  </label></td>
+                  <td><a href="student-details.html">Nick Golding</a></td>
+                  <td>123456</td>
+                  <td><a class="blue" href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Pat Atkins</a></td>
+                  <td>&nbsp;</td>
+                  </tr>
+                </table>
+                
+                <p>
+                  <input type="submit" name="button" id="button" value="Submit Attendance Register">
+                </p>
+                </form>
+                
+                
+                
+                <ul class="student-tools">
+                  <li><a href="group-email.html" class="group-email">Send the students a group email</a></li>
+                  <li><a href="/your-record/p14.dll?T18TM129_2014J_243990" class="st-doc">Download your student details file</a></li>
+                  <li><a href="students4.aspx?code=TM129&amp;pres=2014J&amp;alloc=243990&amp;xx=D201508280836_74 " class="st-print">Print your student list</a></li>
+                 </ul>
+
+				<h3>Students who attended without booking</h3>
+                <p><a href="add-students.html">Add students to attendance register</a></p>
+                <form class="tutorial-register" method="get" action="attendance-register-thanks.html">
+                  <table class="simple sortable">
+                    <tr class="zebraOdd">
+                      <th>Remove</th>
+                      <th>Student name</th>
+                      <th>PI</th>
+                      <th>Tutor</th>
+                    </tr>
+                    <tr>
+                      <td><label for="checkbox30">
+                        <input name="checkbox30" type="checkbox" id="checkbox30">
+                      </label></td>
+                      <td><a href="student-details.html">Michale Knight</a></td>
+                      <td>123456</td>
+                      <td><a class="blue" href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Pat Atkins</a></td>
+                    </tr>
+                    <tr class="zebraOdd">
+                      <td><label for="checkbox31">
+                        <input name="checkbox31" type="checkbox" id="checkbox31">
+                      </label></td>
+                      <td><a href="student-details.html">Jessica Fletcher</a></td>
+                      <td>123456</td>
+                      <td>Rob Halford (you)</td>
+                    </tr>
+                    <tr>
+                      <td><label for="checkbox32">
+                        <input name="checkbox32" type="checkbox" id="checkbox32">
+                      </label></td>
+                      <td><a href="student-details.html">Martin Scorsese</a></td>
+                      <td>123456</td>
+                      <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jeremy Keith</a></td>
+                    </tr>
+                    <tr class="zebraOdd">
+                      <td><label for="checkbox33">
+                        <input name="checkbox33" type="checkbox" id="checkbox33">
+                      </label></td>
+                      <td><a href="student-details.html">Al Pacino</a></td>
+                      <td>123456</td>
+                      <td><a href="https://msds.open.ac.uk/staffdirectory/StaffDetails.aspx?id=00904448">Jason Snell</a></td>
+                    </tr>
+                  </table>
+                  <p>
+                    <input type="submit" name="button2" id="button2" value="Remove selected student/s">
+                  </p>
+                </form>
+                <p>&nbsp;</p>
+                
+                
+                <h3>Key</h3>
+                <p class="key">
+                               N = New to OU study<br>
+                               D = Disability<br>
+                               AB = Assessment Banking.  See <a href="http://www2.open.ac.uk/tutors/deferral-with-assessment-banking"> further details</a>.<br>
+                               18 = Under 18 (including YASS).<br>
+                               25 = Under 25 (but at least 18).<br>
+                               C = Contact history available.<br>
+                               P = Based in prison.  See <a href="http://www2.open.ac.uk/tutors/students-in-prison-or-secure-units"> further details</a>.<br>
+                               SU = Based in secure unit.  See <a href="http://www2.open.ac.uk/tutors/students-in-prison-or-secure-units"> further details</a>.<br>
+                               
+                               OpenPlus = a collaborative scheme. See <a href="http://intranet6.open.ac.uk/science/main/information-tutors-and-regional-advisors"> further details</a>.<br>
+                               GSS = Global Science Scheme.<br>
+                               IND = Has visited <a href="http://www.open.ac.uk/learning/new/">induction website</a>.<br>
+                               <span class="alert">ALERT</span> = Student has either failed or withdrawn part-way through two modules in succession.<br>
+                               <span class="alert">RESTRICTED</span> = Student has either failed or withdrawn part-way through three modules in succession.<br>
+                               AC2 = Academic conduct case has been raised against the student.<br>
+                               AC5 = Academic conduct case has been resolved.<br>
+                               <span class="alert">Updated</span> = Student record updated in the last 14 days.</p>
+
+           
+
+            
+    
+                    
+                        
+
+
                 <div class="page-footer">
 
 <h2>Need help?</h2>
